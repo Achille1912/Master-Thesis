@@ -1,0 +1,20 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}figure\PYG{n+nb}{\PYGZcb{}}[!ht]
+  \PYG{k}{\PYGZbs{}centering}
+  \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+    \PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}axis\PYG{n+nb}{\PYGZcb{}}[hebdomon, xlabel = \PYG{l+s}{\PYGZbs{}(}\PYG{n+nb}{x}\PYG{l+s}{\PYGZbs{})}, ylabel = \PYG{n+nb}{\PYGZob{}}\PYG{l+s}{\PYGZbs{}(}\PYG{n+nb}{f}\PYG{o}{(}\PYG{n+nb}{x}\PYG{o}{)}\PYG{l+s}{\PYGZbs{})}\PYG{n+nb}{\PYGZcb{}}]
+      \PYG{c}{\PYGZpc{}}
+      \PYG{k}{\PYGZbs{}addplot} [domain=\PYGZhy{}10:10, samples=100,red]\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZca{}}3 \PYGZhy{} 7*x \PYGZhy{} 1\PYG{n+nb}{\PYGZcb{}};
+      \PYG{k}{\PYGZbs{}addlegendentry}\PYG{n+nb}{\PYGZob{}}\PYG{l+s}{\PYGZbs{}(}\PYG{n+nb}{x\PYGZca{}}\PYG{l+m}{2}\PYG{n+nb}{ }\PYG{o}{\PYGZhy{}}\PYG{n+nb}{ }\PYG{l+m}{2}\PYG{n+nb}{x }\PYG{o}{\PYGZhy{}}\PYG{n+nb}{ }\PYG{l+m}{1}\PYG{l+s}{\PYGZbs{})}\PYG{n+nb}{\PYGZcb{}}
+      \PYG{c}{\PYGZpc{}}
+      \PYG{k}{\PYGZbs{}addplot} [domain=\PYGZhy{}10:10, samples=100, blue]\PYG{n+nb}{\PYGZob{}}x\PYG{n+nb}{\PYGZca{}}2 + 6*x + 8\PYG{n+nb}{\PYGZcb{}};
+      \PYG{c}{\PYGZpc{}}
+      \PYG{k}{\PYGZbs{}addlegendentry}\PYG{n+nb}{\PYGZob{}}\PYG{l+s}{\PYGZbs{}(}\PYG{n+nb}{x\PYGZca{}}\PYG{l+m}{2}\PYG{n+nb}{ }\PYG{o}{+}\PYG{n+nb}{ }\PYG{l+m}{2}\PYG{n+nb}{x }\PYG{o}{+}\PYG{n+nb}{ }\PYG{l+m}{1}\PYG{l+s}{\PYGZbs{})}\PYG{n+nb}{\PYGZcb{}}
+      \PYG{c}{\PYGZpc{}}
+    \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}axis\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}tikzpicture\PYG{n+nb}{\PYGZcb{}}
+  \PYG{k}{\PYGZbs{}caption}\PYG{n+nb}{\PYGZob{}}This is an example of a 2D PGF plot comparing
+  two functions where these functions are calculated using
+  PGF itself rather than entering/reading from data.\PYG{n+nb}{\PYGZcb{}}
+\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}figure\PYG{n+nb}{\PYGZcb{}}
+\end{MintedVerbatim}

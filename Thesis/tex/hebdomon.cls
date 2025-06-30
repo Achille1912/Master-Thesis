@@ -247,7 +247,7 @@
 \newcommand{\Subsubsection}[1]{\subsubsection{\textcolor{mciBlue}{#1}}}
 
 %\newcommand{\hlight}[1]{\textcolor{mciOrange}{#1}}
-\newcommand{\hlight}[1]{\textcolor{mciRed}{#1}}
+\newcommand{\hlight}[1]{\textbf{\textcolor{mciRed}{#1}}}
 
 
 % Configure the baseline of the document

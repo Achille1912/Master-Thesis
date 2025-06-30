@@ -1,12 +1,11 @@
 % Load the base class
 \documentclass[minted, draw]{../tex/hebdomon}
 \usepackage{svg}
+\usepackage{biblatex}[backend=biber, style=ieee, sorting=none]
+\addbibresource{references.bib}
 \begin{document}
 
-\title{Blood Cells Detection and Classification using Deep Learning and Machine Learning}
-\author{v0.1}
-\StudentName{Achille Cannavale}
-\date{dtm@mci4me.at}
+
 
 \publishers{
   \begin{tabular}[!b]{rl}
@@ -27,16 +26,16 @@
     {\Large Corso di Laurea Magistrale in Ingegneria Informatica \par}
 
     \vspace{2cm}
-    {\Huge\bfseries Blood Cells Detection and Classification using Deep Learning and Machine Learning\par}
+    {\Huge\bfseries Segmentazione del seno in immagini MRI\par}
     \vspace{1cm}
     {\large Versione 0.1}
 
     \vfill
 
     \begin{flushleft}
-    \textbf{Cannavale Achille} \\
-    \textbf{Colacicco Nunziamaria} \\
-    \textbf{La Torre Noemi} \\
+    \textbf{Studente}: Achille Cannavale \\
+	\textbf{Matricola}: 59721 \\
+    \textbf{Relatore}: Alessandro Bria \\
     \end{flushleft}
 
     \vspace{1.5cm}
@@ -48,62 +47,105 @@
 \tableofcontents
 \newpage
 
+
+
+
 \Chapter{}
 \Section{Introduzione}
 
-La malaria è una delle principali malattie infettive a livello globale, con un impatto significativo sulla salute pubblica, in particolare nei paesi tropicali e subtropicali. Tra i diversi parassiti responsabili di questa patologia, il \hlight{Plasmodium vivax} rappresenta una delle specie più diffuse. La diagnosi precoce e accurata è fondamentale per un trattamento tempestivo ed efficace, e l’analisi microscopica degli strisci ematici rimane uno degli strumenti diagnostici più affidabili.
-In questo progetto, viene affrontato il problema della rilevazione e classificazione automatica delle cellule del sangue infettate da P. vivax, attraverso tecniche di machine e deep learning.
-Utilizzando il dataset \hlight{P. vivax malaria infected human blood smears}, che contiene oltre \textbf{1.300} immagini microscopiche annotate con più di \textbf{86.000} cellule identificate e classificate, si propone una pipeline (Figura \ref{fig:pipeline_general}) che combina \textbf{Deep Learning} e \textbf{Machine Learning} per:
+La segmentazione di strutture anatomiche in immagini mediche 3D rappresenta un task importante nell’ambito clinico e diagnostico. In particolare la segmentazione del seno da immagini MRI (Magnetic Resonance Imaging) 3D è un task complesso, ma essenziale per applicazioni come la pianificazione di interventi chirugici o l’analisi di anomalie tessutali.
+
+In passato, la segmentazione del seno in immagini MRI 3D veniva effettuata principalmente con \textbf{metodi classici}, spesso semi-automatici o manuali, basati su:
 
 \begin{itemize}
-	\item individuare automaticamente le regioni di interesse (ROI) contenenti cellule
-	\item estrarre le feature significative dalle ROI
-	\item classificare ogni cellula in una delle categorie predefinite, tra cui cellule sane (red blood cell e leucocity) e diversi stadi del parassita infetto (trophozoite, ring, gametocyte, ecc.)
+	\item \hlight{Approcci a soglia} (thresholding) e \hlight{region-growing}, che sfruttavano differenze di intensità tra tessuti ma richiedevano regolazioni manuali e fallivano in presenza di rumore o basso contrasto.
+	\item \hlight{Deformable models} (es.: Active Contours) e \hlight{algoritmi a clustering} (es.: k-means), sensibili all’inizializzazione e poco robusti alla variabilità anatomica.
+	\item Metodi \hlight{atlas-based}, che allineavano immagini a template pre-annotati, limitati però dalla diversità inter-paziente.
 \end{itemize}
 
-\begin{warning}
-	L’analisi di questo lavoro ha evidenziato una marcata sbilanciatura del dataset, aspetto che ha richiesto un’attenta progettazione delle strategie di addestramento.
-\end{warning}
-%
-\begin{figure}[ht]
-	\centering
-	\includesvg[width=\linewidth]{figures/pipeline_general.svg}
-	\caption{Pipeline Generale del nostro progetto, suddivisa in una fase di Deep Learning per per la rilevazione delle ROI e l'estrazione delle features e una fase di Machine Learning per la classificazione delle cellule.}
-	\label{fig:pipeline_general}
-\end{figure}
-%
-\Section{Strumenti Utilizzati}
-Per lo sviluppo del progetto, sono stati utilizzati i seguenti strumenti software:
+Con l’avvento del \textbf{deep learning}, in particolar modo delle reti convoluzional e di architetture come \hlight{U-Net 3D}, la segmentazione del seno ha raggiunto livelli di accuratezza più alti rispetto al passato. 
 
+
+\Section{Background e Stato dell'Arte}
+
+La segmentazione semantica di immagini mediche rappresenta uno dei compiti fondamentali nell’ambito della diagnostica per immagini assistita da computer (CAD - Computer Aided Diagnosis). Essa consente di delineare strutture anatomiche e lesioni, migliorando l’accuratezza e l’efficienza dei processi diagnostici e terapeutici.
+
+Negli ultimi anni, l'avvento del deep learning ha rivoluzionato il campo dell’elaborazione di immagini mediche, introducendo architetture sempre più sofisticate per la segmentazione automatica. Una delle architetture più note e utilizzate è la \textbf{U-Net}, proposta da Ronneberger et al. \cite{ronneberger2015unet}, che ha introdotto un design encoder-decoder con connessioni skip per preservare i dettagli spaziali durante il processo di ricostruzione dell'immagine segmentata.
+
+Successivamente, sono state sviluppate numerose varianti e miglioramenti, tra cui architetture basate su reti convoluzionali più profonde, reti residuali e approcci multi-scala. Tuttavia, negli ultimi anni l’interesse si è spostato verso l’impiego di \textbf{Transformers}, inizialmente sviluppati per il Natural Language Processing (NLP), e adattati con successo al dominio delle immagini mediche. Esempi notevoli sono \textbf{TransUNet} \cite{chen2021transunet} e \textbf{Swin UNETR} \cite{hatamizadeh2022swin}, che combinano l’efficacia dei Transformers nel modellare le dipendenze globali con la capacità di apprendere rappresentazioni spaziali locali, tipiche delle CNN.
+
+Il framework \textbf{MONAI} (Medical Open Network for AI) \cite{cardoso2022monai} si è affermato come uno standard de facto nello sviluppo di pipeline per la segmentazione e classificazione di immagini mediche. Basato su PyTorch, MONAI offre un’ampia gamma di trasformazioni, modelli predefiniti, reader DICOM e metriche di valutazione, risultando particolarmente adatto per workflow in ambito sanitario.
+
+Nel presente lavoro, è stato impiegato MONAI per la gestione dei dati e la costruzione della pipeline di addestramento. Per il task di segmentazione della mammella su risonanza magnetica, si è fatto uso del dataset \textbf{Duke-Breast-Cancer-MRI}, disponibile su The Cancer Imaging Archive (TCIA) \cite{duke_breast_mri}, che contiene serie DICOM annotate manualmente da radiologi esperti.
+
+\Section{Attività di Tirocinio}
+
+L’attività si è inserita nel contesto di un progetto di ricerca mirato allo sviluppo e alla valutazione di modelli di segmentazione automatica per immagini di risonanza magnetica della mammella, con particolare attenzione.
+
+L’obiettivo principale del tirocinio è stato quello di sperimentare e ottimizzare pipeline basate su \textbf{deep learning} per la segmentazione semantica tridimensionale, utilizzando framework open-source moderni come \textbf{MONAI} (Medical Open Network for AI) e \textbf{PyTorch}.
+
+Le principali attività svolte durante il tirocinio sono state:
 \begin{itemize}
-	\item Parte di \textbf{Deep Learning:}
-	\begin{itemize}
-		\item \textbf{PyTorch}: per la progettazione, addestramento e valutazione dei modelli di Deep Learning
-	\end{itemize}
-	\item Parte di \textbf{Machine Learning:}
-	\item \textbf{Scikit-Learn}: per l’implementazione di algoritmi di Machine Learning
-	\item Strumenti \textbf{Ausiliari:}
-	\begin{itemize}
-		\item \textbf{Numpy} e \textbf{Pandas}: per l’analisi dei dati
-		\item \textbf{Matplotlib} e \textbf{Seaborn}: per la visualizzazione dei dati e dei risultati
-	\end{itemize}
+    \item \textbf{Pre-processing} dei dati in formato DICOM, con conversione in formato leggibile da MONAI e normalizzazione dell’intensità del segnale.
+    \item Composizione e validazione di un dataset bilanciato, con partizionamento in training, validation e test set.
+    \item Studio e implementazione di modelli di segmentazione basati su architetture \textbf{state-of-the-art}, tra cui \textbf{UNet} e \textbf{AttentionUNet}.
+    \item Configurazione degli esperimenti, tuning degli iperparametri e addestramento dei modelli in ambiente GPU.
+    \item Valutazione delle prestazioni mediante metriche standard come Dice coefficient
 \end{itemize}
 
-\section{Composizione del Dataset}
-Il Dataset preso in esame è composto da 1.328 immagini e da 86.035 oggetti. Ogni oggetto può appartenere ad una delle seguenti 7 classi:
-\begin{itemize}
-	\item \textbf{red blood cell} (RBC): globuli rossi sani (83,034)
-	\item \textbf{trophozoite}: stadio iniziale del parassita (1,584)
-	\item \textbf{ring}: stadio di anello del parassita (1,617)
-	\item \textbf{difficult}: stadio difficile del parassita (446)
-	\item \textbf{schizont}: stadio avanzato del parassita (190)
-	\item \textbf{gametocyte}: stadio gametico del parassita (156)
-	\item \textbf{leukocyte}: globuli bianchi sani (103)
+Durante il tirocinio sono state inoltre affrontate e risolte diverse problematiche tecniche legate alla gestione dei metadati DICOM, alla compatibilità tra i formati di input, e alla gestione efficiente della memoria in fase di training. L'intero lavoro è stato documentato e riproducibile mediante script Python e configurazioni YAML modulari.
+
+
+
+
+%
+% \begin{figure}[ht]
+% 	\centering
+% 	\includesvg[width=\linewidth]{figures/pipeline_general.svg}
+% 	\caption{Pipeline Generale del nostro progetto, suddivisa in una fase di Deep Learning per per la rilevazione delle ROI e l'estrazione delle features e una fase di Machine Learning per la classificazione delle cellule.}
+% 	\label{fig:pipeline_general}
+% \end{figure}
+
 	
+\Section{Strumenti Utilizzati}
+Durante il tirocinio sono stati impiegati diversi strumenti software e librerie  fondamentali per la gestione, il pre-processing e l'elaborazione di immagini medicali, nonché per lo sviluppo e il training di modelli di deep learning.
+\begin{itemize}
+	\item  Il linguaggio principale di lavoro è stato \textbf{Python}, scelto per la sua flessibilità e per l'ampio ecosistema di librerie scientifiche.
+	\item Per la manipolazione delle immagini DICOM è stata utilizzata la libreria \textbf{MONAI} (Medical Open Network for AI), un framework open-source basato su PyTorch e progettato specificamente per applicazioni di imaging medicale. MONAI ha permesso di gestire agevolmente il caricamento dei dati, le trasformazioni e la normalizzazione delle immagini, grazie a un sistema modulare di trasformazioni componibili.
+	\item Il framework di deep learning impiegato è stato \textbf{PyTorch}, scelto per la sua semplicità d'uso, il supporto attivo della community e le sue prestazioni elevate, specialmente in combinazione con l'accelerazione GPU fornita da CUDA.
+	\item Lo sviluppo del codice è stato realizzato su una macchina Linux, con accesso remoto e con l'ausilio dell'editor \textbf{Visual Studio Code}.
 \end{itemize}
 
 
-Da qui possiamo già evincere il grandissimo squilibrio presente nel dataset, rappresentato dalla classe maggioritaria delle \textbf{red blood cell}.
+
+
+
+
+
+
+
+
+
+
+
+\Section{Composizione del Dataset}
+
+Il dataset utilizzato durante il tirocinio proviene dal database \hlight{Duke Breast Cancer MRI}, un archivio pubblico contenente immagini DICOM di risonanze magnetiche della mammella. Ogni caso clinico è organizzato in una struttura gerarchica che riflette l'identificativo univoco del paziente e delle relative acquisizioni.
+
+Il dataset è composto da sequenze \hlight{DICOM} tridimensionali, ciascuna rappresentante un'acquisizione volumetrica del seno. In tutti i casi sono disponibili anche annotazioni o maschere segmentate manualmente da esperti, utilizzate come ground truth per il training dei modelli di segmentazione.
+
+Durante la fase di preparazione, le immagini sono state convertite in formato compatibile con MONAI tramite una pipeline di preprocessing, che ha incluso:
+\begin{itemize}
+    \item il \textbf{caricamento} delle immagini in memoria;
+    \item la standardizzazione dell'intensità e il ridimensionamento spaziale;
+    \item l'organizzazione dei dati in \textbf{dizionari} contenenti sia l'immagine sia i relativi metadati;
+    \item la \textbf{salvataggio} del dataset preprocessato 
+\end{itemize}
+
+Per ogni volume è stata mantenuta l'associazione tra immagine e metadati (es. spacing, orientamento, posizione del paziente), necessari per garantire una corretta elaborazione e interpretazione dei dati durante le fasi di training, validazione e inferenza.
+
+L'intero dataset è stato infine suddiviso in tre sottoinsiemi: \hlight{training}, \hlight{validation} e \hlight{test}, rispettando la proporzione e la varietà dei casi clinici per assicurare una valutazione affidabile delle performance del modello.
+
 
 
 \Chapter{Deep Learning}
@@ -484,6 +526,7 @@ Some options worth mentioning are as follows:
 	exceeding the memory limit.
 \end{hgitemize}
 
+\printbibliography
 \end{document}
 
 %%% Local Variables:
