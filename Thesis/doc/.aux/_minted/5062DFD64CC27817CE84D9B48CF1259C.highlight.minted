@@ -1,5 +1,0 @@
-\begin{MintedVerbatim}[commandchars=\\\{\}]
-	\PYG{k}{\PYGZbs{}begin}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-		f(x) = x\PYG{n+nb}{\PYGZca{}}2 + 2x + 1
-	\PYG{k}{\PYGZbs{}end}\PYG{n+nb}{\PYGZob{}}equation*\PYG{n+nb}{\PYGZcb{}}
-\end{MintedVerbatim}

@@ -1,0 +1,19 @@
+\Chapter{Dataset: Duke Breast Cancer MRI}
+
+\Section{Composizione del Dataset}
+
+Il dataset utilizzato durante il tirocinio proviene dal database \hlight{Duke Breast Cancer MRI}, un archivio pubblico contenente immagini DICOM di risonanze magnetiche della mammella. Ogni caso clinico è organizzato in una struttura gerarchica che riflette l'identificativo univoco del paziente e delle relative acquisizioni.
+
+Il dataset è composto da sequenze \hlight{DICOM} tridimensionali, ciascuna rappresentante un'acquisizione volumetrica del seno. In tutti i casi sono disponibili anche annotazioni o maschere segmentate manualmente da esperti, utilizzate come ground truth per il training dei modelli di segmentazione.
+
+Durante la fase di preparazione, le immagini sono state convertite in formato compatibile con MONAI tramite una pipeline di preprocessing, che ha incluso:
+\begin{itemize}
+    \item il \textbf{caricamento} delle immagini in memoria;
+    \item la standardizzazione dell'intensità e il ridimensionamento spaziale;
+    \item l'organizzazione dei dati in \textbf{dizionari} contenenti sia l'immagine sia i relativi metadati;
+    \item la \textbf{salvataggio} del dataset preprocessato 
+\end{itemize}
+
+Per ogni volume è stata mantenuta l'associazione tra immagine e metadati (es. spacing, orientamento, posizione del paziente), necessari per garantire una corretta elaborazione e interpretazione dei dati durante le fasi di training, validazione e inferenza.
+
+L'intero dataset è stato infine suddiviso in tre sottoinsiemi: \hlight{training}, \hlight{validation} e \hlight{test}, rispettando la proporzione e la varietà dei casi clinici per assicurare una valutazione affidabile delle performance del modello.

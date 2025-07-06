@@ -2,6 +2,10 @@ This is BibTeX, Version 0.99d (TeX Live 2025)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: HebdomonGuide.aux
 The style file: biblatex.bst
+A level-1 auxiliary file: chap_1.aux
+A level-1 auxiliary file: chap_2.aux
+A level-1 auxiliary file: chap_3.aux
+A level-1 auxiliary file: chap_4.aux
 Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=200001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
@@ -22,44 +26,44 @@ Database file #2: references.bib
 Biblatex version: 3.20
 Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 6 entries,
+You've used 1 entry,
             6402 wiz_defined-function locations,
-            1234 strings with 10282 characters,
-and the built_in function-call counts, 61437 in all, are:
-= -- 5280
-> -- 779
-< -- 164
-+ -- 2271
-- -- 373
-* -- 4331
-:= -- 8118
+            1207 strings with 9044 characters,
+and the built_in function-call counts, 1534 in all, are:
+= -- 73
+> -- 70
+< -- 1
++ -- 49
+- -- 28
+* -- 32
+:= -- 370
 add.period$ -- 0
-call.type$ -- 6
-change.case$ -- 54
+call.type$ -- 1
+change.case$ -- 0
 chr.to.int$ -- 42
-cite$ -- 10
-duplicate$ -- 6933
-empty$ -- 4768
-format.name$ -- 521
-if$ -- 11734
+cite$ -- 0
+duplicate$ -- 11
+empty$ -- 104
+format.name$ -- 0
+if$ -- 325
 int.to.chr$ -- 0
-int.to.str$ -- 11
+int.to.str$ -- 0
 missing$ -- 0
-newline$ -- 267
-num.names$ -- 216
-pop$ -- 2158
+newline$ -- 20
+num.names$ -- 0
+pop$ -- 47
 preamble$ -- 1
-purify$ -- 112
+purify$ -- 0
 quote$ -- 0
-skip$ -- 981
+skip$ -- 78
 stack$ -- 0
-substring$ -- 9616
-swap$ -- 948
-text.length$ -- 196
-text.prefix$ -- 5
+substring$ -- 154
+swap$ -- 1
+text.length$ -- 20
+text.prefix$ -- 0
 top$ -- 1
-type$ -- 192
+type$ -- 22
 warning$ -- 0
-while$ -- 1087
+while$ -- 64
 width$ -- 0
-write$ -- 262
+write$ -- 20

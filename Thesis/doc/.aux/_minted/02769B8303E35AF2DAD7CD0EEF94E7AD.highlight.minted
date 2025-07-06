@@ -1,0 +1,13 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{LOSS}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{package.losses.CombinedLoss}
+\PYG{+w}{  }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{weight\PYGZus{}dice}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.7}
+\PYG{+w}{    }\PYG{n+nt}{weight\PYGZus{}ce}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.3}
+
+\PYG{n+nt}{OPTIMIZER}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{torch.optim.AdamW}
+\PYG{+w}{  }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{lr}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{1e\PYGZhy{}3}\PYG{+w}{               }\PYG{c+c1}{\PYGZsh{} learning rate}
+\PYG{+w}{    }\PYG{n+nt}{weight\PYGZus{}decay}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{1e\PYGZhy{}3}\PYG{+w}{      }\PYG{c+c1}{\PYGZsh{} regolarizzazione}
+\end{MintedVerbatim}

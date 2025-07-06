@@ -1,0 +1,13 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{TRAINING}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{workspace}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{/path/to/experiment\PYGZus{}results}
+\PYG{+w}{  }\PYG{n+nt}{dataset\PYGZus{}root}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{/path/to/dataset}
+\PYG{+w}{  }\PYG{n+nt}{valid\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.1}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} 10\PYGZpc{} validation set}
+\PYG{+w}{  }\PYG{n+nt}{test\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.1}\PYG{+w}{   }\PYG{c+c1}{\PYGZsh{} 10\PYGZpc{} test set}
+\PYG{+w}{  }\PYG{n+nt}{train\PYGZus{}batch\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{4}
+\PYG{+w}{  }\PYG{n+nt}{test\PYGZus{}batch\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{1}
+\PYG{+w}{  }\PYG{n+nt}{num\PYGZus{}workers}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{8}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} thread per data loading}
+\PYG{+w}{  }\PYG{n+nt}{device}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{cuda:0}\PYG{+w}{    }\PYG{c+c1}{\PYGZsh{} GPU da utilizzare}
+\PYG{+w}{  }\PYG{n+nt}{epochs}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{50}\PYG{+w}{        }\PYG{c+c1}{\PYGZsh{} numero di epoche}
+\PYG{+w}{  }\PYG{n+nt}{roi\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{[}\PYG{n+nv}{256}\PYG{p+pIndicator}{,}\PYG{+w}{ }\PYG{n+nv}{256}\PYG{p+pIndicator}{,}\PYG{+w}{ }\PYG{n+nv}{32}\PYG{p+pIndicator}{]}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} dimensione regioni di interesse}
+\end{MintedVerbatim}

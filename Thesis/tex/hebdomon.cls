@@ -81,6 +81,10 @@
 
 \usepackage[labelfont=bf]{caption} % Set the caption style to bold
 
+\usepackage[italian]{babel}
+
+\usepackage{parskip}
+
 \RequirePackage{titlesec}
 
 % %%%%% ----- Colour Definitions ------ %%%%%

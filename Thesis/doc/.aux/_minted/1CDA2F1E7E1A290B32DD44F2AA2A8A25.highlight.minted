@@ -1,0 +1,11 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{TRAIN\PYGZus{}TRANSFORM}\PYG{p}{:}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.LoadImaged}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{[}\PYG{l+s}{\PYGZsq{}post\PYGZus{}2\PYGZsq{}}\PYG{p+pIndicator}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}breast\PYGZsq{}}\PYG{p+pIndicator}{]}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.RandSpatialCropSamplesd}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{[}\PYG{l+s}{\PYGZsq{}img\PYGZsq{}}\PYG{p+pIndicator}{,}\PYG{+w}{ }\PYG{l+s}{\PYGZsq{}seg\PYGZsq{}}\PYG{p+pIndicator}{]}
+\PYG{+w}{      }\PYG{n+nt}{num\PYGZus{}samples}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{4}
+\PYG{+w}{      }\PYG{n+nt}{roi\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{p+pIndicator}{[}\PYG{n+nv}{512}\PYG{p+pIndicator}{,}\PYG{+w}{ }\PYG{n+nv}{512}\PYG{p+pIndicator}{,}\PYG{+w}{ }\PYG{n+nv}{8}\PYG{p+pIndicator}{]}
+\end{MintedVerbatim}
