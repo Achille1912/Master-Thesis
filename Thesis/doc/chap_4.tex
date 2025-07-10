@@ -1,14 +1,16 @@
-\Chapter{Esperimenti}
+\Chapter{Configurazione Sperimentale}
 
 Per effettuare gli esperimenti ho avuto la possibilità di utilizzare un framework sperimentale sviluppato da un dottorando del laboratorio. Il cuore del framework risiedeva nella sua capacità di astrarre la complessità tipica degli esperimenti di segmentazione 3D attraverso una struttura di configurazione gerarchica e intuitiva. Ogni aspetto cruciale del processo, dal preprocessing dei dati alla definizione dell'architettura, dagli iperparametri di training alle metriche di valutazione, trovava una precisa collocazione nel file YAML.
 
 Uno dei maggiori vantaggi di questo approccio emergeva nella fase di validazione incrociata delle ipotesi. La possibilità di confrontare direttamente diverse varianti architetturali, mantenendo invariati tutti gli altri parametri, ha permesso di isolare con precisione l'impatto di ciascuna scelta progettuale.
 
 
-Sebbene il framework fornisse una struttura organizzata per gli esperimenti, non era dotato di sistemi intelligenti in grado di verificare automaticamente la coerenza logica delle configurazioni. Spettava quindi a me, durante la definizione dei parametri nel file YAML, assicurarmi che le scelte fossero compatibili tra loro e adatte al contesto. Ad esempio, se impostavo un'architettura progettata per input volumetrici, dovevo verificare manualmente che anche le trasformazioni di preprocessing—come il random cropping o il resizing—fossero configurate per operare su tre dimensioni, evitando incongruenze che avrebbero compromesso l'addestramento. 
+Sebbene il framework fornisse una struttura organizzata per gli esperimenti, non era dotato di sistemi intelligenti in grado di verificare automaticamente la coerenza logica delle configurazioni. Spettava quindi a me, durante la definizione dei parametri nel file YAML, assicurarmi che le scelte fossero compatibili tra loro e adatte al contesto. Ad esempio, se impostavo un'architettura progettata per input volumetrici, dovevo verificare manualmente che anche le trasformazioni di preprocessing (come il random padding o il resizing) fossero configurate per operare su tre dimensioni, evitando incongruenze che avrebbero compromesso l'addestramento. 
 
 
-Allo stesso modo, quando sperimentavo ottimizzatori diversi, dovevo prestare attenzione alla scelta del learning rate e dello scheduler, poiché valori troppo aggressivi potevano destabilizzare il training, mentre quelli troppo conservativi rallentavano inutilmente la convergenza. Questo processo richiedeva una costante analisi degli errori: se un esperimento falliva o produceva risultati insoliti, dovevo riesaminare la configurazione YAML per identificare possibili discrepanze, come dimensioni di crop incompatibili con la risoluzione del volume o parametri di augmentazione eccessivamente distorti. La mancanza di validazione automatica ha reso il lavoro più impegnativo, ma mi ha costretto a sviluppare una profonda comprensione delle interdipendenze tra i vari componenti del sistema.
+Allo stesso modo, quando sperimentavo ottimizzatori diversi, dovevo prestare attenzione alla scelta del learning rate e dello scheduler, poiché valori troppo aggressivi potevano destabilizzare il training, mentre quelli troppo conservativi rallentavano inutilmente la convergenza. 
+
+Questo processo richiedeva una costante analisi degli errori: se un esperimento falliva o produceva risultati insoliti, dovevo riesaminare la configurazione YAML per identificare possibili discrepanze, come dimensioni di crop incompatibili con la risoluzione del volume o parametri di augmentazione eccessivamente distorti. La mancanza di validazione automatica ha reso il lavoro più impegnativo, ma mi ha costretto a sviluppare una profonda comprensione delle dipendenze tra i vari componenti del sistema.
 
 
 \Section{Il file di configurazione YAML}
@@ -72,7 +74,7 @@ La sezione \texttt{MODEL} configurava l'architettura della rete:
 
 \begin{code}{yaml}
 MODEL:
-  class: package.networks.UNet3D
+  class: monai.networks.nets.Unet
   params:
     channels: [16, 32, 64]  # canali per ogni livello
     in_channels: 1          # canali input
@@ -89,7 +91,7 @@ Le sezioni \texttt{LOSS} e \texttt{OPTIMIZER} controllavano l'addestramento:
 
 \begin{code}{yaml}
 LOSS:
-  class: package.losses.CombinedLoss
+  class: monai.losses.DiceFocalLoss
   params:
     weight_dice: 0.7
     weight_ce: 0.3
@@ -106,16 +108,54 @@ OPTIMIZER:
 Le sezioni finali gestivano la valutazione:
 
 \begin{code}{yaml}
-POST_PRED:
+METRIC:
+  class: monai.metrics.DiceMetric
+  params:
+    include_background: false
+    reduction: mean
+
+POST_PRED:                                                                              
   - class: monai.transforms.AsDiscrete
     params:
       argmax: true
       to_onehot: 2
 
-METRIC:
-  class: monai.metrics.DiceMetric
-  params:
-    include_background: false
+POST_LABEL:                                                                                 
+  - class: monai.transforms.AsDiscrete
+    params:
+      to_onehot: 2
 \end{code}
 
 
+
+\Section{Gestione del Logging}
+
+Per ogni esperimento è stato adottato un sistema di \hlight{logging automatico} organizzato in modo da raccogliere tutti gli output generati in una cartella dedicata, con l’obiettivo di garantire tracciabilità, riproducibilità e analisi approfondita dei risultati.
+
+Ogni cartella di esperimento conteneva le seguenti informazioni:
+
+\begin{itemize}
+\item Un file \texttt{log.txt} contenente tutte le stampe console (\texttt{print}) prodotte durante il training. In questo file venivano riportati:
+\begin{itemize}
+\item la loss di training e validazione per epoca;
+\item le metriche di valutazione (es. Dice score);
+\item eventuali messaggi diagnostici.
+\end{itemize}
+\item Due grafici in formato immagine (\texttt{.png}):
+\begin{itemize}
+    \item il grafico della curva della loss per epoca;
+    \item il grafico della metrica per epoca.
+\end{itemize}
+
+\item Il file del modello salvato (\texttt{.pth}), che rappresenta lo stato della rete al miglior checkpoint.
+
+\item Una sottocartella \texttt{predictions/} contenente, per ogni caso del test set, le immagini salvate slice per slice. Ogni immagine mostrava sovrapposte:
+\begin{itemize}
+    \item l’immagine originale della MRI dell'i-esima slice
+    \item la ground truth dell'i-esima slice
+    \item la predizione generata dal modello dell'i-esima slice
+\end{itemize}
+
+\end{itemize}
+
+Questa struttura ha permesso non solo di monitorare l’andamento dell’addestramento, ma anche di effettuare confronti qualitativi tra modelli diversi e analizzare visivamente i punti di forza e debolezza della rete. Inoltre, la separazione per cartelle ha reso semplice la gestione di esperimenti multipli e il confronto sistematico tra diverse configurazioni di training.

@@ -1,0 +1,18 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{METRIC}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.metrics.DiceMetric}
+\PYG{+w}{  }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{include\PYGZus{}background}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{false}
+\PYG{+w}{    }\PYG{n+nt}{reduction}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{mean}
+
+\PYG{n+nt}{POST\PYGZus{}PRED}\PYG{p}{:}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.AsDiscrete}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{argmax}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{true}
+\PYG{+w}{      }\PYG{n+nt}{to\PYGZus{}onehot}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{2}
+
+\PYG{n+nt}{POST\PYGZus{}LABEL}\PYG{p}{:}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.AsDiscrete}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{to\PYGZus{}onehot}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{2}
+\end{MintedVerbatim}

@@ -16,5 +16,234 @@
   {}
 \endgroup
 
-\datalist[entry]{nty/global//global/global/global}\enddatalist
+\datalist[entry]{nty/global//global/global/global}
+  \entry{cardoso2022monai}{misc}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{3}{}{%
+      {{hash=CMJ}{%
+         family={Cardoso},
+         familyi={C\bibinitperiod},
+         given={M.\bibnamedelima Jorge},
+         giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=LW}{%
+         family={Li},
+         familyi={L\bibinitperiod},
+         given={Wenqi},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=BT}{%
+         family={Brown},
+         familyi={B\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CMJLWBT+1}
+    \strng{fullhash}{CMJLWBT+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{howpublished}{arXiv preprint arXiv:2211.02701}
+    \field{title}{MONAI: An open-source framework for deep learning in healthcare}
+    \verb{url}
+    \verb https://arxiv.org/abs/2211.02701
+    \endverb
+    \field{year}{2022}
+  \endentry
+
+  \entry{chen2021transunet}{misc}{}{}
+    \name{author}{9}{}{%
+      {{hash=CJ}{%
+         family={Chen},
+         familyi={C\bibinitperiod},
+         given={Jin},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=LY}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Yongyi},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=YQ}{%
+         family={Yu},
+         familyi={Y\bibinitperiod},
+         given={Qihang},
+         giveni={Q\bibinitperiod},
+      }}%
+      {{hash=LX}{%
+         family={Luo},
+         familyi={L\bibinitperiod},
+         given={Xiangde},
+         giveni={X\bibinitperiod},
+      }}%
+      {{hash=AE}{%
+         family={Adeli},
+         familyi={A\bibinitperiod},
+         given={Ehsan},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=WY}{%
+         family={Wang},
+         familyi={W\bibinitperiod},
+         given={Yan},
+         giveni={Y\bibinitperiod},
+      }}%
+      {{hash=LL}{%
+         family={Lu},
+         familyi={L\bibinitperiod},
+         given={Le},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=YAL}{%
+         family={Yuille},
+         familyi={Y\bibinitperiod},
+         given={Alan\bibnamedelima L},
+         giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=ZY}{%
+         family={Zhou},
+         familyi={Z\bibinitperiod},
+         given={Yuyin},
+         giveni={Y\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CJ+1}
+    \strng{fullhash}{CJLYYQLXAEWYLLYALZY1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{howpublished}{arXiv preprint arXiv:2102.04306}
+    \field{title}{TransUNet: Transformers Make Strong Encoders for Medical Image Segmentation}
+    \verb{url}
+    \verb https://arxiv.org/abs/2102.04306
+    \endverb
+    \field{year}{2021}
+  \endentry
+
+  \entry{duke_breast_mri}{misc}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{3}{}{%
+      {{hash=CK}{%
+         family={Clark},
+         familyi={C\bibinitperiod},
+         given={Kenneth},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=VB}{%
+         family={Vendt},
+         familyi={V\bibinitperiod},
+         given={Brian},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=SK}{%
+         family={Smith},
+         familyi={S\bibinitperiod},
+         given={Kirk},
+         giveni={K\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CKVBSK+1}
+    \strng{fullhash}{CKVBSK+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{howpublished}{The Cancer Imaging Archive (TCIA)}
+    \field{note}{\url{https://doi.org/10.7937/TCIA.2019.4VAFYFM9}}
+    \field{title}{The Duke-Breast-Cancer-MRI Dataset}
+    \field{year}{2020}
+  \endentry
+
+  \entry{lew2024segmentation}{article}{}{}
+    \name{author}{10}{}{%
+      {{hash=LCO}{%
+         family={Lew},
+         familyi={L\bibinitperiod},
+         given={Christopher\bibnamedelima O.},
+         giveni={C\bibinitperiod\bibinitdelim O\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Harouni},
+         familyi={H\bibinitperiod},
+         given={Majid},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=KER}{%
+         family={Kirksey},
+         familyi={K\bibinitperiod},
+         given={Ella\bibnamedelima R.},
+         giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+      }}%
+      {{hash=KEJ}{%
+         family={Kang},
+         familyi={K\bibinitperiod},
+         given={Elianne\bibnamedelima J.},
+         giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=DH}{%
+         family={Dong},
+         familyi={D\bibinitperiod},
+         given={Haoyu},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GH}{%
+         family={Gu},
+         familyi={G\bibinitperiod},
+         given={Hanxue},
+         giveni={H\bibinitperiod},
+      }}%
+      {{hash=GLJ}{%
+         family={Grimm},
+         familyi={G\bibinitperiod},
+         given={Lars\bibnamedelima J.},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+      {{hash=WR}{%
+         family={Walsh},
+         familyi={W\bibinitperiod},
+         given={Ruth},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=LDA}{%
+         family={Lowell},
+         familyi={L\bibinitperiod},
+         given={Dorothy\bibnamedelima A.},
+         giveni={D\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=MMA}{%
+         family={Mazurowski},
+         familyi={M\bibinitperiod},
+         given={Maciej\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Nature Publishing Group}%
+    }
+    \strng{namehash}{LCO+1}
+    \strng{fullhash}{LCOHMKERKEJDHGHGLJWRLDAMMA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \verb{doi}
+    \verb 10.1038/s41598-024-54048-2
+    \endverb
+    \field{number}{1}
+    \field{pages}{5383}
+    \field{title}{A publicly available deep learning model and dataset for segmentation of breast, fibroglandular tissue, and vessels in breast MRI}
+    \verb{url}
+    \verb https://doi.org/10.1038/s41598-024-54048-2
+    \endverb
+    \field{volume}{14}
+    \field{journaltitle}{Scientific Reports}
+    \field{year}{2024}
+  \endentry
+\enddatalist
 \endinput

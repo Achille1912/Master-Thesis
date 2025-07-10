@@ -2,18 +2,42 @@
 
 \Section{Composizione del Dataset}
 
-Il dataset utilizzato durante il tirocinio proviene dal database \hlight{Duke Breast Cancer MRI}, un archivio pubblico contenente immagini DICOM di risonanze magnetiche della mammella. Ogni caso clinico è organizzato in una struttura gerarchica che riflette l'identificativo univoco del paziente e delle relative acquisizioni.
+Il dataset utilizzato durante il tirocinio proviene dal database \hlight{Duke Breast Cancer MRI} \cite{duke_breast_mri}, un archivio pubblico messo a disposizione dalla Duke University Medical Center e accessibile tramite il portale \textit{The Cancer Imaging Archive (TCIA)}. Questo dataset è stato sviluppato per promuovere la ricerca nel campo della segmentazione automatica della mammella e contiene immagini di risonanza magnetica (MRI) acquisite da pazienti con diagnosi confermata di carcinoma mammario invasivo.
 
-Il dataset è composto da sequenze \hlight{DICOM} tridimensionali, ciascuna rappresentante un'acquisizione volumetrica del seno. In tutti i casi sono disponibili anche annotazioni o maschere segmentate manualmente da esperti, utilizzate come ground truth per il training dei modelli di segmentazione.
+Ogni studio è composto da sequenze MRI in formato \hlight{DICOM}, ottenute in posizione prona utilizzando scanner da 1.5 T o 3.0 T (prodotti da GE Healthcare o Siemens). Le immagini sono acquisite in proiezione assiale, con una risoluzione spaziale variabile compresa tra \texttt{0.6×0.6×1.0 mm\textsuperscript{3}} e \texttt{1.1×1.1×1.2 mm\textsuperscript{3}}, rendendole adatte all'elaborazione tridimensionale.
 
-Durante la fase di preparazione, le immagini sono state convertite in formato compatibile con MONAI tramite una pipeline di preprocessing, che ha incluso:
+Le sequenze utilizzate nel progetto corrispondono alle immagini \textbf{T1-weighted fat-suppressed pre-contrast}, selezionate per l’elevato contrasto tra il tessuto adiposo e quello fibroghiandolare (FGT), senza l’interferenza di mezzi di contrasto. Questa scelta metodologica è coerente con quanto proposto da Lew et al. (2024), che hanno dimostrato l’efficacia di tale sequenza per la segmentazione automatica del FGT e dei vasi sanguigni.
+
+\Subsection{Annotazioni e Ground Truth}
+
+Una caratteristica distintiva del dataset è la disponibilità di annotazioni manuali tridimensionali, elaborate da annotatori formati e successivamente validate da radiologi esperti in senologia. Ogni caso include segmentazioni voxel-wise delle seguenti strutture:
 \begin{itemize}
-    \item il \textbf{caricamento} delle immagini in memoria;
-    \item la standardizzazione dell'intensità e il ridimensionamento spaziale;
-    \item l'organizzazione dei dati in \textbf{dizionari} contenenti sia l'immagine sia i relativi metadati;
-    \item la \textbf{salvataggio} del dataset preprocessato 
+\item \textbf{Seno (breast)}: delimitazione del tessuto mammario escludendo parete toracica, sternale e linfonodi;
+\item \textbf{Tessuto fibroghiandolare (FGT)}: zone a maggiore densità che costituiscono l’indicatore primario per la valutazione del rischio;
+\item \textbf{Vasi sanguigni}: rami dell’arteria mammaria interna e dell’arteria toracica laterale, spesso iperintensi anche in assenza di contrasto.
 \end{itemize}
 
-Per ogni volume è stata mantenuta l'associazione tra immagine e metadati (es. spacing, orientamento, posizione del paziente), necessari per garantire una corretta elaborazione e interpretazione dei dati durante le fasi di training, validazione e inferenza.
 
-L'intero dataset è stato infine suddiviso in tre sottoinsiemi: \hlight{training}, \hlight{validation} e \hlight{test}, rispettando la proporzione e la varietà dei casi clinici per assicurare una valutazione affidabile delle performance del modello.
+\Subsection{Preprocessing e Integrazione con MONAI}
+
+Durante la fase di preparazione, le immagini DICOM sono state convertite in un formato compatibile con \hlight{MONAI} (Medical Open Network for AI) \cite{cardoso2022monai}, un framework open-source ottimizzato per l'elaborazione di dati medici in ambito deep learning.
+
+La pipeline di preprocessing ha incluso le seguenti operazioni:
+\begin{itemize}
+\item il \textbf{caricamento} delle immagini e delle relative maschere;
+\item la \textbf{normalizzazione} dell’intensità per migliorare la stabilità del training;
+\item il \textbf{ridimensionamento} delle immagini a una risoluzione uniforme per l’input nei modelli di rete neurale;
+\item la conversione in \textbf{dizionari Python} contenenti l'immagine e la maschera;
+\item il \textbf{salvataggio} del dataset preprocessato su disco, pronto per essere utilizzato nel training.
+\end{itemize}
+
+
+\Subsection{Suddivisione del Dataset}
+
+Al fine di garantire una valutazione robusta e riproducibile dei modelli, l'intero dataset è stato suddiviso in tre sottoinsiemi:
+\begin{itemize}
+\item \hlight{Training set (80\%)}: utilizzato per l'addestramento del modello, comprendente la maggior parte dei dati e delle variabilità cliniche;
+\item \hlight{Validation set (10\%)}: impiegato durante l’addestramento per monitorare l’overfitting e ottimizzare gli iperparametri;
+\item \hlight{Test set (10\%)}: utilizzato esclusivamente per la valutazione finale delle prestazioni del modello, senza interferenze in fase di sviluppo.
+\end{itemize}
+

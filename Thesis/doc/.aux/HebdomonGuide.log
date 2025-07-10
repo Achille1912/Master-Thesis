@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  6 JUL 2025 19:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  10 JUL 2025 20:36
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1373,7 +1373,7 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <10.95> not availa
 (Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
 (Font)              scaled to size 10.95pt on input line 6.
- (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux))
+ (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux))
 \openout1 = `HebdomonGuide.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1549,14 +1549,10 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <24.88> not availa
 (Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
 (Font)              scaled to size 24.88pt on input line 29.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <12> not available
-(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 31.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 31.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 36.
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 10.95pt on input line 36.
+(Font)              scaled to size 10.95pt on input line 35.
 
 
 [1
@@ -1565,7 +1561,7 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_ogsljj.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_337jzs.enc} <./figures/logo.png>]
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM HebdomonGuide.toc on input line 47.
+(minitoc)             PREPARING MINITOCS FROM HebdomonGuide.toc on input line 45.
 Package minitoc Info: I0033
 (minitoc)             Writing HebdomonGuide.mtc1.
 \openout5 = `HebdomonGuide.mtc1'.
@@ -1582,6 +1578,14 @@ Package minitoc Info: I0033
 (minitoc)             Writing HebdomonGuide.mtc4.
 \openout5 = `HebdomonGuide.mtc4'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc5.
+\openout5 = `HebdomonGuide.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc6.
+\openout5 = `HebdomonGuide.mtc6'.
+
 
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
@@ -1595,13 +1599,13 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <20.74> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 47.
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 45.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 20.74pt on input line 47.
+(Font)              scaled to size 20.74pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <30> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 47.
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 45.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 30.0pt on input line 47.
+(Font)              scaled to size 30.0pt on input line 45.
 (.aux/HebdomonGuide.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -1663,6 +1667,10 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 2.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <12> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
 (.aux/HebdomonGuide.mtc1)
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <14.4> not available
 (Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 2.
@@ -1688,9 +1696,18 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <12> not available
 (Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 48.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 60.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<images/2025-07-07-09-52-55.png, id=128, 1927.2pt x 1036.87375pt>
+File: images/2025-07-07-09-52-55.png Graphic file (type png)
+<use images/2025-07-07-09-52-55.png>
+Package pdftex.def Info: images/2025-07-07-09-52-55.png  used on input line 66.
+(pdftex.def)             Requested size: 455.24417pt x 244.93108pt.
 )
 
-[5]
+[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc} <./images/2025-07-07-09-52-55.png>]
 \openout2 = `chap_2.aux'.
 
  (./chap_2.tex
@@ -1717,11 +1734,31 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 
-])
+]
+<figures/U-Net-architecture.png, id=144, 1560.83125pt x 1039.885pt>
+File: figures/U-Net-architecture.png Graphic file (type png)
+<use figures/U-Net-architecture.png>
+Package pdftex.def Info: figures/U-Net-architecture.png  used on input line 23.
+(pdftex.def)             Requested size: 273.14928pt x 181.98259pt.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/it' tried instead on input line 27.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 10.95pt on input line 27.
 
-[7]
+
+[7 <./figures/u-net-architecture.png>]
 
 [8]
+<images/2025-07-07-12-01-04.png, id=157, 1163.34625pt x 493.845pt>
+File: images/2025-07-07-12-01-04.png Graphic file (type png)
+<use images/2025-07-07-12-01-04.png>
+Package pdftex.def Info: images/2025-07-07-12-01-04.png  used on input line 49.
+(pdftex.def)             Requested size: 455.24417pt x 193.25435pt.
+
+
+[9 <./images/2025-07-07-12-01-04.png>])
+
+[10]
 \openout2 = `chap_3.aux'.
 
  (./chap_3.tex
@@ -1741,16 +1778,20 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 \openout5 = `HebdomonGuide.mtc'.
 
-(.aux/HebdomonGuide.mtc3))
+(.aux/HebdomonGuide.mtc3)
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 7.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
-[9
+[11
 
 
 
 
-]
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}])
 
-[10]
+[12]
 \openout2 = `chap_4.aux'.
 
  (./chap_4.tex
@@ -1772,7 +1813,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 (.aux/HebdomonGuide.mtc4)
 
-[11
+[13
 
 
 
@@ -1781,31 +1822,60 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \pydata@fh@0=\write8
 \openout8 = `_018679B249EA6FB07607F2451175FB2C.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250706191207 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted config  --timestamp 20250710203635 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (.aux/_018679B249EA6FB07607F2451175FB2C.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250706191207 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20250710203635 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (./.aux/_minted/default.style.minted) (./.aux/_minted/EE06B3036988ABCFB4E929BAB7BA860E.highlight.minted
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 1.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
-File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 3.
 ) (./.aux/_minted/C73E597D624552DC9972DF96F42FEFDD.highlight.minted
 
-[12{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc}]) (./.aux/_minted/1CDA2F1E7E1A290B32DD44F2AA2A8A25.highlight.minted
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 5.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (./.aux/_minted/F2EC75F2AB6B25EBBAE2C54DC7137399.highlight.minted) (./.aux/_minted/02769B8303E35AF2DAD7CD0EEF94E7AD.highlight.minted) (./.aux/_minted/94DD70686134B57F80F69031CE038507.highlight.minted
+[14]) (./.aux/_minted/1CDA2F1E7E1A290B32DD44F2AA2A8A25.highlight.minted) (./.aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted) (./.aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
 
-[13{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]))
+[15]) (./.aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted)
 
-[14]
+[16])
 
-LaTeX Warning: Empty bibliography on input line 445.
+[17]
+\openout2 = `chap_5.aux'.
+
+ (./chap_5.tex
+chapter 5.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+)
+Package minitoc Info: I0006
+(minitoc)             HebdomonGuide.mtc5 is empty on input line 54.
+
+
+[18
+
+
+
+
+]
+chapter without number
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
 
 Package minitoc Info: I0009
 (minitoc)             Listing minitoc auxiliary files. 
@@ -1829,10 +1899,11 @@ Package minitoc(hints) Warning: W0024
 
 
 
-[15
+[19
 
 
-] (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux))
+
+] (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1842,18 +1913,18 @@ Package logreq Info: Writing requests to 'HebdomonGuide.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 60799 strings out of 467886
- 1441534 string characters out of 5434045
- 2572832 words of memory out of 5000000
- 88410 multiletter control sequences out of 15000+600000
- 702657 words of font info for 79 fonts, out of 8000000 for 9000
+ 61128 strings out of 467886
+ 1449063 string characters out of 5434045
+ 2576670 words of memory out of 5000000
+ 88709 multiletter control sequences out of 15000+600000
+ 707432 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,9n,131p,10981b,1865s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on .aux/HebdomonGuide.pdf (15 pages, 1763210 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
+Output written on .aux/HebdomonGuide.pdf (19 pages, 2402701 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 211 compressed objects within 3 object streams
- 36 named destinations out of 1000 (max. 500000)
- 314 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 365 PDF objects out of 1000 (max. 8388607)
+ 295 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
