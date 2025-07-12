@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  10 JUL 2025 20:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  12 JUL 2025 16:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1373,7 +1373,7 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <10.95> not availa
 (Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
 (Font)              scaled to size 10.95pt on input line 6.
- (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux))
+ (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux) (.aux/chap_6.aux) (.aux/thanks.aux))
 \openout1 = `HebdomonGuide.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1586,6 +1586,14 @@ Package minitoc Info: I0033
 (minitoc)             Writing HebdomonGuide.mtc6.
 \openout5 = `HebdomonGuide.mtc6'.
 
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc7.
+\openout5 = `HebdomonGuide.mtc7'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc8.
+\openout5 = `HebdomonGuide.mtc8'.
+
 
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
@@ -1629,15 +1637,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 4.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 4.
-)
+
+
+[2
+
+])
 \tf@toc=\write7
 \openout7 = `HebdomonGuide.toc'.
 
 
 
-[2
-
-]
+[3]
 \openout2 = `chap_1.aux'.
 
  (./chap_1.tex
@@ -1686,28 +1696,36 @@ LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/regular/n' will be
 (Font)              scaled to size 10.95pt on input line 9.
 
 
-[3
+[4
 
 
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_d67aat.enc}]
 
-[4]
+[5]
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <12> not available
 (Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 48.
+
+
+Package caption Warning: \label without proper reference on input line 67.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:gpu_info' on page 6 undefined on input line 50.
+
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 60.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/2025-07-07-09-52-55.png, id=128, 1927.2pt x 1036.87375pt>
+<images/2025-07-07-09-52-55.png, id=161, 1927.2pt x 1036.87375pt>
 File: images/2025-07-07-09-52-55.png Graphic file (type png)
 <use images/2025-07-07-09-52-55.png>
 Package pdftex.def Info: images/2025-07-07-09-52-55.png  used on input line 66.
 (pdftex.def)             Requested size: 455.24417pt x 244.93108pt.
 )
 
-[5{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc} <./images/2025-07-07-09-52-55.png>]
+[6{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc} <./images/2025-07-07-09-52-55.png>]
 \openout2 = `chap_2.aux'.
 
  (./chap_2.tex
@@ -1729,36 +1747,51 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 (.aux/HebdomonGuide.mtc2)
 
-[6
+[7
 
 
 
 
 ]
-<figures/U-Net-architecture.png, id=144, 1560.83125pt x 1039.885pt>
+
+Package caption Warning: \label without proper reference on input line 24.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:Schema concettuale dell'architettura U-Net' on page 8 undefined on input line 19.
+
+<figures/U-Net-architecture.png, id=179, 1560.83125pt x 1039.885pt>
 File: figures/U-Net-architecture.png Graphic file (type png)
 <use figures/U-Net-architecture.png>
 Package pdftex.def Info: figures/U-Net-architecture.png  used on input line 23.
 (pdftex.def)             Requested size: 273.14928pt x 181.98259pt.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/FiraSans-OsF/regular/it' tried instead on input line 27.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/it' will be
-(Font)              scaled to size 10.95pt on input line 27.
 
-
-[7 <./figures/u-net-architecture.png>]
 
 [8]
-<images/2025-07-07-12-01-04.png, id=157, 1163.34625pt x 493.845pt>
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/it' tried instead on input line 28.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 10.95pt on input line 28.
+
+
+[9 <./figures/u-net-architecture.png>]
+
+Package caption Warning: \label without proper reference on input line 51.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:schema_segmentazione_seno_paper' on page 10 undefined on input line 46.
+
+<images/2025-07-07-12-01-04.png, id=193, 1163.34625pt x 493.845pt>
 File: images/2025-07-07-12-01-04.png Graphic file (type png)
 <use images/2025-07-07-12-01-04.png>
-Package pdftex.def Info: images/2025-07-07-12-01-04.png  used on input line 49.
+Package pdftex.def Info: images/2025-07-07-12-01-04.png  used on input line 50.
 (pdftex.def)             Requested size: 455.24417pt x 193.25435pt.
 
 
-[9 <./images/2025-07-07-12-01-04.png>])
+[10 <./images/2025-07-07-12-01-04.png>])
 
-[10]
+[11]
 \openout2 = `chap_3.aux'.
 
  (./chap_3.tex
@@ -1784,14 +1817,14 @@ LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 7
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[11
+[12
 
 
 
 
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}])
 
-[12]
+[13]
 \openout2 = `chap_4.aux'.
 
  (./chap_4.tex
@@ -1813,7 +1846,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 (.aux/HebdomonGuide.mtc4)
 
-[13
+[14
 
 
 
@@ -1822,23 +1855,23 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \pydata@fh@0=\write8
 \openout8 = `_018679B249EA6FB07607F2451175FB2C.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250710203635 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted config  --timestamp 20250712161218 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (.aux/_018679B249EA6FB07607F2451175FB2C.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250710203635 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20250712161218 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (./.aux/_minted/default.style.minted) (./.aux/_minted/EE06B3036988ABCFB4E929BAB7BA860E.highlight.minted
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 3.
 ) (./.aux/_minted/C73E597D624552DC9972DF96F42FEFDD.highlight.minted
 
-[14]) (./.aux/_minted/1CDA2F1E7E1A290B32DD44F2AA2A8A25.highlight.minted) (./.aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted) (./.aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
+[15]) (./.aux/_minted/1CDA2F1E7E1A290B32DD44F2AA2A8A25.highlight.minted) (./.aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted) (./.aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
 
-[15]) (./.aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted)
+[16]) (./.aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted)
 
-[16])
+[17])
 
-[17]
+[18]
 \openout2 = `chap_5.aux'.
 
  (./chap_5.tex
@@ -1854,15 +1887,174 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 (scrreprt)              KOMA-Script and will not work with a coming version,
 (scrreprt)              that will remove this deprecated code.
 
+\openout5 = `HebdomonGuide.mtc'.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+(.aux/HebdomonGuide.mtc5)
+\g__nicematrix_max_cell_width_dim=\dimen396
+\c@iRow=\count583
+\c@jCol=\count584
+\l__nicematrix_color_int=\count585
+\l__nicematrix_cell_box=\box101
+\l__nicematrix_the_array_box=\box102
+\l__nicematrix_left_delim_dim=\dimen397
+\l__nicematrix_right_delim_dim=\dimen398
+
+
+[19
+
+
+
+
+]
+
+[20]
+
+LaTeX Warning: Reference `exp5_comparative' on page 21 undefined on input line 89.
+
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 100.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 101.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 102.
+<images/2025-07-12-11-28-31.png, id=273, 578.16pt x 433.62pt>
+File: images/2025-07-12-11-28-31.png Graphic file (type png)
+<use images/2025-07-12-11-28-31.png>
+Package pdftex.def Info: images/2025-07-12-11-28-31.png  used on input line 116.
+(pdftex.def)             Requested size: 273.14928pt x 204.86006pt.
+
+
+[21{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./.aux/_minted/77B8F6DA77FC1294BD3436A1592E46C7.highlight.minted
+
+[22 <./images/2025-07-12-11-28-31.png>])
+
+[23]
+LaTeX Info: Symbol \textuparrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 213.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
+(Font)              using `OT1/cmss/m/n' instead on input line 213.
+
+
+LaTeX Font Warning: Font shape `TS1/cmss/b/n' undefined
+(Font)              using `TS1/cmss/m/n' instead
+(Font)              for symbol `textuparrow' on input line 213.
+
+LaTeX Info: Symbol \textuparrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 216.
+LaTeX Info: Symbol \textuparrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 219.
+(./.aux/_minted/250B47851A626919853D037CA3879930.highlight.minted)
+
+[24{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}])
+
+[25]
+\openout2 = `chap_6.aux'.
+
+ (./chap_6.tex
+chapter 6.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+(.aux/HebdomonGuide.mtc6)
+
+[26
+
+
+
+
+]
+
+[27])
+
+[28]
+
+[29]
+\openout2 = `thanks.aux'.
+
+ (./thanks.tex
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
 )
-Package minitoc Info: I0006
-(minitoc)             HebdomonGuide.mtc5 is empty on input line 54.
 
-
-[18
+[30
 
 
 
+
+
+
+]
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+(.aux/HebdomonGuide.lot)
+\tf@lot=\write9
+\openout9 = `HebdomonGuide.lot'.
+
+
+
+[31
+
+
+
+]
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+(.aux/HebdomonGuide.lof)
+\tf@lof=\write10
+\openout10 = `HebdomonGuide.lof'.
+
+
+
+[32
 
 ]
 chapter without number
@@ -1899,32 +2091,37 @@ Package minitoc(hints) Warning: W0024
 
 
 
-[19
+[33
 
-
-
-] (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux))
+] (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux) (.aux/chap_6.aux) (.aux/thanks.aux))
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'HebdomonGuide.run.xml'.
 \openout1 = `HebdomonGuide.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 61128 strings out of 467886
- 1449063 string characters out of 5434045
- 2576670 words of memory out of 5000000
- 88709 multiletter control sequences out of 15000+600000
- 707432 words of font info for 82 fonts, out of 8000000 for 9000
+ 64082 strings out of 467886
+ 1510514 string characters out of 5434045
+ 2628654 words of memory out of 5000000
+ 91587 multiletter control sequences out of 15000+600000
+ 708082 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,9n,131p,10981b,1865s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on .aux/HebdomonGuide.pdf (19 pages, 2402701 bytes).
+ 122i,14n,131p,10981b,2193s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
+Output written on .aux/HebdomonGuide.pdf (33 pages, 2495492 bytes).
 PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 295 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 385 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 581 PDF objects out of 1000 (max. 8388607)
+ 485 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 502 words of extra memory for PDF output out of 10000 (max. 10000000)
 

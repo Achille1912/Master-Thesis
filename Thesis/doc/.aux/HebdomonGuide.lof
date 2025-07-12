@@ -1,0 +1,21 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\addvspace {10\p@ }
+\contentsline {xchapter}{\textcolor {mciBlue}{Introduzione}}{4}{chapter.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Esempio di output del comando \texttt {nvidia-smi} per monitorare le GPU disponibili.}}{6}{figure.caption.2}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{\textcolor {mciBlue}{Background e Stato dell'Arte}}{7}{chapter.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Schema concettuale dell'architettura U-Net.}}{9}{figure.caption.3}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Overview dei dati di input e la U-NET usata per la segmentazione del seno.}}{10}{figure.caption.4}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{\textcolor {mciBlue}{Dataset: Duke Breast Cancer MRI}}{12}{chapter.3}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{\textcolor {mciBlue}{Configurazione Sperimentale}}{14}{chapter.4}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{\textcolor {mciBlue}{Esperimenti}}{19}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Andamento del learning rate durante il training, con warmup iniziale e successiva discesa coseno.}}{22}{figure.caption.9}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{\textcolor {mciBlue}{Conclusioni}}{26}{chapter.6}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Bibliografia}{33}{chapter*.17}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

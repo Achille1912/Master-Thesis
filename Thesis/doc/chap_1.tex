@@ -47,7 +47,7 @@ Durante il tirocinio sono stati impiegati diversi strumenti software e librerie 
 
 \Subsection{Connessione in SSH e GPU}
 
-Durante il tirocinio, ho avuto accesso alla potenza di calcolo delle \textbf{GPU universitarie}, dedicate a progetti di ricerca in deep learning. Per sfruttare queste risorse, ho utilizzato il protocollo \textbf{SSH} (Secure Shell) per connettermi in remoto ai server e gestire l’esecuzione dei miei esperimenti.
+Durante il tirocinio, ho avuto accesso alla potenza di calcolo delle \textbf{GPU universitarie}, dedicate a progetti di ricerca in deep learning. Per sfruttare queste risorse, ho utilizzato il protocollo \textbf{SSH} (Secure Shell) \ref{fig:gpu_info} per connettermi in remoto ai server e gestire l’esecuzione dei miei esperimenti.
 
 Il sistema era dotato di 4 GPU NVIDIA (modello Tesla V100 o A100, a seconda della disponibilità), condivise tra diversi utenti del dipartimento. Per evitare conflitti nell’allocazione delle risorse, è stato necessario prenotare in anticipo le GPU tramite un sistema di schedulazione interno, basato su code di priorità.
 
@@ -64,4 +64,6 @@ Questa infrastruttura ha permesso di testare i miei modelli su dataset di grandi
 \begin{figure}[H] 
   	\centering 
  	\includegraphics[width=\textwidth]{images/2025-07-07-09-52-55.png} 
+	\label{fig:gpu_info}
+	\caption{Esempio di output del comando \texttt{nvidia-smi} per monitorare le GPU disponibili.}
  \end{figure} 

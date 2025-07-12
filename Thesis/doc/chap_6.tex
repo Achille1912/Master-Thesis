@@ -1,0 +1,45 @@
+\Chapter{Conclusioni}
+
+
+\Section{Sintesi del Percorso Sperimentale}
+
+L’analisi sperimentale condotta ha evidenziato che il successo di una pipeline di segmentazione non dipende da un singolo fattore, bensì dall’interazione armonica tra \textbf{scelte architetturali}, \textbf{strategie di preprocessing}, \textbf{criteri di valutazione} e \textbf{robustezza del training}. Ogni esperimento ha rappresentato un passo incrementale verso una maggiore comprensione del comportamento del modello, contribuendo alla costruzione di una soluzione \textbf{affidabile}, \textbf{generalizzabile} e potenzialmente \textbf{integrabile} in contesti clinici reali.
+
+Il percorso si è rivelato altamente \textbf{iterativo} e \textbf{evidence-based}, partendo da una configurazione di base e introducendo, con rigore sperimentale, modifiche mirate al \textbf{learning rate}, alla \textbf{funzione di loss}, al tipo di \textbf{normalizzazione}, alla \textbf{profondità architetturale}, fino a giungere a una configurazione finale profondamente ottimizzata. Particolarmente significativo è stato l’inserimento di una strategia di \textbf{validazione con trasformazioni inverse}, che ha garantito confronti fedeli tra predizioni e maschere originali, migliorando l’affidabilità delle metriche ottenute.
+
+\Section{Risultato Finale e Implicazioni Cliniche}
+
+Il modello finale, sviluppato nell’esperimento 21, ha raggiunto un \textbf{Dice score di 0.9124}, dimostrando un'elevata accuratezza predittiva. Il valore di questa performance risiede non solo nella metrica in sé, ma nella sua coerenza con una pipeline sperimentale \textbf{solida}, \textbf{riproducibile} e \textbf{scientificamente fondata}.
+
+Dal punto di vista clinico, i risultati ottenuti hanno implicazioni rilevanti. Automatizzare la \textbf{segmentazione del tessuto mammario}, del \textbf{fibroghiandolare (FGT)} e dei \textbf{vasi sanguigni} consente di ridurre la \textbf{variabilità inter-operatore}, migliorare la \textbf{velocità di refertazione} e supportare nuove forme di \textbf{analisi quantitativa}. In particolare, la stima automatizzata della \textbf{densità mammaria} può influenzare in modo diretto la \textbf{valutazione del rischio oncologico}, abilitando percorsi diagnostici più personalizzati e precoci.
+
+Inoltre, la presenza di maschere segmentate consente di contestualizzare meglio le eventuali lesioni, potenziando strumenti di \textbf{localizzazione assistita} e agevolando la \textbf{pianificazione preoperatoria}. Questo può essere utile, ad esempio, per identificare la \textbf{relazione tra lesioni e strutture vascolari} o valutare la \textbf{distribuzione topografica del FGT} rispetto a margini chirurgici.
+
+\Section{Possibili Downstream Task}
+
+Le potenzialità applicative del sistema sviluppato non si limitano alla segmentazione primaria, ma si estendono verso numerosi \textbf{downstream task}. Tra questi rientrano la possibilità di costruire \textbf{modelli predittivi} di rischio oncologico basati su \textbf{caratteristiche morfometriche} derivate dalle segmentazioni, l’integrazione del sistema all’interno di pipeline per \textbf{registrazione multimodale} (es. MRI + mammografia) e la generazione automatica di \textbf{report anatomici strutturati} per supportare la refertazione radiologica.
+
+Un ulteriore ambito di applicazione è rappresentato dalla \textbf{quantificazione longitudinale}: in presenza di acquisizioni ripetute, il modello potrebbe consentire il monitoraggio dell’evoluzione del tessuto mammario nel tempo, supportando la valutazione dell’efficacia terapeutica o la diagnosi precoce in soggetti a rischio.
+
+\Section{Prospettive di Sviluppo Futuro}
+
+Tra gli sviluppi futuri più promettenti, si colloca la possibilità di estendere l’addestramento del modello a \textbf{dataset multi-istituzionali}, affrontando il problema della \textbf{generalizzazione cross-center}. Per ottenere prestazioni robuste su scanner diversi o su popolazioni eterogenee, sarà necessario introdurre meccanismi di \textbf{domain adaptation}, \textbf{normalizzazione avanzata} o \textbf{data augmentation realistica}.
+
+Dal punto di vista architetturale, una direzione interessante è l’esplorazione di \textbf{modelli ibridi CNN-Transformer}, che combinano la capacità di catturare \textbf{dipendenze locali} con la modellazione di \textbf{relazioni globali}. In parallelo, l’ottimizzazione del modello per ambienti a bassa potenza di calcolo, mediante reti \textbf{più leggere e meno profonde}, potrebbe favorire la sua implementazione diretta in contesti clinici, anche in modalità edge.
+
+Infine, un ambito fondamentale riguarda l’\textbf{interpretabile AI}. Fornire spiegazioni visive delle predizioni effettuate dal modello, attraverso mappe di attenzione, gradienti saliency, based o heatmap diagnostiche—può aumentare la \textbf{fiducia} e l’\textbf{accettazione clinica}, ponendo le basi per un’interazione più consapevole tra medico e algoritmo.
+
+
+\Section{Riflessione Conclusiva}
+
+Il presente lavoro ha rappresentato un'opportunità significativa di formazione e crescita all’interno del percorso di tirocinio, consentendomi di confrontarmi in modo diretto con una problematica concreta e di rilevanza clinica: la \textbf{segmentazione automatica} di immagini MRI della mammella. Tale esperienza si è rivelata estremamente formativa, non solo per il consolidamento delle competenze tecniche già acquisite in ambito accademico, ma soprattutto per lo sviluppo di un approccio sperimentale fondato su rigore metodologico, autonomia operativa e capacità critica.
+
+La progettazione e l’ottimizzazione della pipeline di segmentazione sono state affrontate secondo una prospettiva graduale e iterativa. A partire da una configurazione di riferimento, sono state progressivamente introdotte modifiche agli iperparametri, all’architettura del modello, alle tecniche di normalizzazione, alle funzioni di loss e alle strategie di validazione. Ogni sperimentazione ha richiesto un’attenta analisi dei risultati, la verifica dei dati in output, la progettazione di strumenti di debugging specifici e, spesso, la necessità di risolvere problematiche non documentate, tipiche del lavoro su dataset complessi e ambienti computazionali condivisi.
+
+La mia attività si è svolta interamente nell’ambiente di calcolo dell’infrastruttura universitaria, con accesso remoto a \textbf{risorse GPU}, e ha comportato l’elaborazione di volumi DICOM tridimensionali, la gestione efficiente della memoria e l’integrazione di strumenti specialistici per l’elaborazione di immagini biomediche. Tali aspetti hanno richiesto non soltanto competenze tecniche, ma anche una progressiva maturazione sul piano dell’organizzazione del lavoro sperimentale, della documentazione e della gestione degli output in modo riproducibile.
+
+Dal punto di vista metodologico, si è trattato di un progetto orientato all’evidenza, in cui ciascuna decisione è stata motivata da osservazioni empiriche e rafforzata da test sistematici. In tal senso, la realizzazione di una pipeline di valutazione basata su \textbf{trasformazioni inverse} ha rappresentato un passaggio cruciale, migliorando sensibilmente l’affidabilità delle metriche e consentendo un confronto più aderente alla realtà clinica. La metrica finale, un \textbf{Dice score} pari a 0.9124, ottenuta nel contesto dell’ultimo esperimento, è il risultato di un lungo processo di ottimizzazione e rappresenta una sintesi significativa delle scelte maturate.
+
+Più in generale, questo tirocinio ha costituito per me un’esperienza di avvicinamento concreto alla \textbf{ricerca applicata}, permettendomi di comprendere più a fondo le potenzialità e le responsabilità legate all’uso dell’intelligenza artificiale in ambito sanitario. È emersa in particolare l’importanza della trasparenza, della tracciabilità e della validazione nella costruzione di modelli destinati a interagire con dati clinici sensibili.
+
+Concludo dunque questa esperienza con la consapevolezza di aver maturato un insieme articolato di competenze, non solo sul piano tecnico, ma anche sotto il profilo metodologico e professionale. La capacità di analizzare criticamente i risultati, documentare il processo sperimentale e adattare le soluzioni a vincoli reali rappresenta, a mio avviso, uno degli elementi più preziosi di questo percorso, e costituisce una solida base per futuri sviluppi nel campo dell’intelligenza artificiale applicata alla medicina.
