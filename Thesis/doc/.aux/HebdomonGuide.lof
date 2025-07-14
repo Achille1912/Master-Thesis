@@ -14,8 +14,9 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textcolor {mciBlue}{Esperimenti}}{19}{chapter.5}%
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Andamento del learning rate durante il training, con warmup iniziale e successiva discesa coseno.}}{22}{figure.caption.9}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Esempi di segmentazione ottenuti con il modello finale (EXP 21). Le immagini mostrano le predizioni su diverse slice del test set, evidenziando la capacità del modello di identificare correttamente le aree di interesse.}}{25}{figure.caption.13}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textcolor {mciBlue}{Conclusioni}}{26}{chapter.6}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Bibliografia}{33}{chapter*.17}%
+\contentsline {xchapter}{Bibliografia}{32}{chapter*.16}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
