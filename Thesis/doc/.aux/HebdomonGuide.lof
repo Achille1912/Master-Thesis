@@ -14,9 +14,11 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textcolor {mciBlue}{Esperimenti}}{19}{chapter.5}%
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Andamento del learning rate durante il training, con warmup iniziale e successiva discesa coseno.}}{22}{figure.caption.9}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Esempi di segmentazione ottenuti con il modello finale (EXP 21). Le immagini mostrano le predizioni su diverse slice del test set, evidenziando la capacità del modello di identificare correttamente le aree di interesse.}}{25}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Andamento delle funzioni di loss durante il training dell’esperimento finale(EXP 21).}}{24}{figure.caption.12}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Andamento delle metriche di valutazione durante il training dell’esperimento finale(EXP 21).}}{24}{figure.caption.13}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Esempi di segmentazione ottenuti con il modello finale (EXP 21). Le immagini mostrano le predizioni su diverse slice del test set, evidenziando la capacità del modello di identificare correttamente le aree di interesse.}}{25}{figure.caption.15}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textcolor {mciBlue}{Conclusioni}}{26}{chapter.6}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Bibliografia}{32}{chapter*.16}%
+\contentsline {xchapter}{Bibliografia}{31}{chapter*.18}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

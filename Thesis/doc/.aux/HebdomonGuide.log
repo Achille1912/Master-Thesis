@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  14 JUL 2025 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  15 JUL 2025 10:26
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1739,16 +1739,8 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <12> not available
 (Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
 (Font)              scaled to size 12.0pt on input line 48.
-
-
-Package caption Warning: \label without proper reference on input line 67.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:gpu_info' on page 6 undefined on input line 50.
-
 LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 60.
-(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 <images/2025-07-07-09-52-55.png, id=159, 1927.2pt x 1036.87375pt>
@@ -1786,13 +1778,6 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ]
-
-Package caption Warning: \label without proper reference on input line 24.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:Schema concettuale dell'architettura U-Net' on page 8 undefined on input line 19.
-
 <figures/U-Net-architecture.png, id=177, 1560.83125pt x 1039.885pt>
 File: figures/U-Net-architecture.png Graphic file (type png)
 <use figures/U-Net-architecture.png>
@@ -1808,13 +1793,6 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/it' will be
 
 
 [9 <./figures/u-net-architecture.png>]
-
-Package caption Warning: \label without proper reference on input line 51.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:schema_segmentazione_seno_paper' on page 10 undefined on input line 46.
-
 <images/2025-07-07-12-01-04.png, id=191, 1163.34625pt x 493.845pt>
 File: images/2025-07-07-12-01-04.png Graphic file (type png)
 <use images/2025-07-07-12-01-04.png>
@@ -1888,10 +1866,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \pydata@fh@0=\write8
 \openout8 = `_018679B249EA6FB07607F2451175FB2C.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250714111029 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted config  --timestamp 20250715102653 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (.aux/_018679B249EA6FB07607F2451175FB2C.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250714111029 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20250715102653 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (./.aux/_minted/default.style.minted) (./.aux/_minted/EE06B3036988ABCFB4E929BAB7BA860E.highlight.minted
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
@@ -1925,6 +1903,13 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \openout5 = `HebdomonGuide.mtc'.
 
 (.aux/HebdomonGuide.mtc5)
+
+[19
+
+
+
+
+]
 \g__nicematrix_max_cell_width_dim=\dimen410
 \c@iRow=\count585
 \c@jCol=\count586
@@ -1935,81 +1920,87 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \l__nicematrix_right_delim_dim=\dimen412
 
 
-[19
-
-
-
-
-]
-
 [20]
-
-LaTeX Warning: Reference `exp5_comparative' on page 21 undefined on input line 89.
-
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 100.
-LaTeX Info: Symbol \textrightarrow not provided by
-            font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 101.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family FiraSans-OsF in TS1 encoding.
             Default family used instead on input line 102.
-<images/2025-07-12-11-28-31.png, id=271, 578.16pt x 433.62pt>
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 103.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 104.
+<images/2025-07-12-11-28-31.png, id=272, 578.16pt x 433.62pt>
 File: images/2025-07-12-11-28-31.png Graphic file (type png)
 <use images/2025-07-12-11-28-31.png>
-Package pdftex.def Info: images/2025-07-12-11-28-31.png  used on input line 116.
+Package pdftex.def Info: images/2025-07-12-11-28-31.png  used on input line 118.
 (pdftex.def)             Requested size: 273.14928pt x 204.86006pt.
 
 
-[21{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./.aux/_minted/4EB1754C7A456387448EDD44CEFFC262.highlight.minted
+[21{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./.aux/_minted/C2D11D840D89DF93E5445D1389FE250D.highlight.minted
 
 [22 <./images/2025-07-12-11-28-31.png>])
 LaTeX Info: Symbol \textuparrow not provided by
             font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 192.
+            Default family used instead on input line 195.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/m/n' instead on input line 192.
+(Font)              using `OT1/cmss/m/n' instead on input line 195.
 
 
 LaTeX Font Warning: Font shape `TS1/cmss/b/n' undefined
 (Font)              using `TS1/cmss/m/n' instead
-(Font)              for symbol `textuparrow' on input line 192.
+(Font)              for symbol `textuparrow' on input line 195.
 
-LaTeX Info: Symbol \textuparrow not provided by
-            font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 195.
 LaTeX Info: Symbol \textuparrow not provided by
             font family FiraSans-OsF in TS1 encoding.
             Default family used instead on input line 198.
+LaTeX Info: Symbol \textuparrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 201.
 (./.aux/_minted/014032F586E2B3A9EB0E3E53B1DC7267.highlight.minted
 
 [23{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}])
-<figures/slice_017.png, id=296, 324.4923pt x 339.669pt>
+<figures/losses.png, id=297, 1156.32pt x 650.43pt>
+File: figures/losses.png Graphic file (type png)
+<use figures/losses.png>
+Package pdftex.def Info: figures/losses.png  used on input line 231.
+(pdftex.def)             Requested size: 218.51524pt x 122.9081pt.
+
+Underfull \hbox (badness 7238) in paragraph at lines 232--232
+\OT1/FiraSans-OsF/regular/n/10.95 du-ran-te il trai-ning del-l'e-spe-ri-
+ []
+
+<figures/metrics.png, id=298, 1156.32pt x 650.43pt>
+File: figures/metrics.png Graphic file (type png)
+<use figures/metrics.png>
+Package pdftex.def Info: figures/metrics.png  used on input line 240.
+(pdftex.def)             Requested size: 218.51524pt x 122.9081pt.
+
+
+[24 <./figures/losses.png> <./figures/metrics.png>]
+<figures/slice_017.png, id=310, 324.4923pt x 339.669pt>
 File: figures/slice_017.png Graphic file (type png)
 <use figures/slice_017.png>
-Package pdftex.def Info: figures/slice_017.png  used on input line 249.
+Package pdftex.def Info: figures/slice_017.png  used on input line 276.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_041.png, id=297, 324.4923pt x 339.669pt>
+<figures/slice_041.png, id=311, 324.4923pt x 339.669pt>
 File: figures/slice_041.png Graphic file (type png)
 <use figures/slice_041.png>
-Package pdftex.def Info: figures/slice_041.png  used on input line 250.
+Package pdftex.def Info: figures/slice_041.png  used on input line 277.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_089.png, id=298, 324.4923pt x 339.669pt>
+<figures/slice_089.png, id=312, 324.4923pt x 339.669pt>
 File: figures/slice_089.png Graphic file (type png)
 <use figures/slice_089.png>
-Package pdftex.def Info: figures/slice_089.png  used on input line 251.
+Package pdftex.def Info: figures/slice_089.png  used on input line 278.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_131.png, id=299, 324.4923pt x 339.669pt>
+<figures/slice_131.png, id=313, 324.4923pt x 339.669pt>
 File: figures/slice_131.png Graphic file (type png)
 <use figures/slice_131.png>
-Package pdftex.def Info: figures/slice_131.png  used on input line 252.
+Package pdftex.def Info: figures/slice_131.png  used on input line 279.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
 )
-
-[24]
 
 [25 <./figures/slice_017.png> <./figures/slice_041.png> <./figures/slice_089.png> <./figures/slice_131.png>]
 \openout2 = `chap_6.aux'.
@@ -2044,8 +2035,6 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 [28]
 
-[29]
-
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
 (scrreprt)              \chapter. Currently it internally still provides and
@@ -2062,7 +2051,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 
 
-[30
+[29
 
 
 
@@ -2084,7 +2073,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 
 
-[31
+[30
 
 ]
 chapter without number
@@ -2121,7 +2110,7 @@ Package minitoc(hints) Warning: W0024
 
 
 
-[32
+[31
 
 ] (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux) (.aux/chap_6.aux))
  ***********
@@ -2132,26 +2121,23 @@ L3 programming layer <2020/03/25>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package logreq Info: Writing requests to 'HebdomonGuide.run.xml'.
 \openout1 = `HebdomonGuide.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64926 strings out of 467886
- 1525792 string characters out of 5434045
- 2639482 words of memory out of 5000000
- 92416 multiletter control sequences out of 15000+600000
+ 64942 strings out of 467886
+ 1526181 string characters out of 5434045
+ 2638613 words of memory out of 5000000
+ 92431 multiletter control sequences out of 15000+600000
  708082 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,14n,131p,10981b,2193s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on .aux/HebdomonGuide.pdf (32 pages, 2999102 bytes).
+Output written on .aux/HebdomonGuide.pdf (31 pages, 3090378 bytes).
 PDF statistics:
- 584 PDF objects out of 1000 (max. 8388607)
- 481 compressed objects within 5 object streams
- 91 named destinations out of 1000 (max. 500000)
- 514 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 593 PDF objects out of 1000 (max. 8388607)
+ 487 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 524 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -21,9 +21,9 @@ L'architettura della U-Net si sviluppa secondo una struttura simmetrica a forma 
 \begin{figure}[H]
   	\centering 
  	\includegraphics[width=.6\textwidth]{figures/U-Net-architecture.png} 
-    \label{fig:Schema concettuale dell'architettura U-Net}
-	\caption{Schema concettuale dell'architettura U-Net.}
- \end{figure} 
+	 \caption{Schema concettuale dell'architettura U-Net.}
+	 \label{fig:Schema concettuale dell'architettura U-Net}
+	\end{figure} 
 
 Una caratteristica distintiva della U-Net rispetto ad altre reti di segmentazione è la presenza delle cosiddette \textit{skip connections}. Questi collegamenti diretti tra i livelli corrispondenti dell’encoder e del decoder permettono di trasportare le informazioni a bassa astrazione, spesso perse durante il downsampling, direttamente nei livelli di ricostruzione. In questo modo, la rete riesce a combinare efficacemente il contesto globale dell’immagine con i dettagli locali, migliorando significativamente la precisione dei bordi e la definizione delle strutture segmentate.
 
@@ -48,8 +48,8 @@ Negli ultimi anni, la segmentazione automatica delle immagini mediche ha ricevut
 \begin{figure}[H] 
   	\centering 
  	\includegraphics[width=\textwidth]{images/2025-07-07-12-01-04.png} 
+	 \caption{Overview dei dati di input e la U-NET usata per la segmentazione del seno.}
     \label{fig:schema_segmentazione_seno_paper}
-	\caption{Overview dei dati di input e la U-NET usata per la segmentazione del seno.}
  \end{figure} 
 
 Il lavoro si distingue per l’approccio rigoroso e riproducibile all’annotazione dei dati: 100 studi MRI, selezionati dal dataset pubblico \textit{Duke Breast Cancer MRI}, sono stati annotati manualmente seguendo criteri ben definiti e validati da radiologi specializzati. Le annotazioni sono tridimensionali e comprendono il tessuto mammario, il FGT e i vasi, un elemento spesso trascurato in studi precedenti.

@@ -10,7 +10,7 @@ Sebbene il framework fornisse una struttura organizzata per gli esperimenti, non
 
 Allo stesso modo, quando sperimentavo ottimizzatori diversi, dovevo prestare attenzione alla scelta del learning rate e dello scheduler, poiché valori troppo aggressivi potevano destabilizzare il training, mentre quelli troppo conservativi rallentavano inutilmente la convergenza. 
 
-Questo processo richiedeva una costante analisi degli errori: se un esperimento falliva o produceva risultati insoliti, dovevo riesaminare la configurazione YAML per identificare possibili discrepanze, come dimensioni di crop incompatibili con la risoluzione del volume o parametri di augmentazione eccessivamente distorti. La mancanza di validazione automatica ha reso il lavoro più impegnativo, ma mi ha costretto a sviluppare una profonda comprensione delle dipendenze tra i vari componenti del sistema.
+Questo processo richiedeva una costante analisi degli errori: se un esperimento falliva o produceva risultati insoliti, dovevo riesaminare la configurazione YAML per identificare possibili discrepanze, come dimensioni di crop incompatibili con la risoluzione del volume o parametri di augmentazione eccessivamente distorti. La mancanza di validazione automatica ha reso il lavoro più impegnativo, ma mi ha spinto a sviluppare una profonda comprensione delle dipendenze tra i vari componenti del sistema.
 
 
 \Section{Il file di configurazione YAML}
@@ -132,7 +132,7 @@ POST_LABEL:
 
 Per ogni esperimento è stato adottato un sistema di \hlight{logging automatico} organizzato in modo da raccogliere tutti gli output generati in una cartella dedicata, con l’obiettivo di garantire tracciabilità, riproducibilità e analisi approfondita dei risultati.
 
-Ogni cartella di esperimento conteneva le seguenti informazioni:
+Ogni cartella conteneva le seguenti informazioni:
 
 \begin{itemize}
 \item Un file \texttt{log.txt} contenente tutte le stampe console (\texttt{print}) prodotte durante il training. In questo file venivano riportati:

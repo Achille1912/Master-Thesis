@@ -2,7 +2,9 @@
 
 
 \Section{Introduzione}
-Sono stati condotti diversi esperimenti, cercando di variare i aspetti della configurazione del modello e del processo di addestramento, al fine di ottimizzare le prestazioni nella segmentazione delle immagini mammografiche. Si è cercato di cambiare gli iperparametri uno alla volta, mantenendo costanti gli altri, per isolare l'impatto di ciascuna modifica. 
+Sono stati condotti diversi esperimenti, cercando di variare gli aspetti della configurazione del modello e del processo di addestramento, al fine di ottimizzare le prestazioni nella segmentazione delle immagini mammografiche. Si è cercato di cambiare gli iperparametri uno alla volta, mantenendo costanti gli altri, per isolare l'impatto di ciascuna modifica. 
+
+Lo sviluppo di un sistema di segmentazione automatica efficace richiede non solo un’adeguata progettazione architetturale, ma anche un attento processo di \textbf{ottimizzazione sperimentale}, che tenga conto delle molteplici variabili che influenzano l’apprendimento del modello. In questo capitolo viene descritto in dettaglio il percorso iterativo seguito durante il tirocinio, che ha portato a una progressiva evoluzione del modello fino a raggiungere performance soddisfacenti su immagini MRI 3D della mammella.
 
 \Subsection{Nota sulle Valutazioni}
 Nei primi 16 esperimenti, la valutazione sul test set è stata effettuata utilizzando le immagini trasformate, ovvero mantenendo le dimensioni e le modifiche introdotte durante il preprocessing (incluso il resize). A partire dall'esperimento 17, invece, è stata applicata una trasformazione inversa (in particolare il resize inverso) alle ground truth, riportandole alle dimensioni originali. Questo ha permesso una valutazione più corretta e realistica delle performance, evitando possibili distorsioni dovute alle trasformazioni di preprocessing.
@@ -30,7 +32,7 @@ Nei primi 16 esperimenti, la valutazione sul test set è stata effettuata utiliz
 
 
 
-Lo sviluppo di un sistema di segmentazione automatica efficace richiede non solo un’adeguata progettazione architetturale, ma anche un attento processo di \textbf{ottimizzazione sperimentale}, che tenga conto delle molteplici variabili che influenzano l’apprendimento del modello. In questo capitolo viene descritto in dettaglio il percorso iterativo seguito durante il tirocinio, che ha portato a una progressiva evoluzione del modello fino a raggiungere performance soddisfacenti su immagini MRI 3D della mammella.
+
 
 \section{Impostazione degli Esperimenti}
 
@@ -86,7 +88,7 @@ Il passo successivo ha previsto un \textbf{aumento del learning rate} dell’ott
 	\label{tab:exp3-4_results}
 \end{table}
 
-A partire dal quinto esperimento \ref{exp5_comparative} è stata esplorata una \textbf{combinazione di modifiche strutturali}, tra cui il passaggio da \textbf{Adam} ad \textbf{AdamW}, il cambiamento della \textbf{normalizzazione} da \textbf{Batch} a \textbf{Instance} e l’utilizzo di una \textbf{loss} \textbf{composita} (\textbf{Focal} + \textbf{Dice} \textbf{Loss}), ciascuna ponderata per gestire in modo bilanciato gli squilibri tra le classi. Questa configurazione ha prodotto ottimi risultati in validazione (\textbf{0,8623}) e (\textbf{0,8597}) sul test set.
+A partire dal quinto esperimento \ref{tab:exp5_comparative} è stata esplorata una \textbf{combinazione di modifiche strutturali}, tra cui il passaggio da \textbf{Adam} ad \textbf{AdamW}, il cambiamento della \textbf{normalizzazione} da \textbf{Batch} a \textbf{Instance} e l’utilizzo di una \textbf{loss} \textbf{composita} (\textbf{Focal} + \textbf{Dice} \textbf{Loss}), ciascuna ponderata per gestire in modo bilanciato gli squilibri tra le classi. Questa configurazione ha prodotto ottimi risultati in validazione (\textbf{0,8623}) e (\textbf{0,8597}) sul test set.
 \begin{table}[H]
     \centering
     \begin{NiceTabular}{rl}[rules/color={gray!90},rules/width=1pt]
@@ -151,7 +153,8 @@ In seguito a questi risultati, è stata sperimentata una \textbf{nuova strategia
 
 \begin{code}{python}
 class SliceUNet(nn.Module):
-    def __init__(self, in_channels, out_channels, channels, norm, strides, spatial_dims=2):
+    def __init__(self, in_channels, out_channels, 
+                channels, norm, strides, spatial_dims=2):
         super(SliceUNet, self).__init__()
         self.Unet2D = monai.networks.nets.UNet(
             spatial_dims=spatial_dims,
@@ -220,7 +223,31 @@ Con questa nuova metodologia di test, sono stati ripetuti alcuni esperimenti pre
 
 Nonostante questa lieve flessione nei valori assoluti, la nuova metodologia ha reso i confronti tra modelli molto più affidabili. Alcune architetture, che in precedenza sembravano promettenti ma erano in realtà favorite da un confronto distorto, hanno rivelato prestazioni inferiori alle attese. Al contrario, modelli più solidi e coerenti, come l’\textbf{Attention U-Net} testato nell’esperimento \textbf{19}, hanno confermato la loro efficacia anche sotto il nuovo regime di valutazione, raggiungendo un Dice score di \textbf{0.8415} dopo 150 epoche di addestramento.
 
-Il punto culminante di questa fase è stato rappresentato dall’esperimento \textbf{21}, in cui è stata utilizzata una \textbf{U-Net profonda con cinque livelli e stride finale lungo l’asse z pari a 1}. L’input adottava una ROI size tridimensionale pari a $(512, 512, 8)$, e il training è stato prolungato fino a \textbf{200 epoche}. In queste condizioni, il modello ha raggiunto un Dice score pari a \textbf{0.9124}, il valore più alto registrato su tutto il test set \ref{fig:final_segmentation_examples}. Questo risultato rappresenta non solo il successo di una specifica configurazione, ma anche la validazione dell’intero processo di ottimizzazione, culminato in un modello accurato, robusto e valutato con criteri metodologicamente solidi.
+Il punto culminante di questa fase è stato rappresentato dall’esperimento \textbf{21}, in cui è stata utilizzata una \textbf{U-Net profonda con cinque livelli e stride finale lungo l’asse z pari a 1}. L’input adottava una ROI size tridimensionale pari a $(512, 512, 8)$, e il training è stato prolungato fino a \textbf{200 epoche} \ref{fig:losses}. 
+
+\begin{minipage}{.48\textwidth}
+    \begin{figure}[H] 
+        \centering 
+        \includegraphics[width=\textwidth]{figures/losses.png} 
+        \caption{Andamento delle funzioni di loss durante il training dell’esperimento finale(EXP 21).}
+        \label{fig:losses}
+    \end{figure} 
+\end{minipage}
+\hfill
+\begin{minipage}{.48\textwidth}
+    \begin{figure}[H] 
+        \centering 
+        \includegraphics[width=\textwidth]{figures/metrics.png} 
+        \caption{Andamento delle metriche di valutazione durante il training dell’esperimento finale(EXP 21).}
+        \label{fig:metrics}
+    \end{figure} 
+\end{minipage}
+
+
+
+
+In queste condizioni, il modello ha raggiunto un Dice score pari a \textbf{0.9124} \ref{fig:metrics}, il valore più alto registrato su tutto il test set \ref{fig:final_segmentation_examples}. Questo risultato rappresenta non solo il successo di una specifica configurazione, ma anche la validazione dell’intero processo di ottimizzazione, culminato in un modello accurato, robusto e valutato con criteri metodologicamente solidi.
+
 
 \begin{table}[H]
 \centering
