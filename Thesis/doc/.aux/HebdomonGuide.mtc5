@@ -1,7 +1,9 @@
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}\textcolor {mciBlue}{Introduzione}}{\reset@font\mtcSfont 19}{section.5.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.1.1}\textcolor {mciBlue}{Nota sulle Valutazioni}}{\reset@font\mtcSSfont 19}{subsection.5.1.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Impostazione degli Esperimenti}{\reset@font\mtcSfont 20}{section.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Evoluzione Architetturale e Tuning degli Iperparametri}{\reset@font\mtcSfont 20}{section.5.3}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}Strategia Alternativa: Approccio 2D e Architettura SliceUNet}{\reset@font\mtcSfont 22}{section.5.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Ritorno all’approccio 3D: Affinamento e Validazione}{\reset@font\mtcSfont 23}{section.5.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}\textcolor {mciBlue}{Impostazione degli Esperimenti}}{\reset@font\mtcSfont 20}{section.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}\textcolor {mciBlue}{Evoluzione Architetturale e Tuning degli Iperparametri}}{\reset@font\mtcSfont 20}{section.5.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}\textcolor {mciBlue}{Strategia Alternativa: Approccio 2D e Architettura SliceUNet}}{\reset@font\mtcSfont 22}{section.5.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}\textcolor {mciBlue}{Ritorno all’approccio 3D: Affinamento e Validazione}}{\reset@font\mtcSfont 23}{section.5.5}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}\textcolor {mciBlue}{Nuovo approccio di Valutazione}}{\reset@font\mtcSfont 23}{section.5.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.1}\textcolor {mciBlue}{L’Attention U-Net}}{\reset@font\mtcSSfont 24}{subsection.5.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}\textcolor {mciBlue}{Esperimento Finale}}{\reset@font\mtcSfont 25}{section.5.7}}

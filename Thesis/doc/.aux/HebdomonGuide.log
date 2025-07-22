@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  15 JUL 2025 10:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  22 JUL 2025 14:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/achille/Documents/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
-(/home/achille/Documents/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
+**/home/achille/Desktop/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
+(/home/achille/Desktop/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-05-26>
 (../tex/hebdomon.cls
@@ -1561,35 +1561,39 @@ Package: inputenc 2024/02/08 v1.3d Input encoding file
 )
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/sc' in size <10.95> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/sc' tried instead on input line 21.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/sc' will be
+(Font)              scaled to size 10.95pt on input line 21.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/sc' in size <17.28> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/sc' tried instead on input line 21.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/sc' will be
+(Font)              scaled to size 17.28pt on input line 21.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <14.4> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 22.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 22.
 <figures/logo.png, id=43, 582.89902pt x 582.89902pt>
 File: figures/logo.png Graphic file (type png)
 <use figures/logo.png>
-Package pdftex.def Info: figures/logo.png  used on input line 21.
+Package pdftex.def Info: figures/logo.png  used on input line 24.
 (pdftex.def)             Requested size: 113.81102pt x 113.8116pt.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/FiraSans-OsF/regular/sc' tried instead on input line 25.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/sc' will be
-(Font)              scaled to size 10.95pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/sc' in size <17.28> not available
-(Font)              Font shape `OT1/FiraSans-OsF/regular/sc' tried instead on input line 25.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/sc' will be
-(Font)              scaled to size 17.28pt on input line 25.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <14.4> not available
-(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 27.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 14.4pt on input line 27.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <24.88> not available
-(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 30.
+(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
-(Font)              scaled to size 24.88pt on input line 30.
+(Font)              scaled to size 24.88pt on input line 32.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <24.88> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 30.
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 24.88pt on input line 30.
+(Font)              scaled to size 24.88pt on input line 32.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <10.95> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 36.
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 38.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 10.95pt on input line 36.
+(Font)              scaled to size 10.95pt on input line 38.
 
 
 [1
@@ -1598,7 +1602,7 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_ogsljj.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_337jzs.enc} <./figures/logo.png>]
 Package minitoc Info: I0024
-(minitoc)             PREPARING MINITOCS FROM HebdomonGuide.toc on input line 46.
+(minitoc)             PREPARING MINITOCS FROM HebdomonGuide.toc on input line 53.
 Package minitoc Info: I0033
 (minitoc)             Writing HebdomonGuide.mtc1.
 \openout5 = `HebdomonGuide.mtc1'.
@@ -1640,13 +1644,13 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              that will remove this deprecated code.
 
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <20.74> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 46.
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 20.74pt on input line 46.
+(Font)              scaled to size 20.74pt on input line 53.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <30> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 46.
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 53.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 30.0pt on input line 46.
+(Font)              scaled to size 30.0pt on input line 53.
 (.aux/HebdomonGuide.toc
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -1715,10 +1719,6 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <12> not available
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
 (Font)              scaled to size 12.0pt on input line 2.
 (.aux/HebdomonGuide.mtc1)
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <14.4> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 14.4pt on input line 2.
 LaTeX Font Info:    Trying to load font information for TS1+FiraSans-OsF on input line 9.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/fira/TS1FiraSans-OsF.fd
 File: TS1FiraSans-OsF.fd 2019/10/10 (autoinst) Font definitions for TS1/FiraSans-OsF.
@@ -1735,18 +1735,14 @@ LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/regular/n' will be
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_d67aat.enc}]
 
 [5]
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <12> not available
-(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 48.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 48.
-LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 60.
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 58.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/2025-07-07-09-52-55.png, id=159, 1927.2pt x 1036.87375pt>
+<images/2025-07-07-09-52-55.png, id=160, 1927.2pt x 1036.87375pt>
 File: images/2025-07-07-09-52-55.png Graphic file (type png)
 <use images/2025-07-07-09-52-55.png>
-Package pdftex.def Info: images/2025-07-07-09-52-55.png  used on input line 66.
+Package pdftex.def Info: images/2025-07-07-09-52-55.png  used on input line 64.
 (pdftex.def)             Requested size: 455.24417pt x 244.93108pt.
 )
 
@@ -1778,7 +1774,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ]
-<figures/U-Net-architecture.png, id=177, 1560.83125pt x 1039.885pt>
+<figures/U-Net-architecture.png, id=178, 1560.83125pt x 1039.885pt>
 File: figures/U-Net-architecture.png Graphic file (type png)
 <use figures/U-Net-architecture.png>
 Package pdftex.def Info: figures/U-Net-architecture.png  used on input line 23.
@@ -1793,7 +1789,7 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/it' will be
 
 
 [9 <./figures/u-net-architecture.png>]
-<images/2025-07-07-12-01-04.png, id=191, 1163.34625pt x 493.845pt>
+<images/2025-07-07-12-01-04.png, id=192, 1163.34625pt x 493.845pt>
 File: images/2025-07-07-12-01-04.png Graphic file (type png)
 <use images/2025-07-07-12-01-04.png>
 Package pdftex.def Info: images/2025-07-07-12-01-04.png  used on input line 50.
@@ -1827,6 +1823,11 @@ LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 7
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
 File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <12> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 11.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 11.
+
 
 [12
 
@@ -1866,10 +1867,10 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \pydata@fh@0=\write8
 \openout8 = `_018679B249EA6FB07607F2451175FB2C.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250715102653 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted config  --timestamp 20250722141419 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (.aux/_018679B249EA6FB07607F2451175FB2C.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250715102653 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20250722141419 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (./.aux/_minted/default.style.minted) (./.aux/_minted/EE06B3036988ABCFB4E929BAB7BA860E.highlight.minted
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
@@ -1930,7 +1931,7 @@ LaTeX Info: Symbol \textrightarrow not provided by
 LaTeX Info: Symbol \textrightarrow not provided by
             font family FiraSans-OsF in TS1 encoding.
             Default family used instead on input line 104.
-<images/2025-07-12-11-28-31.png, id=272, 578.16pt x 433.62pt>
+<images/2025-07-12-11-28-31.png, id=275, 578.16pt x 433.62pt>
 File: images/2025-07-12-11-28-31.png Graphic file (type png)
 <use images/2025-07-12-11-28-31.png>
 Package pdftex.def Info: images/2025-07-12-11-28-31.png  used on input line 118.
@@ -1962,47 +1963,48 @@ LaTeX Info: Symbol \textuparrow not provided by
 (./.aux/_minted/014032F586E2B3A9EB0E3E53B1DC7267.highlight.minted
 
 [23{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}])
-<figures/losses.png, id=297, 1156.32pt x 650.43pt>
+
+[24]
+<figures/losses.png, id=304, 1156.32pt x 650.43pt>
 File: figures/losses.png Graphic file (type png)
 <use figures/losses.png>
-Package pdftex.def Info: figures/losses.png  used on input line 231.
+Package pdftex.def Info: figures/losses.png  used on input line 243.
 (pdftex.def)             Requested size: 218.51524pt x 122.9081pt.
 
-Underfull \hbox (badness 7238) in paragraph at lines 232--232
+Underfull \hbox (badness 7238) in paragraph at lines 244--244
 \OT1/FiraSans-OsF/regular/n/10.95 du-ran-te il trai-ning del-l'e-spe-ri-
  []
 
-<figures/metrics.png, id=298, 1156.32pt x 650.43pt>
+<figures/metrics.png, id=305, 1156.32pt x 650.43pt>
 File: figures/metrics.png Graphic file (type png)
 <use figures/metrics.png>
-Package pdftex.def Info: figures/metrics.png  used on input line 240.
+Package pdftex.def Info: figures/metrics.png  used on input line 252.
 (pdftex.def)             Requested size: 218.51524pt x 122.9081pt.
-
-
-[24 <./figures/losses.png> <./figures/metrics.png>]
-<figures/slice_017.png, id=310, 324.4923pt x 339.669pt>
+<figures/slice_017.png, id=308, 324.4923pt x 339.669pt>
 File: figures/slice_017.png Graphic file (type png)
 <use figures/slice_017.png>
-Package pdftex.def Info: figures/slice_017.png  used on input line 276.
+Package pdftex.def Info: figures/slice_017.png  used on input line 288.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_041.png, id=311, 324.4923pt x 339.669pt>
+<figures/slice_041.png, id=309, 324.4923pt x 339.669pt>
 File: figures/slice_041.png Graphic file (type png)
 <use figures/slice_041.png>
-Package pdftex.def Info: figures/slice_041.png  used on input line 277.
+Package pdftex.def Info: figures/slice_041.png  used on input line 289.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_089.png, id=312, 324.4923pt x 339.669pt>
+<figures/slice_089.png, id=310, 324.4923pt x 339.669pt>
 File: figures/slice_089.png Graphic file (type png)
 <use figures/slice_089.png>
-Package pdftex.def Info: figures/slice_089.png  used on input line 278.
+Package pdftex.def Info: figures/slice_089.png  used on input line 290.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_131.png, id=313, 324.4923pt x 339.669pt>
+<figures/slice_131.png, id=311, 324.4923pt x 339.669pt>
 File: figures/slice_131.png Graphic file (type png)
 <use figures/slice_131.png>
-Package pdftex.def Info: figures/slice_131.png  used on input line 279.
+Package pdftex.def Info: figures/slice_131.png  used on input line 291.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
 )
 
-[25 <./figures/slice_017.png> <./figures/slice_041.png> <./figures/slice_089.png> <./figures/slice_131.png>]
+[25 <./figures/losses.png> <./figures/metrics.png>]
+
+[26 <./figures/slice_017.png> <./figures/slice_041.png> <./figures/slice_089.png> <./figures/slice_131.png>]
 \openout2 = `chap_6.aux'.
 
  (./chap_6.tex
@@ -2024,16 +2026,16 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 (.aux/HebdomonGuide.mtc6)
 
-[26
+[27
 
 
 
 
 ]
 
-[27])
+[28])
 
-[28]
+[29]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2051,7 +2053,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 
 
-[29
+[30
 
 
 
@@ -2073,7 +2075,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 
 
-[30
+[31
 
 ]
 chapter without number
@@ -2110,7 +2112,7 @@ Package minitoc(hints) Warning: W0024
 
 
 
-[31
+[32
 
 ] (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux) (.aux/chap_6.aux))
  ***********
@@ -2126,18 +2128,18 @@ Package logreq Info: Writing requests to 'HebdomonGuide.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64942 strings out of 467886
- 1526181 string characters out of 5434045
- 2638613 words of memory out of 5000000
- 92431 multiletter control sequences out of 15000+600000
+ 64947 strings out of 467886
+ 1526255 string characters out of 5434045
+ 2639595 words of memory out of 5000000
+ 92434 multiletter control sequences out of 15000+600000
  708082 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 122i,14n,131p,10981b,2193s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 122i,14n,131p,10979b,2193s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on .aux/HebdomonGuide.pdf (31 pages, 3090378 bytes).
+Output written on .aux/HebdomonGuide.pdf (32 pages, 3092251 bytes).
 PDF statistics:
- 593 PDF objects out of 1000 (max. 8388607)
- 487 compressed objects within 5 object streams
- 92 named destinations out of 1000 (max. 500000)
- 524 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 603 PDF objects out of 1000 (max. 8388607)
+ 496 compressed objects within 5 object streams
+ 94 named destinations out of 1000 (max. 500000)
+ 532 words of extra memory for PDF output out of 10000 (max. 10000000)
 

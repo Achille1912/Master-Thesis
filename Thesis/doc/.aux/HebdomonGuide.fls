@@ -2,7 +2,7 @@ PWD /home/achille/Documents/GitHub/Master-Thesis/Thesis/doc
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/achille/Documents/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
+INPUT /home/achille/Desktop/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
 OUTPUT .aux/HebdomonGuide.log
 INPUT ../tex/hebdomon.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/hebdomon/hebdomon.cls
@@ -969,14 +969,15 @@ INPUT .aux/HebdomonGuide.bbl
 INPUT .aux/HebdomonGuide.bbl
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
-INPUT ./figures/logo.png
-INPUT ./figures/logo.png
-INPUT ./figures/logo.png
-INPUT ./figures/logo.png
-INPUT ./figures/logo.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-sc-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-sc-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-ot1.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
+INPUT ./figures/logo.png
+INPUT ./figures/logo.png
+INPUT ./figures/logo.png
+INPUT ./figures/logo.png
+INPUT ./figures/logo.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
@@ -1047,7 +1048,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-ot1.tfm
 INPUT .aux/HebdomonGuide.mtc1
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fira/TS1FiraSans-OsF.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fira/TS1FiraSans-OsF.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/fira/TS1FiraSans-OsF.fd
@@ -1055,7 +1055,6 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/fira/FiraSans-Regular-osf-ts1.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-ts1--base.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_d67aat.enc
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
@@ -1112,6 +1111,7 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmtt10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/rm-lmtt8.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT ./chap_4.tex
 INPUT ./chap_4.tex
