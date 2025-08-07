@@ -34,46 +34,44 @@ Nei primi \textbf{16 esperimenti}, la valutazione sul \textbf{test set} è stata
 
 
 
-
-
-
-
 \Section{Impostazione degli Esperimenti}
 
-Gli esperimenti sono stati condotti in maniera incrementale, seguendo una filosofia di \textbf{ottimizzazione guidata da evidenze}, nella quale ciascuna modifica introdotta agli iperparametri o alla pipeline di preprocessing è stata motivata da osservazioni emerse negli esperimenti precedenti. Tutte le prove sono state documentate e monitorate con precisione.
+Gli esperimenti sono stati condotti in \textbf{maniera incrementale}, seguendo una filosofia di \hlight{ottimizzazione guidata da evidenze}, nella quale ciascuna modifica introdotta agli iperparametri o alla pipeline di preprocessing è stata motivata da osservazioni emerse negli esperimenti precedenti. Tutte le prove sono state \textbf{documentate} e \textbf{monitorate} con precisione.
 
-Per garantire la coerenza e individuare possibili problemi, è stato anche necessario implementare un sistema di \textbf{debugging interno} tramite Python, includendo stampe delle dimensioni dei tensori nei momenti chiave del forward pass e salvataggi intermedi delle immagini durante il training. Questo approccio ha permesso di identificare rapidamente errori legati a mismatch dimensionali, problemi nella gestione della normalizzazione, o trasformazioni incoerenti nei dati di input/output.
+Per garantire la coerenza e individuare possibili problemi, è stato anche necessario implementare un sistema di \hlight{debugging interno} tramite Python, includendo \textbf{stampe delle dimensioni dei tensori nei momenti chiave} del forward pass e salvataggi intermedi delle immagini durante il training. Questo approccio ha \hlight{permesso di identificare rapidamente errori legati a mismatch dimensionali, problemi nella gestione della normalizzazione, o trasformazioni incoerenti nei dati di input/output.}
 
 \Section{Evoluzione Architetturale e Tuning degli Iperparametri}
 
-Il primo esperimento \ref{tab:exp1_config} ha costituito la base di partenza, con una configurazione standard della rete U-Net tridimensionale, con 4 blocchi convoluzionali (\texttt{channels: [16, 32, 64, 128]}), normalizzazione batch, e un resize uniforme applicato a tutte le immagini. Con questa configurazione, è stato ottenuto un \textbf{Dice score} sul test set pari a \textbf{0.7894}.
+Il \textbf{primo esperimento} \ref{tab:exp1_config} ha costituito la \textbf{base di partenza}, con una configurazione \textbf{standard della rete U-Net tridimensionale}, con \textbf{4 blocchi convoluzionali} (\texttt{channels: [16, 32, 64, 128]}), \textbf{normalizzazione batch}, e un \textbf{resize uniforme} applicato a tutte le immagini. Con questa configurazione, è stato ottenuto un \hlight{Dice score sul test set pari a 0.7894}.
 
 \begin{table}[H]
-	\begin{NiceTabular}{rX}[rules/color={gray!90},rules/width=1pt]
-		\CodeBefore
-		\rowcolors{1}{black!5}{}
-		\rowcolors{3}{blue!5}{}
-		\Body
-		\toprule
-		\textbf{Parametro}      & \textbf{Valore}                                \\
-		\midrule
-		\textbf{Architettura} & U-Net 3D standard con 4 blocchi convoluzionali \\
-		\textbf{Canali} & [16, 32, 64, 128] \\
-		\textbf{Normalizzazione} & Batch normalization \\
-		\textbf{Resize} & Uniforme su tutte le immagini \\
-		\textbf{Dice score (test set)} & 0.7894 \\
-		\bottomrule
-	\end{NiceTabular}
+    \begin{center}
+        \begin{NiceTabular}{rc}[rules/color={gray!90},rules/width=1pt]
+            \CodeBefore
+            \rowcolors{1}{black!5}{}
+            \rowcolors{3}{blue!5}{}
+            \Body
+            \toprule
+            \textbf{Parametro}      & \textbf{Valore}                                \\
+            \midrule
+            \textbf{Architettura} & U-Net 3D standard con 4 blocchi convoluzionali \\
+            \textbf{Canali} & [16, 32, 64, 128] \\
+            \textbf{Normalizzazione} & Batch normalization \\
+            \textbf{Resize} & Uniforme su tutte le immagini \\
+            \textbf{Dice score (test set)} & 0.7894 \\
+            \bottomrule
+        \end{NiceTabular}
+    \end{center}
 	\caption{Configurazione del primo esperimento (baseline) con architettura U-Net 3D e risultati ottenuti.}
 	\label{tab:exp1_config}
 \end{table}
 
 
-Il passo successivo ha previsto un \textbf{aumento del learning rate} dell’ottimizzatore Adam, passando da \texttt{0.0005} a \texttt{0.005}. Questo semplice cambiamento ha prodotto un incremento della metrica di circa \textbf{+1.17\%}, suggerendo che la rete era in grado di convergere più rapidamente in presenza di un gradiente iniziale più marcato. Da qui è emersa l’intuizione che la rete potesse beneficiare anche di una maggiore profondità: il terzo e il quarto esperimento \ref{tab:exp3-4_results} hanno confermato questa ipotesi, mostrando miglioramenti crescenti in validazione e test con l’introduzione di un ulteriore blocco (\texttt{channels: [16, 32, 64, 128, 256]}), fino a raggiungere \textbf{0.8597} sul test set e \textbf{0.8569} sul validation set.
+Il \textbf{passo successivo} ha previsto un \textbf{aumento del learning rate} dell’ottimizzatore \textbf{Adam}, passando da \textbf{0.0005} a \textbf{0.005}. Questo semplice cambiamento ha prodotto un \hlight{incremento della metrica di circa +1.17\%,} suggerendo che la rete era in grado di \hlight{convergere più rapidamente in presenza di un gradiente iniziale più marcato}. Da qui è emersa l’intuizione che la rete potesse beneficiare anche di una \hlight{maggiore profondità}: il \textbf{terzo} e il \textbf{quarto} esperimento \ref{tab:exp3-4_results} \hlight{hanno confermato questa ipotesi, mostrando miglioramenti crescenti in validazione e test} con l’introduzione di un ulteriore blocco (\texttt{channels: [16, 32, 64, 128, 256]}), fino a raggiungere \hlight{0.8597 sul test set} e \hlight{0.8569 sul validation set}.
 
 \begin{table}[H]
     \centering
-	\begin{NiceTabular}{rl}[rules/color={gray!90},rules/width=1pt]
+	\begin{NiceTabular}{rc}[rules/color={gray!90},rules/width=1pt]
 		\CodeBefore
 		\rowcolors{1}{black!5}{}
 		\rowcolors{3}{blue!5}{}
@@ -92,7 +90,7 @@ Il passo successivo ha previsto un \textbf{aumento del learning rate} dell’ott
 	\label{tab:exp3-4_results}
 \end{table}
 
-A partire dal quinto esperimento \ref{tab:exp5_comparative} è stata esplorata una \textbf{combinazione di modifiche strutturali}, tra cui il passaggio da \textbf{Adam} ad \textbf{AdamW}, il cambiamento della \textbf{normalizzazione} da \textbf{Batch} a \textbf{Instance} e l’utilizzo di una \textbf{loss} \textbf{composita} (\textbf{Focal} + \textbf{Dice} \textbf{Loss}), ciascuna ponderata per gestire in modo bilanciato gli squilibri tra le classi. Questa configurazione ha prodotto ottimi risultati in validazione (\textbf{0,8623}) e (\textbf{0,8597}) sul test set.
+A partire dal \textbf{quinto esperimento} \ref{tab:exp5_comparative} è stata esplorata una \textbf{combinazione di modifiche strutturali}, tra cui il passaggio da \textbf{Adam} ad \hlight{AdamW}, il cambiamento della \textbf{normalizzazione} da \textbf{Batch} a \hlight{Instance} e l’utilizzo di una \textbf{loss} \textbf{composita} (\hlight{Focal} + \hlight{Dice} \hlight{Loss}), ciascuna ponderata per gestire in modo bilanciato gli squilibri tra le classi. Questa configurazione ha prodotto \hlight{ottimi risultati in validazione (0,8623) e (0,8597) sul test set}.
 \begin{table}[H]
     \centering
     \begin{NiceTabular}{rl}[rules/color={gray!90},rules/width=1pt]
@@ -115,7 +113,7 @@ A partire dal quinto esperimento \ref{tab:exp5_comparative} è stata esplorata u
 \end{table}
 
 
-Nei successivi esperimenti, si è indagata ulteriormente la sensibilità del modello al \textbf{learning rate}, che era stato inizialmente portato troppo in basso (\texttt{0.0001}). Ripristinando un valore intermedio (\texttt{0.001}), il Dice score sul test è aumentato di oltre il \textbf{3\%}. Parallelamente, l’introduzione di una strategia di \textbf{learning rate scheduling} \ref{fig:learning_rate_scheduling} (LinearWarmupCosineAnnealingLR) ha portato a miglioramenti più modesti ma stabili.
+Nei \textbf{successivi esperimenti}, si è indagata ulteriormente la sensibilità del modello al \textbf{learning rate}, che era stato inizialmente portato troppo in basso (\texttt{0.0001}). Ripristinando un valore intermedio (\texttt{0.001}), il \hlight{Dice score sul test è aumentato di oltre il 3\%.} Parallelamente, l’introduzione di una strategia di \hlight{learning rate scheduling  (LinearWarmupCosineAnnealingLR)} \ref{fig:learning_rate_scheduling} ha portato a \hlight{miglioramenti più modesti ma stabili}.
 
 \begin{figure}[H] 
   	\centering 
@@ -126,7 +124,10 @@ Nei successivi esperimenti, si è indagata ulteriormente la sensibilità del mod
 
 
 
-Una seconda linea di sperimentazione ha riguardato il \textbf{trattamento dimensionale} delle immagini. Portando la dimensione da \hlight{384x384} a \hlight{512x512}, si è osservato un ulteriore miglioramento della metrica. Al contrario, strategie basate esclusivamente sul \textbf{padding}, o su un \textbf{mix di resize e padding}, hanno avuto un effetto \textbf{negativo} sulle performance, portando a un crollo significativo della metrica nel nono e decimo esperimento fino a \textbf{0.7576} sul test set e \textbf{0,816} in validazione. 
+ 
+
+
+Una seconda linea di sperimentazione ha riguardato il \textbf{trattamento dimensionale} delle immagini. Portando la dimensione da \textbf{384x384} a \hlight{512x512}, si è osservato un ulteriore \hlight{miglioramento della metrica}. Al contrario, strategie basate esclusivamente sul \textbf{padding}, o su un \textbf{mix di resize e padding}, hanno avuto un effetto \hlight{negativo} sulle performance, portando a un crollo significativo della metrica nel \textbf{nono} e \textbf{decimo} esperimento fino a \hlight{0.7576 sul test set} e \hlight{0.0816 in validazione}. 
 
 \begin{table}[H]
     \centering
@@ -153,7 +154,7 @@ Una seconda linea di sperimentazione ha riguardato il \textbf{trattamento dimens
 
 \Section{Strategia Alternativa: Approccio 2D e Architettura SliceUNet}
 
-In seguito a questi risultati, è stata sperimentata una \textbf{nuova strategia}, volta a esplorare un approccio 2D invece che 3D. Questo ha richiesto l’adozione di una \textbf{ROI size} di tipo \textbf{(512, 512, 1)}, accompagnata da una trasformazione \texttt{RandSpatialCropSamplesd} e da un’opportuna gestione del padding. Per rendere l’intera pipeline compatibile con questo formato, è stata definita un’architettura \textbf{SliceUNet} personalizzata, progettata per operare su singole slice bidimensionali mantenendo il supporto volumetrico per l’aggregazione del risultato finale.
+In seguito a questi risultati, è stata sperimentata una \hlight{nuova strategia}, volta a esplorare un \hlight{approccio 2D} invece che 3D. Questo ha richiesto l’adozione di una \textbf{ROI size} di tipo \textbf{(512, 512, 1)}, accompagnata da una trasformazione \texttt{RandSpatialCropSamplesd} e da un’opportuna gestione del padding. Per rendere l’intera pipeline compatibile con questo formato, è stata definita un’architettura \hlight{SliceUNet personalizzata}, progettata per operare su \textbf{singole slice bidimensionali} mantenendo il supporto volumetrico per \textbf{l’aggregazione del risultato finale}.
 
 \begin{code}{python}
 class SliceUNet(nn.Module):
@@ -176,11 +177,11 @@ class SliceUNet(nn.Module):
 
 
 
-I primi esperimenti con SliceUNet hanno ottenuto risultati interessanti: partendo da \textbf{0.628}, si è passati a \textbf{0.7808}, in test, modificando la strategia di preprocessing da padding a resize. Tuttavia, nonostante l’eleganza e la semplicità computazionale di questo approccio, i risultati non hanno raggiunto i livelli di accuratezza ottenibili con la versione 3D.
+I primi esperimenti con \textbf{SliceUNet} hanno ottenuto \hlight{risultati interessanti}: partendo da \textbf{0.628}, si è passati a \hlight{0.7808, in test}, modificando la strategia di preprocessing da \textbf{padding} a \hlight{resize}. Tuttavia, nonostante \textbf{l’eleganza} e la \textbf{semplicità computazionale} di questo approccio, i risultati \hlight{non hanno raggiunto i livelli di accuratezza ottenibili con la versione 3D}.
 
 \Section{Ritorno all’approccio 3D: Affinamento e Validazione}
 
-Per questo motivo, l’attenzione è tornata su modelli tridimensionali, testando configurazioni diverse di \texttt{roi\_size} (ad esempio, \texttt{512x512x16}) e nuove combinazioni architetturali. Esperimenti successivi hanno mostrato che aumentando la profondità lungo l’asse z e spingendo il numero di \textbf{epoche a 150}, si potevano ottenere performance vicine a \textbf{0.8863} in test, che \textbf{costituivano il massimo assoluto fino a quel punto.}
+Per questo motivo, \textbf{l’attenzione è tornata su modelli tridimensionali}, testando configurazioni diverse di \texttt{roi\_size} (ad esempio, \texttt{512x512x16}) e nuove combinazioni architetturali. \hlight{Esperimenti successivi hanno mostrato che aumentando la profondità lungo l’asse z} e spingendo il numero di \hlight{epoche a 150}, si potevano ottenere performance vicine a \hlight{0.8863 in test}, che \hlight{costituivano il massimo assoluto fino a quel punto.}
 
 \begin{table}[H]
     \centering
@@ -209,8 +210,15 @@ Per questo motivo, l’attenzione è tornata su modelli tridimensionali, testand
     \label{tab:3d_color_progression}
 \end{table}
 
+
+
+%   ┌──────────────────────────────────────────────────────────────────────────┐
+%   │ SONO ARRIVATO FIN QUI                                                    │
+%   └──────────────────────────────────────────────────────────────────────────┘
+
+
 \Section{Nuovo approccio di Valutazione}
-Un aspetto critico che è emerso in questa fase è stato il modo in cui le predizioni venivano valutate. In effetti, l’adozione di tecniche di preprocessing alterava la struttura delle label, rendendo la metrica poco rappresentativa. È stata quindi introdotta una \textbf{pipeline di trasformazioni inverse} nella fase di test, per riportare le predizioni allo spazio originale e confrontarle correttamente con le etichette intonse.
+Un \hlight{aspetto critico} che è emerso in questa fase è stato \textbf{il modo in cui le predizioni venivano valutate}. In effetti, l’adozione di tecniche di preprocessing alterava la struttura delle label, rendendo la metrica poco rappresentativa. È stata quindi introdotta una \textbf{pipeline di trasformazioni inverse} nella fase di test, per riportare le predizioni allo spazio originale e confrontarle correttamente con le etichette intonse.
 
 \begin{code}{python}
 # if there is a resizing transform in the validation transforms, inverse it
