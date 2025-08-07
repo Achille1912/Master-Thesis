@@ -2,15 +2,16 @@
 
 
 \Section{Introduzione}
-Sono stati condotti diversi esperimenti, cercando di variare gli aspetti della configurazione del modello e del processo di addestramento, al fine di ottimizzare le prestazioni nella segmentazione delle immagini mammografiche. Si è cercato di cambiare gli iperparametri uno alla volta, mantenendo costanti gli altri, per isolare l'impatto di ciascuna modifica. 
+Sono stati condotti diversi esperimenti, cercando di variare gli aspetti della configurazione del modello e del processo di addestramento, al fine di ottimizzare le prestazioni nella segmentazione delle immagini mammografiche. Si è cercato di \textbf{cambiare gli iperparametri uno alla volta}, mantenendo costanti gli altri, per isolare l'impatto di ciascuna modifica. 
 
-Lo sviluppo di un sistema di segmentazione automatica efficace richiede non solo un’adeguata progettazione architetturale, ma anche un attento processo di \textbf{ottimizzazione sperimentale}, che tenga conto delle molteplici variabili che influenzano l’apprendimento del modello. In questo capitolo viene descritto in dettaglio il percorso iterativo seguito, che ha portato a una progressiva evoluzione del modello fino a raggiungere performance soddisfacenti su immagini MRI 3D della mammella.
+Lo sviluppo di un sistema di segmentazione automatica efficace richiede non solo un’adeguata progettazione architetturale, ma anche un attento processo di \textbf{ottimizzazione sperimentale}, che tenga conto delle molteplici variabili che influenzano l’apprendimento del modello. In questo capitolo viene descritto in dettaglio il percorso iterativo seguito, che ha portato a una \textbf{progressiva evoluzione del modello} fino a raggiungere \textbf{performance soddisfacenti}.
 
 \Subsection{Nota sulle Valutazioni}
-Nei primi 16 esperimenti, la valutazione sul test set è stata effettuata utilizzando le immagini trasformate, ovvero mantenendo le dimensioni e le modifiche introdotte durante il preprocessing (incluso il resize). A partire dall'esperimento 17, invece, è stata applicata una trasformazione inversa (in particolare il resize inverso) alle ground truth, riportandole alle dimensioni originali. Questo ha permesso una valutazione più corretta e realistica delle performance, evitando possibili distorsioni dovute alle trasformazioni di preprocessing.
+Nei primi \textbf{16 esperimenti}, la valutazione sul \textbf{test set} è stata effettuata utilizzando le \textbf{immagini trasformate}, ovvero mantenendo le dimensioni e le modifiche introdotte durante il preprocessing (incluso il resize). A partire dall'esperimento \textbf{17}, invece, è stata applicata una \textbf{trasformazione inversa} (in particolare il resize inverso) alle ground truth, riportandole alle dimensioni originali. Questo ha permesso una valutazione più corretta e realistica delle performance, evitando possibili distorsioni dovute alle trasformazioni di preprocessing.
 
 \begin{table}[!ht]
-    \begin{NiceTabular}{rrX}[rules/color={gray!90},rules/width=1pt]
+    \begin{center}
+    \begin{NiceTabular}{rrr}[rules/color={gray!90},rules/width=1pt]
         \CodeBefore
         \rowcolors{1}{black!5}{}
         \rowcolors{3}{blue!5}{}
@@ -25,9 +26,12 @@ Nei primi 16 esperimenti, la valutazione sul test set è stata effettuata utiliz
         20 & Attention U-Net 3D & Meccanismo di attention \\
         \bottomrule
     \end{NiceTabular}
+\end{center}
     \caption{Configurazioni principali dei modelli sperimentali con architetture e parametri chiave.}
     \label{tab:config_modelli}
 \end{table}
+
+
 
 
 
@@ -225,13 +229,19 @@ Nonostante questa lieve flessione nei valori assoluti, la nuova metodologia ha r
 
 \Subsection{L’Attention U-Net}
 
-L’\textbf{Attention U-Net} rappresenta una naturale estensione della classica architettura U-Net, progettata per migliorare la capacità del modello di concentrarsi sulle regioni di interesse più rilevanti all’interno dell’immagine. Introdotta da Oktay et al. nel 2018, questa variante si basa sull’integrazione di \textbf{meccanismi di attenzione spaziale} nei percorsi di skip connection tra encoder e decoder. L’obiettivo principale è quello di guidare la rete nell’enfatizzare le strutture salienti e nel sopprimere attivamente le attivazioni inutili o irrilevanti, soprattutto in contesti caratterizzati da alta complessità anatomica o forte squilibrio tra classi.
+L’\textbf{Attention U-Net} \ref{fig:attention_unet} rappresenta una naturale estensione della classica architettura U-Net, progettata per migliorare la capacità del modello di concentrarsi sulle regioni di interesse più rilevanti all’interno dell’immagine. Introdotta da Oktay et al. nel 2018 \cite{oktay2018attention}, questa variante si basa sull’integrazione di \textbf{meccanismi di attenzione spaziale} nei percorsi di skip connection tra encoder e decoder. L’obiettivo principale è quello di guidare la rete nell’enfatizzare le strutture salienti e nel sopprimere attivamente le attivazioni inutili o irrilevanti, soprattutto in contesti caratterizzati da alta complessità anatomica o forte squilibrio tra classi.
 
 Nella U-Net tradizionale, le informazioni a bassa risoluzione estratte dall’encoder vengono concatenate direttamente con i feature map corrispondenti del decoder. Tuttavia, questo approccio assume che tutte le regioni abbiano pari rilevanza informativa, ignorando il fatto che non tutte le porzioni dell’immagine contribuiscono in egual misura alla segmentazione finale. L’Attention U-Net introduce quindi un \textbf{modulo di attenzione} che agisce come un filtro “intelligente”: prima della concatenazione, il modello valuta l’importanza di ciascuna regione mediante un \textit{gating mechanism}, che calcola mappe di attenzione specifiche per ogni livello di skip connection.
 
+\begin{figure}[H] 
+  	\centering 
+ 	\includegraphics[width=.8\textwidth]{images/2025-07-22-14-33-52.png} 
+    \caption{Shcema dell’Attention U-Net. Le frecce indicano il flusso di informazioni tra i moduli di encoder e decoder, con l’integrazione del modulo di attenzione.}
+    \label{fig:attention_unet}
+ \end{figure} 
 Dal punto di vista implementativo, il modulo di attenzione riceve in input due segnali: da un lato, le feature provenienti dal livello encoder (contenenti informazione spaziale locale); dall’altro, i segnali di gating dal decoder (contenenti informazione semantica più astratta). L’interazione tra questi due flussi genera una mappa di attenzione, applicata tramite moltiplicazione ai tensori encoder, prima della loro trasmissione al decoder. In questo modo, il decoder riceve solo le informazioni più rilevanti per la predizione finale.
 
-Nel contesto del presente lavoro, nonostante un aumento moderato della complessità computazionale, il modello ha mostrato buone performance, raggiungendo un Dice score pari a \textbf{0.8415} nell’esperimento dedicato, con un miglioramento rispetto a modelli privi di attenzione.
+Nel contesto del presente lavoro, nonostante un aumento moderato della complessità computazionale, il modello ha mostrato buone performance, raggiungendo un Dice score pari a \textbf{0.8415} nell’esperimento dedicato.
 
 \Section{Esperimento Finale}
 
@@ -292,3 +302,7 @@ In queste condizioni, il modello ha raggiunto un Dice score pari a \textbf{0.912
     \caption{Esempi di segmentazione ottenuti con il modello finale (EXP 21). Le immagini mostrano le predizioni su diverse slice del test set, evidenziando la capacità del modello di identificare correttamente le aree di interesse.}
     \label{fig:final_segmentation_examples}
 \end{figure}
+
+\Subsection{Post-processing morfologico}
+
+Al fine di migliorare la coerenza spaziale delle segmentazioni generate dalla rete, è stato integrato un passaggio di \textit{post-processing} basato su operazioni morfologiche. In particolare, si è adottata la trasformazione \texttt{KeepLargestConnectedComponent} fornita dalla libreria MONAI, applicata esclusivamente alla classe del seno. Questa trasformazione consente di rimuovere piccole regioni frammentate, mantenendo soltanto la componente connessa di dimensione maggiore. Tale operazione ha un effetto simile a un \textit{closing morfologico}, contribuendo a rendere le segmentazioni più compatte e continue. A seguito di questo passaggio si osserva un incremento della metrica sul \textbf{set di test (da 0.9124 a 0.9156)}, a fronte di una lieve flessione nel \textbf{validation set (da 0.9193 a 0.9188)}.

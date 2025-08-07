@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  22 JUL 2025 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  7 AUG 2025 21:19
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -938,6 +938,11 @@ Package: enumitem 2025/02/06 v3.11 Customized lists
 \enit@inbox=\box68
 \enit@count@id=\count495
 \enitdp@description=\count496
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks39
+\verbatim@line=\toks40
+\verbatim@in@stream=\read4
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
@@ -973,7 +978,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) o
 \U@D=\dimen339
 \l@unhyphenated=\language91
  (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@readstream=\read4
+\bbl@readstream=\read5
 \bbl@dirlevel=\count500
  (/usr/local/texlive/2025/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2024/10/10 v.1.5.01 Italian support for the babel system
@@ -991,7 +996,7 @@ Class scrreprt Warning: Usage of package `parskip' together
 (scrreprt)              I'd suggest to use option
 (scrreprt)              `parskip' with one of it's several values.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `parskip' on input line 87.
+(scrreprt)              package `parskip' on input line 89.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
@@ -1006,7 +1011,7 @@ Class scrreprt Warning: Usage of package `titlesec' together
 (scrreprt)              and several others to re-configure section
 (scrreprt)              headings.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `titlesec' on input line 89.
+(scrreprt)              package `titlesec' on input line 91.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
@@ -1015,7 +1020,7 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \aftertitleunit=\skip99
 \ttl@plus=\dimen340
 \ttl@minus=\dimen341
-\ttl@toksa=\toks39
+\ttl@toksa=\toks41
 \titlewidth=\dimen342
 \titlewidthlast=\dimen343
 \titlewidthfirst=\dimen344
@@ -1043,7 +1048,7 @@ Package titlesec Warning: Non standard sectioning command \subparagraph
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count504
 \lst@gtempboxa=\box70
-\lst@token=\toks40
+\lst@token=\toks42
 \lst@length=\count505
 \lst@currlwidth=\dimen345
 \lst@column=\count506
@@ -1082,8 +1087,8 @@ Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
 \pgffor@iter=\dimen351
 \pgffor@skip=\dimen352
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
@@ -1116,12 +1121,7 @@ File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@expandcount=\count520
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
-))) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks43
-\verbatim@line=\toks44
-\verbatim@in@stream=\read5
-)
+)))
 \tcb@titlebox=\box76
 \tcb@upperbox=\box77
 \tcb@lowerbox=\box78
@@ -1739,7 +1739,7 @@ LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 5
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-<images/2025-07-07-09-52-55.png, id=160, 1927.2pt x 1036.87375pt>
+<images/2025-07-07-09-52-55.png, id=162, 1927.2pt x 1036.87375pt>
 File: images/2025-07-07-09-52-55.png Graphic file (type png)
 <use images/2025-07-07-09-52-55.png>
 Package pdftex.def Info: images/2025-07-07-09-52-55.png  used on input line 64.
@@ -1774,7 +1774,7 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 
 ]
-<figures/U-Net-architecture.png, id=178, 1560.83125pt x 1039.885pt>
+<figures/U-Net-architecture.png, id=180, 1560.83125pt x 1039.885pt>
 File: figures/U-Net-architecture.png Graphic file (type png)
 <use figures/U-Net-architecture.png>
 Package pdftex.def Info: figures/U-Net-architecture.png  used on input line 23.
@@ -1782,18 +1782,17 @@ Package pdftex.def Info: figures/U-Net-architecture.png  used on input line 23.
 
 
 [8]
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/FiraSans-OsF/regular/it' tried instead on input line 28.
-LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/it' will be
-(Font)              scaled to size 10.95pt on input line 28.
-
 
 [9 <./figures/u-net-architecture.png>]
-<images/2025-07-07-12-01-04.png, id=192, 1163.34625pt x 493.845pt>
+<images/2025-07-07-12-01-04.png, id=194, 1163.34625pt x 493.845pt>
 File: images/2025-07-07-12-01-04.png Graphic file (type png)
 <use images/2025-07-07-12-01-04.png>
 Package pdftex.def Info: images/2025-07-07-12-01-04.png  used on input line 50.
 (pdftex.def)             Requested size: 455.24417pt x 193.25435pt.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/it' tried instead on input line 55.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 10.95pt on input line 55.
 
 
 [10 <./images/2025-07-07-12-01-04.png>])
@@ -1819,10 +1818,14 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \openout5 = `HebdomonGuide.mtc'.
 
 (.aux/HebdomonGuide.mtc3)
-LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 7.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
-File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/b/n' in size <10.95> not available
+(Font)              Font shape `TS1/FiraSans-OsF/bold/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 10.95pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <8> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 7.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <12> not available
 (Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
@@ -1834,7 +1837,7 @@ LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
 
 
 
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}])
+])
 
 [13]
 \openout2 = `chap_4.aux'.
@@ -1867,19 +1870,28 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 \pydata@fh@0=\write8
 \openout8 = `_018679B249EA6FB07607F2451175FB2C.data.minted'.
 
-runsystem(latexminted config  --timestamp 20250722141419 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted config  --timestamp 20250807211925 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (.aux/_018679B249EA6FB07607F2451175FB2C.config.minted)
-runsystem(latexminted cleanconfig  --timestamp 20250722141419 018679B249EA6FB07607F2451175FB2C)...executed.
+runsystem(latexminted cleanconfig  --timestamp 20250807211925 018679B249EA6FB07607F2451175FB2C)...executed.
 
  (./.aux/_minted/default.style.minted) (./.aux/_minted/EE06B3036988ABCFB4E929BAB7BA860E.highlight.minted
 LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 3.
 ) (./.aux/_minted/C73E597D624552DC9972DF96F42FEFDD.highlight.minted
 
-[15]) (./.aux/_minted/1CDA2F1E7E1A290B32DD44F2AA2A8A25.highlight.minted) (./.aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted) (./.aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
+[15]) (./.aux/_minted/1CDA2F1E7E1A290B32DD44F2AA2A8A25.highlight.minted
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 5.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (./.aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted) (./.aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
 
-[16]) (./.aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted)
+[16{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) (./.aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted) (./.aux/_minted/A74CB242BBF3F1C6E3602245B15E9365.highlight.minted)
+Underfull \hbox (badness 10000) in paragraph at lines 136--157
+
+ []
+
+
 
 [17])
 
@@ -1924,87 +1936,96 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 [20]
 LaTeX Info: Symbol \textrightarrow not provided by
             font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 102.
+            Default family used instead on input line 106.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 103.
+            Default family used instead on input line 107.
 LaTeX Info: Symbol \textrightarrow not provided by
             font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 104.
-<images/2025-07-12-11-28-31.png, id=275, 578.16pt x 433.62pt>
+            Default family used instead on input line 108.
+
+
+[21]
+<images/2025-07-12-11-28-31.png, id=288, 578.16pt x 433.62pt>
 File: images/2025-07-12-11-28-31.png Graphic file (type png)
 <use images/2025-07-12-11-28-31.png>
-Package pdftex.def Info: images/2025-07-12-11-28-31.png  used on input line 118.
+Package pdftex.def Info: images/2025-07-12-11-28-31.png  used on input line 122.
 (pdftex.def)             Requested size: 273.14928pt x 204.86006pt.
 
 
-[21{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./.aux/_minted/C2D11D840D89DF93E5445D1389FE250D.highlight.minted
+[22{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc} <./images/2025-07-12-11-28-31.png>] (./.aux/_minted/C2D11D840D89DF93E5445D1389FE250D.highlight.minted)
 
-[22 <./images/2025-07-12-11-28-31.png>])
+[23]
 LaTeX Info: Symbol \textuparrow not provided by
             font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 195.
+            Default family used instead on input line 199.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
-(Font)              using `OT1/cmss/m/n' instead on input line 195.
+(Font)              using `OT1/cmss/m/n' instead on input line 199.
 
 
 LaTeX Font Warning: Font shape `TS1/cmss/b/n' undefined
 (Font)              using `TS1/cmss/m/n' instead
-(Font)              for symbol `textuparrow' on input line 195.
+(Font)              for symbol `textuparrow' on input line 199.
 
 LaTeX Info: Symbol \textuparrow not provided by
             font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 198.
+            Default family used instead on input line 202.
 LaTeX Info: Symbol \textuparrow not provided by
             font family FiraSans-OsF in TS1 encoding.
-            Default family used instead on input line 201.
-(./.aux/_minted/014032F586E2B3A9EB0E3E53B1DC7267.highlight.minted
+            Default family used instead on input line 205.
+(./.aux/_minted/014032F586E2B3A9EB0E3E53B1DC7267.highlight.minted)
 
-[23{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}])
+[24{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+<images/2025-07-22-14-33-52.png, id=312, 1599.9775pt x 739.76375pt>
+File: images/2025-07-22-14-33-52.png Graphic file (type png)
+<use images/2025-07-22-14-33-52.png>
+Package pdftex.def Info: images/2025-07-22-14-33-52.png  used on input line 238.
+(pdftex.def)             Requested size: 364.19672pt x 168.38116pt.
 
-[24]
-<figures/losses.png, id=304, 1156.32pt x 650.43pt>
+
+[25 <./images/2025-07-22-14-33-52.png>]
+<figures/losses.png, id=322, 1156.32pt x 650.43pt>
 File: figures/losses.png Graphic file (type png)
 <use figures/losses.png>
-Package pdftex.def Info: figures/losses.png  used on input line 243.
+Package pdftex.def Info: figures/losses.png  used on input line 253.
 (pdftex.def)             Requested size: 218.51524pt x 122.9081pt.
 
-Underfull \hbox (badness 7238) in paragraph at lines 244--244
+Underfull \hbox (badness 7379) in paragraph at lines 254--254
 \OT1/FiraSans-OsF/regular/n/10.95 du-ran-te il trai-ning del-l'e-spe-ri-
  []
 
-<figures/metrics.png, id=305, 1156.32pt x 650.43pt>
+<figures/metrics.png, id=323, 1156.32pt x 650.43pt>
 File: figures/metrics.png Graphic file (type png)
 <use figures/metrics.png>
-Package pdftex.def Info: figures/metrics.png  used on input line 252.
+Package pdftex.def Info: figures/metrics.png  used on input line 262.
 (pdftex.def)             Requested size: 218.51524pt x 122.9081pt.
-<figures/slice_017.png, id=308, 324.4923pt x 339.669pt>
+<figures/slice_017.png, id=326, 324.4923pt x 339.669pt>
 File: figures/slice_017.png Graphic file (type png)
 <use figures/slice_017.png>
-Package pdftex.def Info: figures/slice_017.png  used on input line 288.
+Package pdftex.def Info: figures/slice_017.png  used on input line 298.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_041.png, id=309, 324.4923pt x 339.669pt>
+<figures/slice_041.png, id=327, 324.4923pt x 339.669pt>
 File: figures/slice_041.png Graphic file (type png)
 <use figures/slice_041.png>
-Package pdftex.def Info: figures/slice_041.png  used on input line 289.
+Package pdftex.def Info: figures/slice_041.png  used on input line 299.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_089.png, id=310, 324.4923pt x 339.669pt>
+<figures/slice_089.png, id=328, 324.4923pt x 339.669pt>
 File: figures/slice_089.png Graphic file (type png)
 <use figures/slice_089.png>
-Package pdftex.def Info: figures/slice_089.png  used on input line 290.
+Package pdftex.def Info: figures/slice_089.png  used on input line 300.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-<figures/slice_131.png, id=311, 324.4923pt x 339.669pt>
+<figures/slice_131.png, id=329, 324.4923pt x 339.669pt>
 File: figures/slice_131.png Graphic file (type png)
 <use figures/slice_131.png>
-Package pdftex.def Info: figures/slice_131.png  used on input line 291.
+Package pdftex.def Info: figures/slice_131.png  used on input line 301.
 (pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
-)
 
-[25 <./figures/losses.png> <./figures/metrics.png>]
 
-[26 <./figures/slice_017.png> <./figures/slice_041.png> <./figures/slice_089.png> <./figures/slice_131.png>]
+[26 <./figures/losses.png> <./figures/metrics.png>])
+
+[27 <./figures/slice_017.png> <./figures/slice_041.png> <./figures/slice_089.png> <./figures/slice_131.png>]
 \openout2 = `chap_6.aux'.
 
  (./chap_6.tex
@@ -2026,16 +2047,16 @@ Class scrreprt Warning: Redefinition of \@makechapterhead detected.
 
 (.aux/HebdomonGuide.mtc6)
 
-[27
+[28
 
 
 
 
 ]
 
-[28])
+[29])
 
-[29]
+[30]
 
 Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 (scrreprt)              Note: KOMA-Script does use styles for commands like
@@ -2053,7 +2074,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 
 
-[30
+[31
 
 
 
@@ -2075,7 +2096,7 @@ Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
 
 
 
-[31
+[32
 
 ]
 chapter without number
@@ -2112,7 +2133,7 @@ Package minitoc(hints) Warning: W0024
 
 
 
-[32
+[33
 
 ] (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux) (.aux/chap_6.aux))
  ***********
@@ -2128,18 +2149,18 @@ Package logreq Info: Writing requests to 'HebdomonGuide.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 64947 strings out of 467886
- 1526255 string characters out of 5434045
- 2639595 words of memory out of 5000000
- 92434 multiletter control sequences out of 15000+600000
- 708082 words of font info for 84 fonts, out of 8000000 for 9000
+ 64985 strings out of 467886
+ 1527598 string characters out of 5434045
+ 2643999 words of memory out of 5000000
+ 92463 multiletter control sequences out of 15000+600000
+ 712571 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,14n,131p,10979b,2193s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
-Output written on .aux/HebdomonGuide.pdf (32 pages, 3092251 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
+Output written on .aux/HebdomonGuide.pdf (33 pages, 3589247 bytes).
 PDF statistics:
- 603 PDF objects out of 1000 (max. 8388607)
- 496 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 500000)
- 532 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 625 PDF objects out of 1000 (max. 8388607)
+ 515 compressed objects within 6 object streams
+ 99 named destinations out of 1000 (max. 500000)
+ 545 words of extra memory for PDF output out of 10000 (max. 10000000)
 

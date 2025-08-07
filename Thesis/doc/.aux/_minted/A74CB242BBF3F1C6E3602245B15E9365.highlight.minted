@@ -1,0 +1,16 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
++\PYGZhy{}\PYGZhy{}\PYG{+w}{ }exp\PYGZus{}i/
+\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }log.txt
+\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }loss\PYGZus{}curve.png
+\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }metric\PYGZus{}curve.png
+\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }best\PYGZus{}model.pth
+\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }predictions/
+\PYG{p}{|}\PYG{+w}{       }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }case\PYGZus{}001/
+\PYG{p}{|}\PYG{+w}{       }\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }slice\PYGZus{}01.png
+\PYG{p}{|}\PYG{+w}{       }\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }slice\PYGZus{}02.png
+\PYG{p}{|}\PYG{+w}{       }\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }...
+\PYG{p}{|}\PYG{+w}{       }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }case\PYGZus{}002/
+\PYG{p}{|}\PYG{+w}{       }\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }slice\PYGZus{}01.png
+\PYG{p}{|}\PYG{+w}{       }\PYG{p}{|}\PYG{+w}{   }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }...
+\PYG{p}{|}\PYG{+w}{       }+\PYGZhy{}\PYGZhy{}\PYG{+w}{ }...
+\end{MintedVerbatim}

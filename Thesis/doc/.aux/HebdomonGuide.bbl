@@ -17,6 +17,26 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global/global}
+  \entry{MarcoCantone}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=CM}{%
+         family={Cantone},
+         familyi={C\bibinitperiod},
+         given={Marco},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CM1}
+    \strng{fullhash}{CM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{note}{Unpublished internal software, University of Cassino}
+    \field{title}{Experimental Framework for 3D MRI Segmentation}
+    \field{year}{2025}
+  \endentry
+
   \entry{cardoso2022monai}{misc}{}{}
     \true{moreauthor}
     \true{morelabelname}
@@ -244,6 +264,82 @@
     \field{volume}{14}
     \field{journaltitle}{Scientific Reports}
     \field{year}{2024}
+  \endentry
+
+  \entry{oktay2018attention}{inproceedings}{}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{10}{}{%
+      {{hash=OO}{%
+         family={Oktay},
+         familyi={O\bibinitperiod},
+         given={Ozan},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=SJ}{%
+         family={Schlemper},
+         familyi={S\bibinitperiod},
+         given={Jo},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FLL}{%
+         family={Folgoc},
+         familyi={F\bibinitperiod},
+         given={Loic\bibnamedelima Le},
+         giveni={L\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=LM}{%
+         family={Lee},
+         familyi={L\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HM}{%
+         family={Heinrich},
+         familyi={H\bibinitperiod},
+         given={Mattias},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Misawa},
+         familyi={M\bibinitperiod},
+         given={Kazunari},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MK}{%
+         family={Mori},
+         familyi={M\bibinitperiod},
+         given={Kensaku},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=MS}{%
+         family={McDonagh},
+         familyi={M\bibinitperiod},
+         given={Steven},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=HN}{%
+         family={Hammerla},
+         familyi={H\bibinitperiod},
+         given={Nils},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=KB}{%
+         family={Kainz},
+         familyi={K\bibinitperiod},
+         given={Bernhard},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{OO+1}
+    \strng{fullhash}{OOSJFLLLMHMMKMKMSHNKB+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{O}
+    \field{sortinithash}{O}
+    \field{booktitle}{arXiv preprint arXiv:1804.03999}
+    \field{title}{Attention U-Net: Learning Where to Look for the Pancreas}
+    \field{year}{2018}
   \endentry
 \enddatalist
 \endinput

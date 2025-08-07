@@ -7,7 +7,7 @@
 \contentsline {chapter}{\numberline {2}\textcolor {mciBlue}{Background e Stato dell'Arte}}{7}{chapter.2}%
 \contentsline {section}{\numberline {2.1}\textcolor {mciBlue}{L’Evoluzione delle Tecniche di Segmentazione}}{7}{section.2.1}%
 \contentsline {section}{\numberline {2.2}\textcolor {mciBlue}{Architettura U-Net per la Segmentazione di Immagini Mediche}}{8}{section.2.2}%
-\contentsline {section}{\numberline {2.3}\textcolor {mciBlue}{Strumenti e Dataset Moderni}}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.3}\textcolor {mciBlue}{Strumenti e Dataset Moderni}}{9}{section.2.3}%
 \contentsline {section}{\numberline {2.4}\textcolor {mciBlue}{Stato dell'Arte nella Segmentazione del Seno in MRI 3D}}{10}{section.2.4}%
 \contentsline {chapter}{\numberline {3}\textcolor {mciBlue}{Dataset: Duke Breast Cancer MRI}}{12}{chapter.3}%
 \contentsline {section}{\numberline {3.1}\textcolor {mciBlue}{Composizione del Dataset}}{12}{section.3.1}%
@@ -25,19 +25,20 @@
 \contentsline {section}{\numberline {4.2}\textcolor {mciBlue}{Gestione del Logging}}{17}{section.4.2}%
 \contentsline {chapter}{\numberline {5}\textcolor {mciBlue}{Esperimenti}}{19}{chapter.5}%
 \contentsline {section}{\numberline {5.1}\textcolor {mciBlue}{Introduzione}}{19}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}\textcolor {mciBlue}{Nota sulle Valutazioni}}{19}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.1}\textcolor {mciBlue}{Nota sulle Valutazioni}}{20}{subsection.5.1.1}%
 \contentsline {section}{\numberline {5.2}\textcolor {mciBlue}{Impostazione degli Esperimenti}}{20}{section.5.2}%
 \contentsline {section}{\numberline {5.3}\textcolor {mciBlue}{Evoluzione Architetturale e Tuning degli Iperparametri}}{20}{section.5.3}%
-\contentsline {section}{\numberline {5.4}\textcolor {mciBlue}{Strategia Alternativa: Approccio 2D e Architettura SliceUNet}}{22}{section.5.4}%
-\contentsline {section}{\numberline {5.5}\textcolor {mciBlue}{Ritorno all’approccio 3D: Affinamento e Validazione}}{23}{section.5.5}%
-\contentsline {section}{\numberline {5.6}\textcolor {mciBlue}{Nuovo approccio di Valutazione}}{23}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}\textcolor {mciBlue}{L’Attention U-Net}}{24}{subsection.5.6.1}%
-\contentsline {section}{\numberline {5.7}\textcolor {mciBlue}{Esperimento Finale}}{25}{section.5.7}%
-\contentsline {chapter}{\numberline {6}\textcolor {mciBlue}{Conclusioni}}{27}{chapter.6}%
-\contentsline {section}{\numberline {6.1}\textcolor {mciBlue}{Sintesi del Percorso Sperimentale}}{27}{section.6.1}%
-\contentsline {section}{\numberline {6.2}\textcolor {mciBlue}{Risultato Finale e Implicazioni Cliniche}}{27}{section.6.2}%
-\contentsline {section}{\numberline {6.3}\textcolor {mciBlue}{Possibili Downstream Task}}{28}{section.6.3}%
-\contentsline {section}{\numberline {6.4}\textcolor {mciBlue}{Prospettive di Sviluppo Futuro}}{28}{section.6.4}%
-\contentsline {section}{\numberline {6.5}\textcolor {mciBlue}{Riflessione Conclusiva}}{29}{section.6.5}%
-\contentsline {chapter}{\nonumberline Bibliografia}{32}{chapter*.18}%
+\contentsline {section}{\numberline {5.4}\textcolor {mciBlue}{Strategia Alternativa: Approccio 2D e Architettura SliceUNet}}{23}{section.5.4}%
+\contentsline {section}{\numberline {5.5}\textcolor {mciBlue}{Ritorno all’approccio 3D: Affinamento e Validazione}}{24}{section.5.5}%
+\contentsline {section}{\numberline {5.6}\textcolor {mciBlue}{Nuovo approccio di Valutazione}}{24}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}\textcolor {mciBlue}{L’Attention U-Net}}{25}{subsection.5.6.1}%
+\contentsline {section}{\numberline {5.7}\textcolor {mciBlue}{Esperimento Finale}}{26}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}\textcolor {mciBlue}{Post-processing morfologico}}{27}{subsection.5.7.1}%
+\contentsline {chapter}{\numberline {6}\textcolor {mciBlue}{Conclusioni}}{28}{chapter.6}%
+\contentsline {section}{\numberline {6.1}\textcolor {mciBlue}{Sintesi del Percorso Sperimentale}}{28}{section.6.1}%
+\contentsline {section}{\numberline {6.2}\textcolor {mciBlue}{Risultato Finale e Implicazioni Cliniche}}{28}{section.6.2}%
+\contentsline {section}{\numberline {6.3}\textcolor {mciBlue}{Possibili Downstream Task}}{29}{section.6.3}%
+\contentsline {section}{\numberline {6.4}\textcolor {mciBlue}{Prospettive di Sviluppo Futuro}}{29}{section.6.4}%
+\contentsline {section}{\numberline {6.5}\textcolor {mciBlue}{Riflessione Conclusiva}}{30}{section.6.5}%
+\contentsline {chapter}{\nonumberline Bibliografia}{33}{chapter*.19}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

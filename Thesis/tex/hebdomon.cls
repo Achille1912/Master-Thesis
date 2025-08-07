@@ -77,6 +77,8 @@
 
 \RequirePackage{enumitem}
 
+\usepackage{verbatim}
+
 \RequirePackage{amsmath}
 
 \usepackage[labelfont=bf]{caption} % Set the caption style to bold

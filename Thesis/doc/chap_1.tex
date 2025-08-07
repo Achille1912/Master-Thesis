@@ -1,17 +1,17 @@
 \Chapter{Introduzione}
 \Section{Contesto}
 
-La segmentazione di strutture anatomiche in immagini mediche 3D rappresenta un task importante nell’ambito clinico e diagnostico. In particolare la segmentazione del seno da immagini MRI (Magnetic Resonance Imaging) 3D è un task complesso, ma essenziale per applicazioni come la pianificazione di interventi chirugici o l’analisi di anomalie tessutali.
+La segmentazione di strutture anatomiche in immagini mediche 3D rappresenta un task importante nell’ambito clinico e diagnostico. In particolare la segmentazione del seno da immagini \textbf{MRI (Magnetic Resonance Imaging) 3D} è un task complesso, ma essenziale per applicazioni come la pianificazione di interventi chirugici o l’analisi di anomalie tessutali.
 
 In passato, la segmentazione del seno in immagini MRI 3D veniva effettuata principalmente con \textbf{metodi classici}, spesso semi-automatici o manuali, basati su:
 
 \begin{itemize}
-	\item \hlight{Approcci a soglia} (thresholding) e \hlight{region-growing}, che sfruttavano differenze di intensità tra tessuti ma richiedevano regolazioni manuali e fallivano in presenza di rumore o basso contrasto.
-	\item \hlight{Deformable models} (es.: Active Contours) e \hlight{algoritmi a clustering} (es.: k-means), sensibili all’inizializzazione e poco robusti alla variabilità anatomica.
-	\item Metodi \hlight{atlas-based}, che allineavano immagini a template pre-annotati, limitati però dalla diversità inter-paziente.
+	\item \textbf{Approcci a soglia} (thresholding) e \textbf{region-growing}, che sfruttavano differenze di intensità tra tessuti ma richiedevano regolazioni manuali e fallivano in presenza di rumore o basso contrasto.
+	\item \textbf{Deformable models} (es.: Active Contours) e \textbf{algoritmi a clustering} (es.: k-means), sensibili all’inizializzazione e poco robusti alla variabilità anatomica.
+	\item Metodi \textbf{atlas-based}, che allineavano immagini a template pre-annotati, limitati però dalla diversità inter-paziente.
 \end{itemize}
 
-Con l’avvento del \textbf{deep learning}, in particolar modo delle \textbf{reti convoluzionali} e di architetture come \hlight{U-Net 3D} \cite{chen2021transunet}, la segmentazione del seno ha raggiunto livelli di accuratezza più alti rispetto al passato. 
+Con l’avvento del \textbf{deep learning}, in particolar modo delle \textbf{reti convoluzionali} e di architetture come \textbf{U-Net 3D} \cite{chen2021transunet}, la segmentazione del seno ha raggiunto livelli di accuratezza più alti rispetto al passato. 
 
 
 
@@ -24,14 +24,14 @@ L’obiettivo principale del tirocinio è stato quello di sperimentare e ottimiz
 
 Le principali attività svolte sono state:
 \begin{itemize}
-    \item \textbf{Pre-processing} dei dati in formato DICOM, con conversione in formato leggibile da MONAI e normalizzazione delle immagini.
-    \item Composizione e validazione di un dataset bilanciato, con partizionamento in training, validation e test set.
+    \item \textbf{Pre-processing} dei dati in formato \textbf{DICOM}, con conversione in formato leggibile da \textbf{MONAI} e normalizzazione delle immagini.
+    \item Composizione e validazione di un dataset bilanciato, con partizionamento in \textbf{training}, \textbf{validation} e \textbf{test} \textbf{set}.
     \item Studio e implementazione di modelli di segmentazione basati su architetture tra cui \textbf{UNet} e \textbf{AttentionUNet}.
     \item Configurazione degli esperimenti, \textbf{tuning degli iperparametri} e addestramento dei modelli in ambiente GPU.
-    \item Valutazione delle prestazioni mediante metriche standard come Dice Score
+    \item Valutazione delle prestazioni mediante metriche standard come \textbf{Dice Score}
 \end{itemize}
 
-Sono state inoltre affrontate e risolte diverse problematiche tecniche legate alla gestione dei metadati DICOM, alla compatibilità tra i formati di input, e alla gestione efficiente della memoria in fase di training. L'intero lavoro è stato documentato e riproducibile mediante script \textbf{Python} e configurazioni \textbf{YAML}.
+Sono state inoltre affrontate e risolte diverse problematiche tecniche legate alla gestione dei metadati \textbf{DICOM}, alla compatibilità tra i formati di input, e alla gestione efficiente della memoria in fase di training. L'intero lavoro è stato documentato e riproducibile mediante script \textbf{Python} e configurazioni \textbf{YAML}.
 
 
 	
@@ -39,15 +39,15 @@ Sono state inoltre affrontate e risolte diverse problematiche tecniche legate al
 Sono stati impiegati diversi strumenti software e librerie  fondamentali per la gestione, il pre-processing e l'elaborazione di immagini medicali, nonché per lo sviluppo e il training di modelli di deep learning.
 \begin{itemize}
 	\item  Il linguaggio principale di lavoro è stato \textbf{Python}, scelto per la sua flessibilità e per l'ampio ecosistema di librerie scientifiche.
-	\item Per la manipolazione delle immagini DICOM è stata utilizzata la libreria \textbf{MONAI} (Medical Open Network for AI), un framework open-source basato su PyTorch e progettato specificamente per applicazioni di imaging medicale. MONAI ha permesso di gestire agevolmente il caricamento dei dati, le trasformazioni e la normalizzazione delle immagini, grazie a un sistema modulare di trasformazioni componibili.
-	\item Il framework di deep learning impiegato è stato \textbf{PyTorch}, scelto per la sua semplicità d'uso, il supporto attivo della community e le sue prestazioni elevate, specialmente in combinazione con l'accelerazione GPU fornita da CUDA.
-	\item Lo sviluppo del codice è stato realizzato su una macchina Linux, con accesso remoto e con l'ausilio dell'editor \textbf{Visual Studio Code}.
+	\item Per la manipolazione delle immagini \textbf{DICOM} è stata utilizzata la libreria \textbf{MONAI} (\textbf{Medical Open Network for AI}), un framework open-source basato su \textbf{PyTorch} e progettato specificamente per applicazioni di imaging medicale. MONAI ha permesso di gestire agevolmente il caricamento dei dati, le trasformazioni e la normalizzazione delle immagini, grazie a un sistema modulare di trasformazioni componibili.
+	\item Il framework di deep learning impiegato è stato \textbf{PyTorch}, scelto per la sua semplicità d'uso, il supporto attivo della community e le sue prestazioni elevate, specialmente in combinazione con l'accelerazione GPU fornita da \textbf{CUDA}.
+	\item Lo sviluppo del codice è stato realizzato su una macchina \textbf{Linux}, con accesso remoto e con l'ausilio dell'editor \textbf{Visual Studio Code}.
 \end{itemize}
 
 
-Per sperimentare le varie pipeline, ho avuto accesso alla potenza di calcolo delle \textbf{GPU universitarie}, dedicate a progetti di ricerca in deep learning. Per sfruttare queste risorse, ho utilizzato il protocollo \textbf{SSH} (Secure Shell) \ref{fig:gpu_info} per connettermi in remoto ai server e gestire l’esecuzione dei miei esperimenti.
+Per sperimentare le varie pipeline, ho avuto accesso alla potenza di calcolo delle \textbf{GPU universitarie}, dedicate a progetti di ricerca in \textbf{deep learning}. Per sfruttare queste risorse, ho utilizzato il protocollo \textbf{SSH} (Secure Shell) \ref{fig:gpu_info} per connettermi in remoto ai server e gestire l’esecuzione dei miei esperimenti.
 
-Il sistema era dotato di 4 GPU NVIDIA (modello Tesla V100 o A100, a seconda della disponibilità), condivise tra diversi utenti del dipartimento. Per evitare conflitti nell’allocazione delle risorse, è stato necessario prenotare in anticipo le GPU tramite un sistema di schedulazione interno, basato su code di priorità.
+Il sistema era dotato di \hlight{4 GPU NVIDIA} (modello Tesla V100 o A100, a seconda della disponibilità), condivise tra diversi utenti del dipartimento. Per evitare conflitti nell’allocazione delle risorse, è stato necessario prenotare in anticipo le GPU tramite un sistema di schedulazione interno, basato su code di priorità.
 
 Nel dettaglio, il nodo su cui ho lavorato disponeva delle seguenti GPU:
 \begin{itemize}
