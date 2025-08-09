@@ -1,0 +1,25 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{from}\PYG{+w}{ }\PYG{n+nn}{scipy.ndimage}\PYG{+w}{ }\PYG{k+kn}{import} \PYG{n}{binary\PYGZus{}closing}
+\PYG{k+kn}{from}\PYG{+w}{ }\PYG{n+nn}{monai.transforms}\PYG{+w}{ }\PYG{k+kn}{import} \PYG{n}{MapTransform}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{torch}
+\PYG{k+kn}{import}\PYG{+w}{ }\PYG{n+nn}{numpy}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n+nn}{np}
+
+\PYG{k}{class}\PYG{+w}{ }\PYG{n+nc}{MorphologicalClosing}\PYG{p}{():}
+    \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{dim}\PYG{o}{=}\PYG{l+m+mi}{12}\PYG{p}{):}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dim} \PYG{o}{=} \PYG{n}{dim}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{structure} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{ones}\PYG{p}{((}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dim}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dim}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{dim}\PYG{p}{),} \PYG{n}{dtype}\PYG{o}{=}\PYG{n+nb}{bool}\PYG{p}{)}
+    \PYG{k}{def}\PYG{+w}{ }\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}call\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{x}\PYG{p}{):}
+        \PYG{n}{device} \PYG{o}{=} \PYG{n}{x}\PYG{o}{.}\PYG{n}{device} \PYG{k}{if} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{Tensor}\PYG{p}{)} \PYG{k}{else} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{device}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}cpu\PYGZsq{}}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} convert to numpy}
+        \PYG{k}{if} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{Tensor}\PYG{p}{):}
+            \PYG{n}{x} \PYG{o}{=} \PYG{n}{x}\PYG{o}{.}\PYG{n}{cpu}\PYG{p}{()}\PYG{o}{.}\PYG{n}{numpy}\PYG{p}{()}
+        \PYG{c+c1}{\PYGZsh{} remove first dimension}
+        \PYG{n}{x} \PYG{o}{=} \PYG{n}{x}\PYG{o}{.}\PYG{n}{squeeze}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)} \PYG{k}{if} \PYG{n}{x}\PYG{o}{.}\PYG{n}{ndim} \PYG{o}{\PYGZgt{}} \PYG{l+m+mi}{3} \PYG{k}{else} \PYG{n}{x}
+        \PYG{n}{closed\PYGZus{}np} \PYG{o}{=} \PYG{n}{binary\PYGZus{}closing}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{structure}\PYG{o}{=}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{structure}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} re\PYGZhy{}add first dimension}
+        \PYG{n}{closed\PYGZus{}np} \PYG{o}{=} \PYG{n}{closed\PYGZus{}np}\PYG{p}{[}\PYG{k+kc}{None}\PYG{p}{,} \PYG{o}{...}\PYG{p}{]}
+        \PYG{c+c1}{\PYGZsh{} convert back to tensor and move to original device}
+        \PYG{n}{closed\PYGZus{}tensor} \PYG{o}{=} \PYG{n}{torch}\PYG{o}{.}\PYG{n}{tensor}\PYG{p}{(}\PYG{n}{closed\PYGZus{}np}\PYG{p}{,} \PYG{n}{dtype}\PYG{o}{=}\PYG{n}{torch}\PYG{o}{.}\PYG{n}{float32}\PYG{p}{,}
+                                    \PYG{n}{device}\PYG{o}{=}\PYG{n}{device}\PYG{p}{)}
+        \PYG{k}{return} \PYG{n}{closed\PYGZus{}tensor}
+\end{MintedVerbatim}

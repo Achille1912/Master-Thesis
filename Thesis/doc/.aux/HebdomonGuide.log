@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  7 AUG 2025 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.24)  9 AUG 2025 19:45
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -943,31 +943,39 @@ Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks39
 \verbatim@line=\toks40
 \verbatim@in@stream=\read4
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen329
+\WF@size=\dimen330
+\c@WF@wrappedlines=\count497
+\WF@box=\box69
+\WF@everypar=\toks41
+Package: wrapfig 2003/01/31  v 3.6
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen329
-\captionmargin=\dimen330
-\caption@leftmargin=\dimen331
-\caption@rightmargin=\dimen332
-\caption@width=\dimen333
-\caption@indent=\dimen334
-\caption@parindent=\dimen335
-\caption@hangindent=\dimen336
+\caption@tempdima=\dimen331
+\captionmargin=\dimen332
+\caption@leftmargin=\dimen333
+\caption@rightmargin=\dimen334
+\caption@width=\dimen335
+\caption@indent=\dimen336
+\caption@parindent=\dimen337
+\caption@hangindent=\dimen338
 Package caption Info: KOMA-Script document class detected.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption-koma.sto
 File: caption-koma.sto 2023/09/08 v2.0e Adaption of the caption package to the KOMA-Script document classes (AR)
 ))
-\c@caption@flags=\count497
-\c@continuedfloat=\count498
+\c@caption@flags=\count498
+\c@continuedfloat=\count499
 Package caption Info: hyperref package is loaded.
 Package caption Info: KOMA-Script scrextend package detected.
-\caption@addmargin@hsize=\dimen337
-\caption@addmargin@linewidth=\dimen338
+\caption@addmargin@hsize=\dimen339
+\caption@addmargin@linewidth=\dimen340
+Package caption Info: wrapfig package is loaded.
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2025/06/10 v25.10 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
-\babel@savecnt=\count499
+\babel@savecnt=\count500
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2043.
 LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2045.
 LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2047.
@@ -975,20 +983,20 @@ LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line
 LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2049.
 LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2051.
 LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2076.
-\U@D=\dimen339
+\U@D=\dimen341
 \l@unhyphenated=\language91
  (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read5
-\bbl@dirlevel=\count500
+\bbl@dirlevel=\count501
  (/usr/local/texlive/2025/texmf-dist/tex/generic/babel-italian/italian.ldf
 Language: italian 2024/10/10 v.1.5.01 Italian support for the babel system
  (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/locale/it/babel-italian.tex
 Package babel Info: Importing font and identification data for italian
 (babel)             from babel-it.ini. Reported on input line 11.
 )
-\it@lettering=\count501
-\it@doublequoteactive=\count502
-\it@ISOcompliance=\count503
+\it@lettering=\count502
+\it@doublequoteactive=\count503
+\it@ISOcompliance=\count504
 ))
 
 Class scrreprt Warning: Usage of package `parskip' together
@@ -996,7 +1004,7 @@ Class scrreprt Warning: Usage of package `parskip' together
 (scrreprt)              I'd suggest to use option
 (scrreprt)              `parskip' with one of it's several values.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `parskip' on input line 89.
+(scrreprt)              package `parskip' on input line 93.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
@@ -1011,19 +1019,19 @@ Class scrreprt Warning: Usage of package `titlesec' together
 (scrreprt)              and several others to re-configure section
 (scrreprt)              headings.
 (scrreprt)              Nevertheless, using requested
-(scrreprt)              package `titlesec' on input line 91.
+(scrreprt)              package `titlesec' on input line 95.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box69
+\ttl@box=\box70
 \beforetitleunit=\skip98
 \aftertitleunit=\skip99
-\ttl@plus=\dimen340
-\ttl@minus=\dimen341
-\ttl@toksa=\toks41
-\titlewidth=\dimen342
-\titlewidthlast=\dimen343
-\titlewidthfirst=\dimen344
+\ttl@plus=\dimen342
+\ttl@minus=\dimen343
+\ttl@toksa=\toks42
+\titlewidth=\dimen344
+\titlewidthlast=\dimen345
+\titlewidthfirst=\dimen346
 
 
 Package titlesec Warning: Non standard sectioning command \section
@@ -1046,25 +1054,25 @@ Package titlesec Warning: Non standard sectioning command \subparagraph
 (titlesec)                detected. Using default spacing and no format.
 
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count504
-\lst@gtempboxa=\box70
-\lst@token=\toks42
-\lst@length=\count505
-\lst@currlwidth=\dimen345
-\lst@column=\count506
-\lst@pos=\count507
-\lst@lostspace=\dimen346
-\lst@width=\dimen347
-\lst@newlines=\count508
-\lst@lineno=\count509
-\lst@maxwidth=\dimen348
+\lst@mode=\count505
+\lst@gtempboxa=\box71
+\lst@token=\toks43
+\lst@length=\count506
+\lst@currlwidth=\dimen347
+\lst@column=\count507
+\lst@pos=\count508
+\lst@lostspace=\dimen348
+\lst@width=\dimen349
+\lst@newlines=\count509
+\lst@lineno=\count510
+\lst@maxwidth=\dimen350
  (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstpatch.sty
 File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
-\c@lstnumber=\count510
-\lst@skipnumbers=\count511
-\lst@framebox=\box71
+\c@lstnumber=\count511
+\lst@skipnumbers=\count512
+\lst@framebox=\box72
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/09/23 1.10c listings configuration
 ))
@@ -1079,62 +1087,62 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 File: pgfmoduleplot.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2023-01-15 v3.1.10 (3.1.10)
-\pgf@nodesepstart=\dimen349
-\pgf@nodesepend=\dimen350
+\pgf@nodesepstart=\dimen351
+\pgf@nodesepend=\dimen352
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2023-01-15 v3.1.10 (3.1.10)
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2023-01-15 v3.1.10 (3.1.10)
-\pgffor@iter=\dimen351
-\pgffor@skip=\dimen352
-\pgffor@stack=\toks43
-\pgffor@toks=\toks44
+\pgffor@iter=\dimen353
+\pgffor@skip=\dimen354
+\pgffor@stack=\toks44
+\pgffor@toks=\toks45
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgf@plot@mark@count=\count512
-\pgfplotmarksize=\dimen353
+\pgf@plot@mark@count=\count513
+\pgfplotmarksize=\dimen355
 )
-\tikz@lastx=\dimen354
-\tikz@lasty=\dimen355
-\tikz@lastxsaved=\dimen356
-\tikz@lastysaved=\dimen357
-\tikz@lastmovetox=\dimen358
-\tikz@lastmovetoy=\dimen359
-\tikzleveldistance=\dimen360
-\tikzsiblingdistance=\dimen361
-\tikz@figbox=\box72
-\tikz@figbox@bg=\box73
-\tikz@tempbox=\box74
-\tikz@tempbox@bg=\box75
-\tikztreelevel=\count513
-\tikznumberofchildren=\count514
-\tikznumberofcurrentchild=\count515
-\tikz@fig@count=\count516
+\tikz@lastx=\dimen356
+\tikz@lasty=\dimen357
+\tikz@lastxsaved=\dimen358
+\tikz@lastysaved=\dimen359
+\tikz@lastmovetox=\dimen360
+\tikz@lastmovetoy=\dimen361
+\tikzleveldistance=\dimen362
+\tikzsiblingdistance=\dimen363
+\tikz@figbox=\box73
+\tikz@figbox@bg=\box74
+\tikz@tempbox=\box75
+\tikz@tempbox@bg=\box76
+\tikztreelevel=\count514
+\tikznumberofchildren=\count515
+\tikznumberofcurrentchild=\count516
+\tikz@fig@count=\count517
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfmatrixcurrentrow=\count517
-\pgfmatrixcurrentcolumn=\count518
-\pgf@matrix@numberofcolumns=\count519
+\pgfmatrixcurrentrow=\count518
+\pgfmatrixcurrentcolumn=\count519
+\pgf@matrix@numberofcolumns=\count520
 )
-\tikz@expandcount=\count520
+\tikz@expandcount=\count521
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )))
-\tcb@titlebox=\box76
-\tcb@upperbox=\box77
-\tcb@lowerbox=\box78
-\tcb@phantombox=\box79
-\c@tcbbreakpart=\count521
-\c@tcblayer=\count522
-\c@tcolorbox@number=\count523
-\l__tcobox_tmpa_box=\box80
-\l__tcobox_tmpa_dim=\dimen362
-\tcb@temp=\box81
+\tcb@titlebox=\box77
+\tcb@upperbox=\box78
+\tcb@lowerbox=\box79
+\tcb@phantombox=\box80
+\c@tcbbreakpart=\count522
+\c@tcblayer=\count523
+\c@tcolorbox@number=\count524
+\l__tcobox_tmpa_box=\box81
+\l__tcobox_tmpa_dim=\dimen364
 \tcb@temp=\box82
 \tcb@temp=\box83
 \tcb@temp=\box84
+\tcb@temp=\box85
  (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbminted.code.tex
 Library (tcolorbox): 'tcbminted.code.tex' version '6.6.0'
 (/usr/local/texlive/2025/texmf-dist/tex/latex/minted/minted.sty
@@ -1147,93 +1155,93 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 Package: fvextra 2025/05/29 v1.13.2 fvextra - extensions and patches for fancyvrb
  (/usr/local/texlive/2025/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
-\FV@CodeLineNo=\count524
+\FV@CodeLineNo=\count525
 \FV@InFile=\read6
-\FV@TabBox=\box85
-\c@FancyVerbLine=\count525
-\FV@StepNumber=\count526
+\FV@TabBox=\box86
+\c@FancyVerbLine=\count526
+\FV@StepNumber=\count527
 \FV@OutFile=\write6
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2025/05/13 line numbers on paragraphs v5.5
-\linenopenalty=\count527
-\output=\toks45
-\linenoprevgraf=\count528
-\linenumbersep=\dimen363
-\linenumberwidth=\dimen364
-\c@linenumber=\count529
-\c@pagewiselinenumber=\count530
-\c@LN@truepage=\count531
-\c@internallinenumber=\count532
-\c@internallinenumbers=\count533
-\quotelinenumbersep=\dimen365
-\bframerule=\dimen366
-\bframesep=\dimen367
-\bframebox=\box86
-\@LN@amsmath@ams@eqpen=\count534
+\linenopenalty=\count528
+\output=\toks46
+\linenoprevgraf=\count529
+\linenumbersep=\dimen365
+\linenumberwidth=\dimen366
+\c@linenumber=\count530
+\c@pagewiselinenumber=\count531
+\c@LN@truepage=\count532
+\c@internallinenumber=\count533
+\c@internallinenumbers=\count534
+\quotelinenumbersep=\dimen367
+\bframerule=\dimen368
+\bframesep=\dimen369
+\bframebox=\box87
+\@LN@amsmath@ams@eqpen=\count535
 )
-\c@FancyVerbWriteLine=\count535
-\c@FancyVerbBufferLine=\count536
-\c@FV@TrueTabGroupLevel=\count537
-\c@FV@TrueTabCounter=\count538
-\FV@TabBox@Group=\box87
-\FV@bgcolorstructbox=\box88
+\c@FancyVerbWriteLine=\count536
+\c@FancyVerbBufferLine=\count537
+\c@FV@TrueTabGroupLevel=\count538
+\c@FV@TrueTabCounter=\count539
+\FV@TabBox@Group=\box88
+\FV@bgcolorstructbox=\box89
 \FV@TmpLength=\skip100
-\c@FV@HighlightLinesStart=\count539
-\c@FV@HighlightLinesStop=\count540
-\FV@LoopCount=\count541
-\FV@NCharsBox=\box89
-\FV@BreakIndent=\dimen368
-\FV@BreakIndentNChars=\count542
-\FV@BreakSymbolSepLeft=\dimen369
-\FV@BreakSymbolSepLeftNChars=\count543
-\FV@BreakSymbolSepRight=\dimen370
-\FV@BreakSymbolSepRightNChars=\count544
-\FV@BreakSymbolIndentLeft=\dimen371
-\FV@BreakSymbolIndentLeftNChars=\count545
-\FV@BreakSymbolIndentRight=\dimen372
-\FV@BreakSymbolIndentRightNChars=\count546
-\c@FancyVerbLineBreakLast=\count547
-\FV@LineBox=\box90
-\FV@LineIndentBox=\box91
-\c@FV@BreakBufferDepth=\count548
-\FV@LineWidth=\dimen373
+\c@FV@HighlightLinesStart=\count540
+\c@FV@HighlightLinesStop=\count541
+\FV@LoopCount=\count542
+\FV@NCharsBox=\box90
+\FV@BreakIndent=\dimen370
+\FV@BreakIndentNChars=\count543
+\FV@BreakSymbolSepLeft=\dimen371
+\FV@BreakSymbolSepLeftNChars=\count544
+\FV@BreakSymbolSepRight=\dimen372
+\FV@BreakSymbolSepRightNChars=\count545
+\FV@BreakSymbolIndentLeft=\dimen373
+\FV@BreakSymbolIndentLeftNChars=\count546
+\FV@BreakSymbolIndentRight=\dimen374
+\FV@BreakSymbolIndentRightNChars=\count547
+\c@FancyVerbLineBreakLast=\count548
+\FV@LineBox=\box91
+\FV@LineIndentBox=\box92
+\c@FV@BreakBufferDepth=\count549
+\FV@LineWidth=\dimen375
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/latex2pydata/latex2pydata.sty
 Package: latex2pydata 2025/03/26 v0.6.0 latex2pydata - write data to file in Python literal format
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks46
-\pgfopts@list@add@b@toks=\toks47
+\pgfopts@list@add@a@toks=\toks47
+\pgfopts@list@add@b@toks=\toks48
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count549
-\float@exts=\toks48
-\float@box=\box92
-\@float@everytoks=\toks49
-\@floatcapt=\box93
+\c@float@type=\count550
+\float@exts=\toks49
+\float@box=\box93
+\@float@everytoks=\toks50
+\@floatcapt=\box94
 )
-\c@minted@FancyVerbLineTemp=\count550
-\@float@every@listing=\toks50
-\c@listing=\count551
+\c@minted@FancyVerbLineTemp=\count551
+\@float@every@listing=\toks51
+\c@listing=\count552
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcblistingscore.code.tex
 Library (tcolorbox): 'tcblistingscore.code.tex' version '6.6.0'
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbprocessing.code.tex
 Library (tcolorbox): 'tcbprocessing.code.tex' version '6.6.0'
 )
-\c@tcblisting=\count552
+\c@tcblisting=\count553
 ))) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '6.6.0'
 (/usr/local/texlive/2025/texmf-dist/tex/latex/pdfcol/pdfcol.sty
 Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
 )
 Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
-\tcb@testbox=\box94
-\tcb@totalupperbox=\box95
-\tcb@totallowerbox=\box96
+\tcb@testbox=\box95
+\tcb@totalupperbox=\box96
+\tcb@totallowerbox=\box97
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
 Library (tcolorbox): 'tcbskins.code.tex' version '6.6.0'
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzfill.image.sty
@@ -1242,7 +1250,7 @@ Package: tikzfill.image 2023/08/08 v1.0.1 Image filling library for TikZ
 Package: tikzfill-common 2023/08/08 v1.0.1 Auxiliary code for tikzfill
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tikzfill/tikzlibraryfill.image.code.tex
 File: tikzlibraryfill.image.code.tex 2023/08/08 v1.0.1 Image filling library
-\l__tikzfill_img_box=\box97
+\l__tikzfill_img_box=\box98
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.6.0'
 )) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbtheorems.code.tex
@@ -1251,16 +1259,16 @@ Library (tcolorbox): 'tcbtheorems.code.tex' version '6.6.0'
 Library (tcolorbox): 'tcbhooks.code.tex' version '6.6.0'
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbraster.code.tex
 Library (tcolorbox): 'tcbraster.code.tex' version '6.6.0'
-\c@tcbrastercolumn=\count553
-\c@tcbrasterrow=\count554
-\c@tcbrasternum=\count555
-\c@tcbraster=\count556
+\c@tcbrastercolumn=\count554
+\c@tcbrasterrow=\count555
+\c@tcbrasternum=\count556
+\c@tcbraster=\count557
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcbfitting.code.tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '6.6.0'
-\tcbfitdim=\dimen374
-\tcb@lowerfitdim=\dimen375
-\tcb@upperfitdim=\dimen376
-\tcb@cur@hbadness=\count557
+\tcbfitdim=\dimen376
+\tcb@lowerfitdim=\dimen377
+\tcb@upperfitdim=\dimen378
+\tcb@cur@hbadness=\count558
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.6.0'
 (/usr/local/texlive/2025/texmf-dist/tex/latex/tcolorbox/tcblistings.code.tex
@@ -1284,43 +1292,43 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/pgfplots/pgfplots.sty (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
-\t@pgfplots@toka=\toks51
-\t@pgfplots@tokb=\toks52
-\t@pgfplots@tokc=\toks53
-\pgfplots@tmpa=\dimen377
-\c@pgfplots@coordindex=\count558
-\c@pgfplots@scanlineindex=\count559
+\t@pgfplots@toka=\toks52
+\t@pgfplots@tokb=\toks53
+\t@pgfplots@tokc=\toks54
+\pgfplots@tmpa=\dimen379
+\c@pgfplots@coordindex=\count559
+\c@pgfplots@scanlineindex=\count560
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary utilities for your pgf version...
-\t@pgf@toka=\toks54
-\t@pgf@tokb=\toks55
-\t@pgf@tokc=\toks56
+\t@pgf@toka=\toks55
+\t@pgf@tokb=\toks56
+\t@pgf@tokc=\toks57
 (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
-\c@pgfplotsarray@tmp=\count560
+\c@pgfplotsarray@tmp=\count561
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
-\c@pgfplotstable@counta=\count561
-\t@pgfplotstable@a=\toks57
+\c@pgfplotstable@counta=\count562
+\t@pgfplotstable@a=\toks58
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count562
+\c@pgfplotslibrarysurf@no=\count563
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen378
-\pgfdecoratedremainingdistance=\dimen379
-\pgfdecoratedinputsegmentcompleteddistance=\dimen380
-\pgfdecoratedinputsegmentremainingdistance=\dimen381
-\pgf@decorate@distancetomove=\dimen382
-\pgf@decorate@repeatstate=\count563
-\pgfdecorationsegmentamplitude=\dimen383
-\pgfdecorationsegmentlength=\dimen384
+\pgfdecoratedcompleteddistance=\dimen380
+\pgfdecoratedremainingdistance=\dimen381
+\pgfdecoratedinputsegmentcompleteddistance=\dimen382
+\pgfdecoratedinputsegmentremainingdistance=\dimen383
+\pgf@decorate@distancetomove=\dimen384
+\pgf@decorate@repeatstate=\count564
+\pgfdecorationsegmentamplitude=\dimen385
+\pgfdecorationsegmentlength=\dimen386
 )
-\tikz@lib@dec@box=\box98
+\tikz@lib@dec@box=\box99
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
-\pgfplots@numplots=\count564
-\pgfplots@xmin@reg=\dimen385
-\pgfplots@xmax@reg=\dimen386
-\pgfplots@ymin@reg=\dimen387
-\pgfplots@ymax@reg=\dimen388
-\pgfplots@zmin@reg=\dimen389
-\pgfplots@zmax@reg=\dimen390
+\pgfplots@numplots=\count565
+\pgfplots@xmin@reg=\dimen387
+\pgfplots@xmax@reg=\dimen388
+\pgfplots@ymin@reg=\dimen389
+\pgfplots@ymax@reg=\dimen390
+\pgfplots@zmin@reg=\dimen391
+\pgfplots@zmax@reg=\dimen392
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
@@ -1335,9 +1343,9 @@ runsystem(uname -s > "HebdomonGuide.w18")...executed.
 runsystem(rm -- "HebdomonGuide.w18")...executed.
 
 )
-\c@svg@param@lastpage=\count565
-\svg@box=\box99
-\c@svg@param@currpage=\count566
+\c@svg@param@lastpage=\count566
+\svg@box=\box100
+\c@svg@param@currpage=\count567
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2025-06-23 v1.6 Transparency with color stacks
  (/usr/local/texlive/2025/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
@@ -1352,33 +1360,33 @@ Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-
 Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
  (/usr/local/texlive/2025/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
-\collectedbox=\box100
+\collectedbox=\box101
 )
-\tc@llx=\dimen391
-\tc@lly=\dimen392
-\tc@urx=\dimen393
-\tc@ury=\dimen394
+\tc@llx=\dimen393
+\tc@lly=\dimen394
+\tc@urx=\dimen395
+\tc@ury=\dimen396
 Package trimclip Info: Using driver 'tc-pdftex.def'.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
 File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
 ))
-\adjbox@Width=\dimen395
-\adjbox@Height=\dimen396
-\adjbox@Depth=\dimen397
-\adjbox@Totalheight=\dimen398
-\adjbox@pwidth=\dimen399
-\adjbox@pheight=\dimen400
-\adjbox@pdepth=\dimen401
-\adjbox@ptotalheight=\dimen402
+\adjbox@Width=\dimen397
+\adjbox@Height=\dimen398
+\adjbox@Depth=\dimen399
+\adjbox@Totalheight=\dimen400
+\adjbox@pwidth=\dimen401
+\adjbox@pheight=\dimen402
+\adjbox@pdepth=\dimen403
+\adjbox@ptotalheight=\dimen404
  (/usr/local/texlive/2025/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count567
+\c@checkoddpage=\count568
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box101
-\sift@deathcycles=\count568
-\@vwid@loff=\dimen403
-\@vwid@roff=\dimen404
+\@vwid@box=\box102
+\sift@deathcycles=\count569
+\@vwid@loff=\dimen405
+\@vwid@roff=\dimen406
 )
 ==> First Aid for varwidth.sty applied!
 )
@@ -1386,8 +1394,8 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count569
-\@quotereset=\count570
+\@quotelevel=\count570
+\@quotereset=\count571
 Class scrreprt Info: loading recommended package `bookmark'.
 (scrreprt)           Using `bookmark' together with `hyperref' is recommended,
 (scrreprt)           because of handling of possible bookmark level gaps.
@@ -1400,7 +1408,7 @@ Class scrreprt Info: loading recommended package `bookmark'.
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count571
+\BKM@id=\count572
 ))
 LaTeX Font Info:    Trying to load font information for OT1+FiraSans-OsF on input line 7.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/fira/OT1FiraSans-OsF.fd
@@ -1468,30 +1476,30 @@ LaTeX Font Info:    ... okay on input line 7.
 
 (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count572
-\scratchdimen=\dimen405
-\scratchbox=\box102
-\nofMPsegments=\count573
-\nofMParguments=\count574
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count575
-\MPscratchDim=\dimen406
-\MPnumerator=\count576
-\makeMPintoPDFobject=\count577
-\everyMPtoPDFconversion=\toks59
+\scratchcounter=\count573
+\scratchdimen=\dimen407
+\scratchbox=\box103
+\nofMPsegments=\count574
+\nofMParguments=\count575
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count576
+\MPscratchDim=\dimen408
+\MPnumerator=\count577
+\makeMPintoPDFobject=\count578
+\everyMPtoPDFconversion=\toks60
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\c__nicematrix_shift_Ldots_last_row_dim=\dimen407
-\c__nicematrix_shift_exterior_Vdots_dim=\dimen408
-\c__nicematrix_innersep_middle_dim=\dimen409
-\c@tabularnotesi=\count578
-\enitdp@tabularnotes=\count579
-\c@tabularnotes*i=\count580
-\enitdp@tabularnotes*=\count581
+\c__nicematrix_shift_Ldots_last_row_dim=\dimen409
+\c__nicematrix_shift_exterior_Vdots_dim=\dimen410
+\c__nicematrix_innersep_middle_dim=\dimen411
+\c@tabularnotesi=\count579
+\enitdp@tabularnotes=\count580
+\c@tabularnotes*i=\count581
+\enitdp@tabularnotes*=\count582
 Package biblatex Info: Trying to load language 'italian'...
 Package biblatex Info: ... file 'italian.lbx' found.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/biblatex/lbx/italian.lbx
@@ -1510,8 +1518,8 @@ Package biblatex Info: ... file 'HebdomonGuide.bbl' found.
  (.aux/HebdomonGuide.bbl)
 Package biblatex Info: Reference section=0 on input line 7.
 Package biblatex Info: Reference segment=0 on input line 7.
-\c@mv@tabular=\count582
-\c@mv@boldtabular=\count583
+\c@mv@tabular=\count583
+\c@mv@boldtabular=\count584
 Package minitoc(hints) Info: I0049
 (minitoc(hints))             ==> You requested the hints option. 
 (minitoc(hints))             Some hints are eventually given below.
@@ -1551,16 +1559,679 @@ italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting
 italian.ldf    on input line 7.
 
-\c@lstlisting=\count584
+\c@lstlisting=\count585
 Package tocbasic Info: setting babel extension for `lol' on input line 7.
 \scr@dte@lstlisting@maxnumwidth=\skip101
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks60
-\inpenc@posthook=\toks61
+\inpenc@prehook=\toks61
+\inpenc@posthook=\toks62
 )
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/sc' in size <10.95> not available
 (Font)              Font shape `OT1/FiraSans-OsF/regular/sc' tried instead on input line 21.
-LaTeX Font Info:    Font shape `OT1/Fir
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/sc' will be
+(Font)              scaled to size 10.95pt on input line 21.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/sc' in size <17.28> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/sc' tried instead on input line 21.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/sc' will be
+(Font)              scaled to size 17.28pt on input line 21.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <14.4> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 22.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <14.4> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 22.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 22.
+<figures/logo.png, id=43, 582.89902pt x 582.89902pt>
+File: figures/logo.png Graphic file (type png)
+<use figures/logo.png>
+Package pdftex.def Info: figures/logo.png  used on input line 24.
+(pdftex.def)             Requested size: 113.81102pt x 113.8116pt.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <24.88> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 24.88pt on input line 32.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <24.88> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 24.88pt on input line 32.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <10.95> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 38.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 10.95pt on input line 38.
+
+
+[1
+
+
+
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_ogsljj.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_337jzs.enc} <./figures/logo.png>]
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM HebdomonGuide.toc on input line 53.
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc1.
+\openout5 = `HebdomonGuide.mtc1'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc2.
+\openout5 = `HebdomonGuide.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc3.
+\openout5 = `HebdomonGuide.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc4.
+\openout5 = `HebdomonGuide.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc5.
+\openout5 = `HebdomonGuide.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc6.
+\openout5 = `HebdomonGuide.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing HebdomonGuide.mtc7.
+\openout5 = `HebdomonGuide.mtc7'.
+
+
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <20.74> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 20.74pt on input line 53.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <30> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 53.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 30.0pt on input line 53.
+(.aux/HebdomonGuide.toc
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 4.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 4.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 4.
+
+
+[2
+
+])
+\tf@toc=\write7
+\openout7 = `HebdomonGuide.toc'.
+
+
+
+[3]
+\openout2 = `chap_1.aux'.
+
+ (./chap_1.tex
+chapter 1.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <10> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 2.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/n' in size <12> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/n' tried instead on input line 2.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 2.
+(.aux/HebdomonGuide.mtc1)
+<images/2025-08-08-20-08-17.png, id=148, 401.5pt x 401.5pt>
+File: images/2025-08-08-20-08-17.png Graphic file (type png)
+<use images/2025-08-08-20-08-17.png>
+Package pdftex.def Info: images/2025-08-08-20-08-17.png  used on input line 8.
+(pdftex.def)             Requested size: 113.81104pt x 113.80992pt.
+
+Underfull \hbox (badness 3977) in paragraph at lines 15--16
+[][]\OT1/FiraSans-OsF/regular/n/10.95 In pas-sa-to, la seg-men-ta-zio-ne del se-no in im-ma-gi-ni MRI 3D
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 15--16
+\OT1/FiraSans-OsF/regular/n/10.95 ve-ni-va ef-fet-tua-ta prin-ci-pal-men-te con \OT1/FiraSans-OsF/bold/n/10.95 me-to-di clas-si-ci\OT1/FiraSans-OsF/regular/n/10.95 , spes-so
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+FiraSans-OsF on input line 18.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/fira/TS1FiraSans-OsF.fd
+File: TS1FiraSans-OsF.fd 2019/10/10 (autoinst) Font definitions for TS1/FiraSans-OsF.
+)
+LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/m/n' in size <10.95> not available
+(Font)              Font shape `TS1/FiraSans-OsF/regular/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/regular/n' will be
+(Font)              scaled to size 10.95pt on input line 18.
+
+
+[4
+
+
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_d67aat.enc} <./images/2025-08-08-20-08-17.png>]
+<images/2025-08-08-20-13-58.png, id=162, 1204.5pt x 1455.4375pt>
+File: images/2025-08-08-20-13-58.png Graphic file (type png)
+<use images/2025-08-08-20-13-58.png>
+Package pdftex.def Info: images/2025-08-08-20-13-58.png  used on input line 37.
+(pdftex.def)             Requested size: 45.52719pt x 55.0096pt.
+
+Overfull \hbox (2.51031pt too wide) in paragraph at lines 38--38
+[][]\OT1/FiraSans-OsF/bold/n/10.95 Figura 1.2:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--38
+\OT1/FiraSans-OsF/regular/n/10.95 Torch.
+ []
+
+
+
+[5 <./images/2025-08-08-20-13-58.png>]
+LaTeX Font Info:    Trying to load font information for OT1+lmtt on input line 75.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmtt.fd
+File: ot1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+<images/2025-07-07-09-52-55.png, id=174, 1927.2pt x 1036.87375pt>
+File: images/2025-07-07-09-52-55.png Graphic file (type png)
+<use images/2025-07-07-09-52-55.png>
+Package pdftex.def Info: images/2025-07-07-09-52-55.png  used on input line 81.
+(pdftex.def)             Requested size: 455.24417pt x 244.93108pt.
+)
+
+[6{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmtt.enc} <./images/2025-07-07-09-52-55.png>]
+\openout2 = `chap_2.aux'.
+
+ (./chap_2.tex
+chapter 2.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+(.aux/HebdomonGuide.mtc2)
+<images/2025-08-09-19-12-14.png, id=186, 1463.4675pt x 1194.4625pt>
+File: images/2025-08-09-19-12-14.png Graphic file (type png)
+<use images/2025-08-09-19-12-14.png>
+Package pdftex.def Info: images/2025-08-09-19-12-14.png  used on input line 12.
+(pdftex.def)             Requested size: 364.19672pt x 297.24794pt.
+
+
+[7
+
+
+
+
+]
+
+[8 <./images/2025-08-09-19-12-14.png>]
+<figures/U-Net-architecture.png, id=203, 1560.83125pt x 1039.885pt>
+File: figures/U-Net-architecture.png Graphic file (type png)
+<use figures/U-Net-architecture.png>
+Package pdftex.def Info: figures/U-Net-architecture.png  used on input line 30.
+(pdftex.def)             Requested size: 273.14928pt x 181.98259pt.
+
+
+[9 <./figures/u-net-architecture.png>]
+<images/2025-07-07-12-01-04.png, id=212, 1163.34625pt x 493.845pt>
+File: images/2025-07-07-12-01-04.png Graphic file (type png)
+<use images/2025-07-07-12-01-04.png>
+Package pdftex.def Info: images/2025-07-07-12-01-04.png  used on input line 57.
+(pdftex.def)             Requested size: 455.24417pt x 193.25435pt.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/FiraSans-OsF/regular/it' tried instead on input line 62.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/regular/it' will be
+(Font)              scaled to size 10.95pt on input line 62.
+
+
+[10 <./images/2025-07-07-12-01-04.png>])
+
+[11]
+\openout2 = `chap_3.aux'.
+
+ (./chap_3.tex
+chapter 3.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+(.aux/HebdomonGuide.mtc3)
+LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/b/n' in size <10.95> not available
+(Font)              Font shape `TS1/FiraSans-OsF/bold/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `TS1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 10.95pt on input line 7.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <8> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 8.0pt on input line 7.
+<images/2025-08-09-19-34-01.png, id=232, 1939.245pt x 865.2325pt>
+File: images/2025-08-09-19-34-01.png Graphic file (type png)
+<use images/2025-08-09-19-34-01.png>
+Package pdftex.def Info: images/2025-08-09-19-34-01.png  used on input line 11.
+(pdftex.def)             Requested size: 182.09488pt x 81.23416pt.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/b/n' in size <12> not available
+(Font)              Font shape `OT1/FiraSans-OsF/bold/n' tried instead on input line 18.
+LaTeX Font Info:    Font shape `OT1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 18.
+
+
+[12
+
+
+
+
+ <./images/2025-08-09-19-34-01.png>]
+<figures/split_pie_chart.png, id=244, 417.7206pt x 366.4089pt>
+File: figures/split_pie_chart.png Graphic file (type png)
+<use figures/split_pie_chart.png>
+Package pdftex.def Info: figures/split_pie_chart.png  used on input line 46.
+(pdftex.def)             Requested size: 182.09488pt x 159.72203pt.
+)
+
+[13 <./figures/split_pie_chart.png>]
+\openout2 = `chap_4.aux'.
+
+ (./chap_4.tex
+chapter 4.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+(.aux/HebdomonGuide.mtc4)
+
+[14
+
+
+
+
+]
+\pydata@fh@0=\write8
+\openout8 = `_018679B249EA6FB07607F2451175FB2C.data.minted'.
+
+runsystem(latexminted config  --timestamp 20250809194516 018679B249EA6FB07607F2451175FB2C)...executed.
+
+ (.aux/_018679B249EA6FB07607F2451175FB2C.config.minted)
+runsystem(latexminted cleanconfig  --timestamp 20250809194516 018679B249EA6FB07607F2451175FB2C)...executed.
+
+ (./.aux/_minted/default.style.minted) (./.aux/_minted/EE06B3036988ABCFB4E929BAB7BA860E.highlight.minted
+LaTeX Font Info:    Font shape `OT1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/lmtt/b/n' tried instead on input line 3.
+) (./.aux/_minted/C73E597D624552DC9972DF96F42FEFDD.highlight.minted
+
+[15]) (./.aux/_minted/1CDA2F1E7E1A290B32DD44F2AA2A8A25.highlight.minted
+LaTeX Font Info:    Trying to load font information for TS1+lmtt on input line 5.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ts1lmtt.fd
+File: ts1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)) (./.aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted) (./.aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
+
+[16{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]) (./.aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted) (./.aux/_minted/A74CB242BBF3F1C6E3602245B15E9365.highlight.minted)
+Underfull \hbox (badness 10000) in paragraph at lines 136--157
+
+ []
+
+
+
+[17])
+
+[18]
+\openout2 = `chap_5.aux'.
+
+ (./chap_5.tex
+chapter 5.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+(.aux/HebdomonGuide.mtc5)
+
+[19
+
+
+
+
+]
+\g__nicematrix_max_cell_width_dim=\dimen412
+\c@iRow=\count586
+\c@jCol=\count587
+\l__nicematrix_color_int=\count588
+\l__nicematrix_cell_box=\box104
+\l__nicematrix_the_array_box=\box105
+\l__nicematrix_left_delim_dim=\dimen413
+\l__nicematrix_right_delim_dim=\dimen414
+
+
+[20]
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 104.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 105.
+LaTeX Info: Symbol \textrightarrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 106.
+
+
+[21]
+<images/2025-07-12-11-28-31.png, id=316, 578.16pt x 433.62pt>
+File: images/2025-07-12-11-28-31.png Graphic file (type png)
+<use images/2025-07-12-11-28-31.png>
+Package pdftex.def Info: images/2025-07-12-11-28-31.png  used on input line 120.
+(pdftex.def)             Requested size: 273.14928pt x 204.86006pt.
+
+
+[22{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc} <./images/2025-07-12-11-28-31.png>] (./.aux/_minted/C2D11D840D89DF93E5445D1389FE250D.highlight.minted)
+
+[23]
+LaTeX Info: Symbol \textuparrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 200.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/b/n' undefined
+(Font)              using `OT1/cmss/m/n' instead on input line 200.
+
+
+LaTeX Font Warning: Font shape `TS1/cmss/b/n' undefined
+(Font)              using `TS1/cmss/m/n' instead
+(Font)              for symbol `textuparrow' on input line 200.
+
+LaTeX Info: Symbol \textuparrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 203.
+LaTeX Info: Symbol \textuparrow not provided by
+            font family FiraSans-OsF in TS1 encoding.
+            Default family used instead on input line 206.
+(./.aux/_minted/F851D6BA08F717CE340071F989CFF6E2.highlight.minted)
+
+[24{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
+<images/2025-07-22-14-33-52.png, id=341, 1599.9775pt x 739.76375pt>
+File: images/2025-07-22-14-33-52.png Graphic file (type png)
+<use images/2025-07-22-14-33-52.png>
+Package pdftex.def Info: images/2025-07-22-14-33-52.png  used on input line 245.
+(pdftex.def)             Requested size: 364.19672pt x 168.38116pt.
+<figures/losses.png, id=343, 1156.32pt x 650.43pt>
+File: figures/losses.png Graphic file (type png)
+<use figures/losses.png>
+Package pdftex.def Info: figures/losses.png  used on input line 260.
+(pdftex.def)             Requested size: 218.51524pt x 122.9081pt.
+
+Underfull \hbox (badness 2671) in paragraph at lines 261--261
+\OT1/FiraSans-OsF/regular/n/10.95 du-ran-te il trai-ning del-l'e-spe-ri-men-to fi-na-
+ []
+
+<figures/metrics.png, id=344, 1156.32pt x 650.43pt>
+File: figures/metrics.png Graphic file (type png)
+<use figures/metrics.png>
+Package pdftex.def Info: figures/metrics.png  used on input line 269.
+(pdftex.def)             Requested size: 218.51524pt x 122.9081pt.
+
+
+[25 <./images/2025-07-22-14-33-52.png>]
+<figures/slice_017.png, id=354, 324.4923pt x 339.669pt>
+File: figures/slice_017.png Graphic file (type png)
+<use figures/slice_017.png>
+Package pdftex.def Info: figures/slice_017.png  used on input line 305.
+(pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
+<figures/slice_041.png, id=355, 324.4923pt x 339.669pt>
+File: figures/slice_041.png Graphic file (type png)
+<use figures/slice_041.png>
+Package pdftex.def Info: figures/slice_041.png  used on input line 306.
+(pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
+<figures/slice_089.png, id=356, 324.4923pt x 339.669pt>
+File: figures/slice_089.png Graphic file (type png)
+<use figures/slice_089.png>
+Package pdftex.def Info: figures/slice_089.png  used on input line 307.
+(pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
+<figures/slice_131.png, id=357, 324.4923pt x 339.669pt>
+File: figures/slice_131.png Graphic file (type png)
+<use figures/slice_131.png>
+Package pdftex.def Info: figures/slice_131.png  used on input line 308.
+(pdftex.def)             Requested size: 182.09488pt x 190.61243pt.
+
+
+[26 <./figures/losses.png> <./figures/metrics.png>] (./.aux/_minted/0565905256863C70110C3B770F76786D.highlight.minted
+
+[27 <./figures/slice_017.png> <./figures/slice_041.png> <./figures/slice_089.png> <./figures/slice_131.png>])
+<images/2025-08-08-18-52-24.png, id=375, 1778.645pt x 595.22375pt>
+File: images/2025-08-08-18-52-24.png Graphic file (type png)
+<use images/2025-08-08-18-52-24.png>
+Package pdftex.def Info: images/2025-08-08-18-52-24.png  used on input line 351.
+(pdftex.def)             Requested size: 455.24417pt x 152.34769pt.
+
+
+[28 <./images/2025-08-08-18-52-24.png>])
+
+[29]
+\openout2 = `chap_6.aux'.
+
+ (./chap_6.tex
+chapter 6.
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+\openout5 = `HebdomonGuide.mtc'.
+
+(.aux/HebdomonGuide.mtc6)
+
+[30
+
+
+
+
+]
+
+[31])
+
+[32]
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+(.aux/HebdomonGuide.lot)
+\tf@lot=\write9
+\openout9 = `HebdomonGuide.lot'.
+
+
+
+[33
+
+
+
+]
+
+Class scrreprt Warning: Redefinition of \@makeschapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makeschapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makeschapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+(.aux/HebdomonGuide.lof)
+\tf@lof=\write10
+\openout10 = `HebdomonGuide.lof'.
+
+
+
+[34
+
+]
+chapter without number
+
+Class scrreprt Warning: Redefinition of \@makechapterhead detected.
+(scrreprt)              Note: KOMA-Script does use styles for commands like
+(scrreprt)              \chapter. Currently it internally still provides and
+(scrreprt)              uses \@makechapterhead, but a completely different
+(scrreprt)              definition compared to the standard classes.
+(scrreprt)              So redefining or using internal \@makechapterhead
+(scrreprt)              by users or package authors may already break
+(scrreprt)              KOMA-Script and will not work with a coming version,
+(scrreprt)              that will remove this deprecated code.
+
+
+Overfull \hbox (1.11514pt too wide) in paragraph at lines 450--450
+[]\OT1/FiraSans-OsF/regular/it/10.95 Breast MRI 3D\OT1/FiraSans-OsF/regular/n/10.95 . \OT1/FiraSans-OsF/regular/sc/10.95 url\OT1/FiraSans-OsF/regular/n/10.95 : []$\OT1/lmtt/m/n/10.95 https : / / discourse . slicer . org / t / outer -[] surface -[] segmentation -[]
+ []
+
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the HebdomonGuide.maf file.
+\openout5 = `HebdomonGuide.maf'.
+
+
+Package minitoc(hints) Warning: W0033
+(minitoc(hints))                The caption package should be 
+(minitoc(hints))                loaded BEFORE the minitoc package.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the HebdomonGuide.log file.
+
+
+
+[35
+
+] (.aux/HebdomonGuide.aux (.aux/chap_1.aux) (.aux/chap_2.aux) (.aux/chap_3.aux) (.aux/chap_4.aux) (.aux/chap_5.aux) (.aux/chap_6.aux))
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'HebdomonGuide.run.xml'.
+\openout1 = `HebdomonGuide.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 65146 strings out of 467886
+ 1531981 string characters out of 5434045
+ 2644810 words of memory out of 5000000
+ 92605 multiletter control sequences out of 15000+600000
+ 712571 words of font info for 86 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 122i,14n,131p,10979b,2877s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Italic.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb>
+Output written on .aux/HebdomonGuide.pdf (35 pages, 7866005 bytes).
+PDF statistics:
+ 689 PDF objects out of 1000 (max. 8388607)
+ 561 compressed objects within 6 object streams
+ 111 named destinations out of 1000 (max. 500000)
+ 575 words of extra memory for PDF output out of 10000 (max. 10000000)
+

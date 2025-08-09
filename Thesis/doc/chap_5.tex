@@ -212,16 +212,15 @@ Per questo motivo, \textbf{l’attenzione è tornata su modelli tridimensionali}
 
 
 
-%   ┌──────────────────────────────────────────────────────────────────────────┐
-%   │ SONO ARRIVATO FIN QUI                                                    │
-%   └──────────────────────────────────────────────────────────────────────────┘
+%   ┌───────────────────────┐
+%   │ SONO ARRIVATO FIN QUI │
+%   └───────────────────────┘
 
 
 \Section{Nuovo approccio di Valutazione}
 Un \hlight{aspetto critico} che è emerso in questa fase è stato \textbf{il modo in cui le predizioni venivano valutate}. In effetti, l’adozione di tecniche di preprocessing alterava la struttura delle label, rendendo la metrica poco rappresentativa. È stata quindi introdotta una \textbf{pipeline di trasformazioni inverse} nella fase di test, per riportare le predizioni allo spazio originale e confrontarle correttamente con le etichette intonse.
 
 \begin{code}{python}
-# if there is a resizing transform in the validation transforms, inverse it
 if isinstance(test_loader.dataset.transform, Compose) 
             and any(isinstance(tr, Resized) 
             for tr in test_loader.dataset.transform.transforms):
@@ -231,15 +230,15 @@ if isinstance(test_loader.dataset.transform, Compose)
 
 % Con questa nuova metodologia di test, sono stati ripetuti alcuni esperimenti precedenti. Sebbene i risultati apparissero \textbf{lievemente più bassi in termini assoluti}, la loro \textbf{affidabilità era notevolmente superiore}. In questo contesto, nuove architetture come l’\textbf{Attention U-Net} e reti con struttura compressa ma profonda hanno ottenuto risultati significativi, culminando nel ventunesimo esperimento con un Dice score pari a \textbf{0.9124}, il valore più alto registrato sull’intero test set.
 
-Con questa nuova metodologia di test, sono stati ripetuti alcuni esperimenti precedenti, mantenendo invariati l’architettura, la configurazione degli iperparametri e il preprocessing, ma modificando il modo in cui veniva eseguita la valutazione sul test set. L’introduzione delle \textbf{trasformazioni inverse}, ha evidenziato una differenza sostanziale tra le metriche riportate in precedenza e quelle ricalcolate in condizioni più rigorose. Ad esempio, l’esperimento \textbf{16}, che con il metodo di valutazione originale aveva raggiunto un Dice score di \textbf{0.8863}, è stato ripetuto come esperimento \textbf{20}, ottenendo un valore ridotto di \textbf{0.8567}. 
+Con questa nuova metodologia di test, sono stati ripetuti alcuni esperimenti precedenti, mantenendo \textbf{invariati l’architettura}, la \textbf{configurazione degli iperparametri} e il \textbf{preprocessing}, ma modificando il modo in cui veniva eseguita la valutazione sul test set. L’introduzione delle \textbf{trasformazioni inverse}, ha evidenziato una \textbf{differenza sostanziale} tra le metriche riportate in precedenza e quelle ricalcolate in condizioni più rigorose. Ad esempio, l’esperimento \textbf{16}, che con il metodo di valutazione originale aveva raggiunto un \textbf{Dice score di 0.8863}, è stato ripetuto come esperimento \textbf{20}, ottenendo un valore \hlight{ridotto di 0.8567.} 
 
-Nonostante questa lieve flessione nei valori assoluti, la nuova metodologia ha reso i confronti tra modelli molto più affidabili. Alcune architetture, che in precedenza sembravano promettenti ma erano in realtà favorite da un confronto distorto, hanno rivelato prestazioni inferiori alle attese. %Al contrario, modelli più solidi e coerenti, come l’\textbf{Attention U-Net} testato nell’esperimento \textbf{19}, hanno confermato la loro efficacia anche sotto il nuovo regime di valutazione, raggiungendo un Dice score di \textbf{0.8415} dopo 150 epoche di addestramento.
+Nonostante questa lieve flessione nei valori assoluti, la nuova metodologia \hlight{ha reso i confronti tra modelli molto più affidabili}. Alcune architetture, che in precedenza sembravano promettenti ma erano in realtà favorite da un confronto distorto, hanno rivelato prestazioni inferiori alle attese. %Al contrario, modelli più solidi e coerenti, come l’\textbf{Attention U-Net} testato nell’esperimento \textbf{19}, hanno confermato la loro efficacia anche sotto il nuovo regime di valutazione, raggiungendo un Dice score di \textbf{0.8415} dopo 150 epoche di addestramento.
 
 \Subsection{L’Attention U-Net}
 
-L’\textbf{Attention U-Net} \ref{fig:attention_unet} rappresenta una naturale estensione della classica architettura U-Net, progettata per migliorare la capacità del modello di concentrarsi sulle regioni di interesse più rilevanti all’interno dell’immagine. Introdotta da Oktay et al. nel 2018 \cite{oktay2018attention}, questa variante si basa sull’integrazione di \textbf{meccanismi di attenzione spaziale} nei percorsi di skip connection tra encoder e decoder. L’obiettivo principale è quello di guidare la rete nell’enfatizzare le strutture salienti e nel sopprimere attivamente le attivazioni inutili o irrilevanti, soprattutto in contesti caratterizzati da alta complessità anatomica o forte squilibrio tra classi.
+L’\textbf{Attention U-Net} \ref{fig:attention_unet} rappresenta una naturale estensione della classica architettura \textbf{U-Net}, progettata per migliorare la capacità del modello di \textbf{concentrarsi sulle regioni di interesse  più rilevanti all’interno dell’immagine}. Introdotta da \textbf{Oktay et al. nel 2018} \cite{oktay2018attention}, questa variante si basa sull’integrazione di \textbf{meccanismi di attenzione spaziale} nei percorsi di \textbf{skip connection} tra \textbf{encoder} e \textbf{decoder}. L’obiettivo principale è quello di guidare la rete \textbf{nell’enfatizzare le strutture salienti} e nel \textbf{sopprimere attivamente le attivazioni inutili} o irrilevanti, soprattutto in contesti caratterizzati da alta complessità anatomica o forte squilibrio tra classi.
 
-Nella U-Net tradizionale, le informazioni a bassa risoluzione estratte dall’encoder vengono concatenate direttamente con i feature map corrispondenti del decoder. Tuttavia, questo approccio assume che tutte le regioni abbiano pari rilevanza informativa, ignorando il fatto che non tutte le porzioni dell’immagine contribuiscono in egual misura alla segmentazione finale. L’Attention U-Net introduce quindi un \textbf{modulo di attenzione} che agisce come un filtro “intelligente”: prima della concatenazione, il modello valuta l’importanza di ciascuna regione mediante un \textit{gating mechanism}, che calcola mappe di attenzione specifiche per ogni livello di skip connection.
+Nella \textbf{U-Net tradizionale}, le informazioni a bassa risoluzione estratte dall’encoder vengono concatenate direttamente con i feature map corrispondenti del decoder. Tuttavia, questo approccio assume che tutte le regioni abbiano pari rilevanza informativa, ignorando il fatto che non tutte le porzioni dell’immagine contribuiscono in egual misura alla segmentazione finale. \textbf{L’Attention U-Net} introduce quindi un \textbf{modulo di attenzione} che agisce come un \textbf{filtro “intelligente”:} prima della concatenazione, il modello valuta l’importanza di ciascuna regione mediante un \textbf{gating mechanism}, che calcola \textbf{mappe di attenzione} specifiche per ogni livello di \textbf{skip connection}.
 
 \begin{figure}[H] 
   	\centering 
@@ -247,13 +246,13 @@ Nella U-Net tradizionale, le informazioni a bassa risoluzione estratte dall’en
     \caption{Shcema dell’Attention U-Net. Le frecce indicano il flusso di informazioni tra i moduli di encoder e decoder, con l’integrazione del modulo di attenzione.}
     \label{fig:attention_unet}
  \end{figure} 
-Dal punto di vista implementativo, il modulo di attenzione riceve in input due segnali: da un lato, le feature provenienti dal livello encoder (contenenti informazione spaziale locale); dall’altro, i segnali di gating dal decoder (contenenti informazione semantica più astratta). L’interazione tra questi due flussi genera una mappa di attenzione, applicata tramite moltiplicazione ai tensori encoder, prima della loro trasmissione al decoder. In questo modo, il decoder riceve solo le informazioni più rilevanti per la predizione finale.
+Dal punto di vista implementativo, il modulo di attenzione riceve in input due segnali: da un lato, \textbf{le feature provenienti dal livello encoder} (contenenti informazione spaziale locale); dall’altro, \textbf{i segnali di gating dal decoder} (contenenti informazione semantica più astratta). L’interazione tra questi due flussi genera una \textbf{mappa di attenzione}, applicata tramite moltiplicazione ai tensori encoder, prima della loro trasmissione al decoder. In questo modo, il decoder riceve solo le informazioni più rilevanti per la predizione finale.
 
-Nel contesto del presente lavoro, nonostante un aumento moderato della complessità computazionale, il modello ha mostrato buone performance, raggiungendo un Dice score pari a \textbf{0.8415} nell’esperimento dedicato.
+Nel contesto del presente lavoro, \textbf{nonostante un aumento moderato della complessità computazionale}, il modello \hlight{ha mostrato buone performance}, raggiungendo un \hlight{Dice score pari a 0.8415} nell’esperimento dedicato.
 
 \Section{Esperimento Finale}
 
-Il punto culminante di questa fase è stato rappresentato dall’esperimento \textbf{21}, in cui è stata utilizzata una \textbf{U-Net profonda con cinque livelli e stride finale lungo l’asse z pari a 1}. L’input adottava una ROI size tridimensionale pari a $(512, 512, 8)$, e il training è stato prolungato fino a \textbf{200 epoche} \ref{fig:losses}. 
+Il punto culminante di questa fase è stato rappresentato dall’esperimento \textbf{21}, in cui è stata utilizzata una \hlight{U-Net profonda con cinque livelli e stride finale lungo l’asse z pari a 1}. L’input adottava una ROI size tridimensionale pari a $(512, 512, 8)$, e il training è stato prolungato fino a \hlight{200 epoche} \ref{fig:losses}. 
 
 \begin{minipage}{.48\textwidth}
     \begin{figure}[H] 
@@ -276,7 +275,7 @@ Il punto culminante di questa fase è stato rappresentato dall’esperimento \te
 
 
 
-In queste condizioni, il modello ha raggiunto un Dice score pari a \textbf{0.9124} \ref{fig:metrics}, il valore più alto registrato su tutto il test set \ref{fig:final_segmentation_examples}. Questo risultato rappresenta non solo il successo di una specifica configurazione, ma anche la validazione dell’intero processo di ottimizzazione, culminato in un modello accurato, robusto e valutato con criteri metodologicamente solidi.
+In queste condizioni, \hlight{il modello ha raggiunto un Dice score pari a 0.9124} \ref{fig:metrics}, \hlight{il valore più alto registrato su tutto il test set} \ref{fig:final_segmentation_examples}. Questo risultato rappresenta non solo il successo di una specifica configurazione, ma anche la validazione dell’intero \textbf{processo di ottimizzazione}, culminato in un \textbf{modello accurato}, \textbf{robusto} e valutato con \textbf{criteri metodologicamente solidi}.
 
 
 \begin{table}[H]
@@ -311,6 +310,50 @@ In queste condizioni, il modello ha raggiunto un Dice score pari a \textbf{0.912
     \label{fig:final_segmentation_examples}
 \end{figure}
 
-\Subsection{Post-processing morfologico}
+\Subsection{Post-processing morfologico: operazione di Closing}
 
-Al fine di migliorare la coerenza spaziale delle segmentazioni generate dalla rete, è stato integrato un passaggio di \textit{post-processing} basato su operazioni morfologiche. In particolare, si è adottata la trasformazione \texttt{KeepLargestConnectedComponent} fornita dalla libreria MONAI, applicata esclusivamente alla classe del seno. Questa trasformazione consente di rimuovere piccole regioni frammentate, mantenendo soltanto la componente connessa di dimensione maggiore. Tale operazione ha un effetto simile a un \textit{closing morfologico}, contribuendo a rendere le segmentazioni più compatte e continue. A seguito di questo passaggio si osserva un incremento della metrica sul \textbf{set di test (da 0.9124 a 0.9156)}, a fronte di una lieve flessione nel \textbf{validation set (da 0.9193 a 0.9188)}.
+Al termine dell’addestramento del modello finale (EXP~21), è stata introdotta una fase opzionale di \textbf{post-processing morfologico} sulle maschere di segmentazione prodotte, con l’obiettivo di correggere eventuali discontinuità e imperfezioni residue lungo i margini delle strutture segmentate.
+
+L’operazione applicata è il \textbf{closing morfologico} (\emph{dilatazione seguita da erosione}). Questo tipo di trasformazione è comunemente utilizzato per \textbf{colmare piccoli vuoti} all’interno delle regioni segmentate, \textbf{uniformare i bordi} delle maschere e \textbf{migliorare la connettività} delle strutture anatomiche in presenza di interruzioni puntuali.
+
+
+L'implementazione è stata realizzata creando una funzione custom in Python che applica il closing morfologico su ciascuna maschera di segmentazione generata dal modello. La funzione utilizza la libreria \texttt{scikit-image} per eseguire le operazioni morfologiche, specificando un \textbf{kernel di dimensione fissata dal parametro in ingresso}:
+
+\begin{code}{python}
+from scipy.ndimage import binary_closing
+from monai.transforms import MapTransform
+import torch
+import numpy as np
+
+class MorphologicalClosing():
+    def __init__(self, dim=12):
+        self.dim = dim
+        self.structure = np.ones((self.dim, self.dim, self.dim), dtype=bool)
+    def __call__(self, x):
+        device = x.device if isinstance(x, torch.Tensor) else torch.device('cpu')
+        # convert to numpy
+        if isinstance(x, torch.Tensor):
+            x = x.cpu().numpy()
+        # remove first dimension
+        x = x.squeeze(0) if x.ndim > 3 else x
+        closed_np = binary_closing(x, structure=self.structure)
+        # re-add first dimension
+        closed_np = closed_np[None, ...]
+        # convert back to tensor and move to original device
+        closed_tensor = torch.tensor(closed_np, dtype=torch.float32, 
+                                    device=device)
+        return closed_tensor
+\end{code}
+Sono state testate diverse dimensioni per il \textbf{kernel size} dell’operazione di closing, variando il parametro tra valori compresi tra 6 e 16. L’analisi sistematica ha mostrato che la dimensione ottimale era pari a \hlight{10}, che garantiva il miglior compromesso tra \textbf{uniformità dei bordi} e \textbf{preservazione dei dettagli anatomici}, evitando sia un’eccessiva erosione sia la formazione di artefatti.
+
+\begin{figure}[H] 
+  	\centering 
+ 	\includegraphics[width=\textwidth]{images/2025-08-08-18-52-24.png} 
+    \caption{Esempio di segmentazione prima e dopo l'applicazione del closing morfologico. Le immagini mostrano come il closing migliori la coesione delle strutture segmentate, eliminando piccole discontinuità e rendendo le maschere più uniformi.}
+    \label{fig:closing_example}
+ \end{figure} 
+
+L’effetto del closing \ref{fig:closing_example} è stato valutato rieseguendo la metrica di \textbf{Dice score} sul \emph{test set}. Il modello finale, che in fase di validazione rigorosa aveva raggiunto un valore di \textbf{0.9124}, \hlight{ha beneficiato di un incremento fino a 0.9161} dopo il post-processing. Questo risultato conferma che, pur trattandosi di un miglioramento numericamente modesto \textbf{(\(+0.0037\)),} \hlight{l’operazione di closing ha contribuito a rifinire ulteriormente le maschere, portando a un output visivamente più coerente e clinicamente più fruibile.}
+
+
+

@@ -17,6 +17,39 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global/global}
+  \entry{brain_mri_3d}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Brain MRI 3D}
+    \verb{url}
+    \verb https://www.researchgate.net/figure/D-image-of-a-brain-obtained-from-
+    \verb MRI-The-markers-show-the-end-points-of-the-rays_fig4_221197073
+    \endverb
+  \endentry
+
+  \entry{breast_mri_3d}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Breast MRI 3D}
+    \verb{url}
+    \verb https://discourse.slicer.org/t/outer-surface-segmentation-of-breast-m
+    \verb ri-image/33817
+    \endverb
+  \endentry
+
+  \entry{mri_machine}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{Breast MRI Machine}
+    \verb{url}
+    \verb https://www.dukehealth.org/blog/fast-breast-mri-available-women-avera
+    \verb ge-breast-cancer-risk
+    \endverb
+  \endentry
+
   \entry{MarcoCantone}{misc}{}{}
     \name{author}{1}{}{%
       {{hash=CM}{%
@@ -340,6 +373,16 @@
     \field{booktitle}{arXiv preprint arXiv:1804.03999}
     \field{title}{Attention U-Net: Learning Where to Look for the Pancreas}
     \field{year}{2018}
+  \endentry
+
+  \entry{pytorch_logo}{misc}{}{}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{title}{PyTorch Logo}
+    \verb{url}
+    \verb https://pytorch.org/
+    \endverb
   \endentry
 \enddatalist
 \endinput

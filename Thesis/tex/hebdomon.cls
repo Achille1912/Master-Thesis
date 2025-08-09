@@ -78,6 +78,10 @@
 \RequirePackage{enumitem}
 
 \usepackage{verbatim}
+\usepackage{wrapfig}
+
+\setcapindent{0pt}
+
 
 \RequirePackage{amsmath}
 

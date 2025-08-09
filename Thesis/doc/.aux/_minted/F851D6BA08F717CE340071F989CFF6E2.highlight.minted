@@ -1,0 +1,7 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{k}{if} \PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{test\PYGZus{}loader}\PYG{o}{.}\PYG{n}{dataset}\PYG{o}{.}\PYG{n}{transform}\PYG{p}{,} \PYG{n}{Compose}\PYG{p}{)}
+            \PYG{o+ow}{and} \PYG{n+nb}{any}\PYG{p}{(}\PYG{n+nb}{isinstance}\PYG{p}{(}\PYG{n}{tr}\PYG{p}{,} \PYG{n}{Resized}\PYG{p}{)}
+            \PYG{k}{for} \PYG{n}{tr} \PYG{o+ow}{in} \PYG{n}{test\PYGZus{}loader}\PYG{o}{.}\PYG{n}{dataset}\PYG{o}{.}\PYG{n}{transform}\PYG{o}{.}\PYG{n}{transforms}\PYG{p}{):}
+    \PYG{n}{val\PYGZus{}outputs} \PYG{o}{=} \PYG{p}{[}\PYG{n}{Resized}\PYG{p}{(}\PYG{n}{keys}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}img\PYGZdq{}}\PYG{p}{,} \PYG{n}{spatial\PYGZus{}size}\PYG{o}{=}\PYG{n}{original\PYGZus{}shape}\PYG{p}{,} \PYG{n}{mode}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}nearest\PYGZdq{}}\PYG{p}{)}
+                    \PYG{p}{(\PYGZob{}}\PYG{l+s+s2}{\PYGZdq{}img\PYGZdq{}}\PYG{p}{:} \PYG{n}{i}\PYG{p}{\PYGZcb{})[}\PYG{l+s+s2}{\PYGZdq{}img\PYGZdq{}}\PYG{p}{]} \PYG{k}{for} \PYG{n}{i} \PYG{o+ow}{in} \PYG{n}{val\PYGZus{}outputs}\PYG{p}{]}
+\end{MintedVerbatim}

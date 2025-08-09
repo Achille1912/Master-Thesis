@@ -10,15 +10,15 @@
 \contentsline {xchapter}{\textcolor {mciBlue}{Configurazione Sperimentale}}{14}{chapter.4}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textcolor {mciBlue}{Esperimenti}}{19}{chapter.5}%
-\contentsline {table}{\numberline {5.1}{\ignorespaces Configurazioni principali dei modelli sperimentali con architetture e parametri chiave.}}{20}{table.caption.5}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Configurazione del primo esperimento (baseline) con architettura U-Net 3D e risultati ottenuti.}}{21}{table.caption.6}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Risultati degli esperimenti 3-4 con architettura U-Net 3D più profonda. L'aggiunta di un quinto blocco convoluzionale ha portato a significativi miglioramenti nelle metriche.}}{21}{table.caption.7}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Analisi comparativa delle modifiche introdotte dall'EXP 5. Tutti i cambiamenti hanno contribuito al miglioramento delle performance.}}{22}{table.caption.8}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Confronto sistematico degli approcci dimensionali. I valori mostrano come il resize completo produca i migliori risultati, mentre il padding peggiora le performance.}}{23}{table.caption.10}%
-\contentsline {table}{\numberline {5.6}{\ignorespaces Progressione prestazionale con scala cromatica: dal rosso (baseline) al blu (miglior risultato). I $\Delta $ verdi mostrano il miglioramento cumulativo, mentre il blu evidenzia il picco prestazionale (+41.1\% rispetto alla baseline).}}{24}{table.caption.11}%
-\contentsline {table}{\numberline {5.7}{\ignorespaces Analisi dettagliata dei risultati finali. La colonna $\Delta $ mostra: per EXP 16 la sovrastima rispetto alla nuova metodologia, per EXP 19-21 la variazione rispetto al benchmark corretto (EXP 20).}}{26}{table.caption.15}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Configurazioni principali dei modelli sperimentali con architetture e parametri chiave.}}{20}{table.caption.10}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Configurazione del primo esperimento (baseline) con architettura U-Net 3D e risultati ottenuti.}}{21}{table.caption.11}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Risultati degli esperimenti 3-4 con architettura U-Net 3D più profonda. L'aggiunta di un quinto blocco convoluzionale ha portato a significativi miglioramenti nelle metriche.}}{21}{table.caption.12}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Analisi comparativa delle modifiche introdotte dall'EXP 5. Tutti i cambiamenti hanno contribuito al miglioramento delle performance.}}{22}{table.caption.13}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Confronto sistematico degli approcci dimensionali. I valori mostrano come il resize completo produca i migliori risultati, mentre il padding peggiora le performance.}}{23}{table.caption.15}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Progressione prestazionale con scala cromatica: dal rosso (baseline) al blu (miglior risultato). I $\Delta $ verdi mostrano il miglioramento cumulativo, mentre il blu evidenzia il picco prestazionale (+41.1\% rispetto alla baseline).}}{24}{table.caption.16}%
+\contentsline {table}{\numberline {5.7}{\ignorespaces Analisi dettagliata dei risultati finali. La colonna $\Delta $ mostra: per EXP 16 la sovrastima rispetto alla nuova metodologia, per EXP 19-21 la variazione rispetto al benchmark corretto (EXP 20).}}{26}{table.caption.20}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{\textcolor {mciBlue}{Conclusioni}}{28}{chapter.6}%
+\contentsline {xchapter}{\textcolor {mciBlue}{Conclusioni}}{30}{chapter.6}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Bibliografia}{33}{chapter*.19}%
+\contentsline {xchapter}{Bibliografia}{35}{chapter*.25}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
