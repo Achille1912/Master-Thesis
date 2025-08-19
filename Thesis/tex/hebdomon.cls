@@ -24,9 +24,9 @@
 }
 
 %-OPTION: set option to choose lstlisting code printing package
-\DeclareOption{lstlisting}{
-	\setboolean{lst}{true}
-}
+% \DeclareOwtion{lstlisting}{
+% 	\setboolean{lst}{true}
+% }
 
 %-OPTION: set option to choose PGF/TikZ plotting packages
 \DeclareOption{draw}{
@@ -49,10 +49,16 @@
 
 % Page Geometry -----------------------------------------------------------
 % Define the default page geometry
+% \RequirePackage[
+% 	left   = 3.0cm,
+% 	right  = 2.0cm,
+% 	top    = 2.5cm,
+% 	bottom = 2.5cm]{geometry}
+
 \RequirePackage[
-	left   = 3.0cm,
-	right  = 2.0cm,
-	top    = 2.5cm,
+	left   = 3.5cm,
+	right  = 2.5cm,
+	top    = 3.5cm,
 	bottom = 2.5cm]{geometry}
 
 % Required Packages -------------------------------------------------------
@@ -81,6 +87,8 @@
 \usepackage{wrapfig}
 
 \setcapindent{0pt}
+
+\usepackage[title]{appendix}
 
 
 \RequirePackage{amsmath}

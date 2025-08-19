@@ -1,0 +1,206 @@
+\begin{MintedVerbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{n+nt}{TRAINING}\PYG{p}{:}
+\PYG{+w}{ }\PYG{+w+wError}{ }\PYG{n+nt}{workspace}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{/home/cannavale/data/seg\PYGZus{}breast/exp\PYGZus{}24/}\PYG{+w}{                                                     }\PYG{c+c1}{\PYGZsh{} Workspace dell\PYGZsq{}eseprimento (cannavale/data/seg\PYGZus{}brest/exp1/)}
+\PYG{+w}{  }\PYG{n+nt}{monai\PYGZus{}data}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{/ssd1/cantone/datasets/Duke\PYGZhy{}Breast\PYGZhy{}Cancer\PYGZhy{}MRI/other/data\PYGZus{}monai\PYGZus{}relative}\PYG{+w}{                  }\PYG{c+c1}{\PYGZsh{} File di metadati che spiega al framework come funziona il dataset}
+\PYG{+w}{  }\PYG{n+nt}{dataset\PYGZus{}root}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{/ssd1/cantone/datasets/Duke\PYGZhy{}Breast\PYGZhy{}Cancer\PYGZhy{}MRI/}\PYG{+w}{                                        }\PYG{c+c1}{\PYGZsh{} percorso del dataset}
+\PYG{+w}{  }\PYG{n+nt}{valid\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.1}
+\PYG{+w}{  }\PYG{n+nt}{test\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.1}\PYG{+w}{                                                                                        }\PYG{c+c1}{\PYGZsh{} 20\PYGZpc{} in test e 80\PYGZpc{} in train}
+\PYG{+w}{  }\PYG{n+nt}{train\PYGZus{}test\PYGZus{}split\PYGZus{}seed}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{42}\PYG{+w}{                                                                             }\PYG{c+c1}{\PYGZsh{} seed della randomicità dello split}
+\PYG{+w}{  }\PYG{n+nt}{cache\PYGZus{}ratio}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.1}\PYG{+w}{                                                                                     }\PYG{c+c1}{\PYGZsh{} metto basso e metto un accumulation a 4}
+\PYG{+w}{  }\PYG{n+nt}{accumulation}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{4}\PYG{+w}{                                                                                      }\PYG{c+c1}{\PYGZsh{} l\PYGZsq{}optimizer entra in gioco ogni 4 volte}
+\PYG{+w}{  }\PYG{n+nt}{train\PYGZus{}batch\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{4}
+\PYG{+w}{  }\PYG{n+nt}{test\PYGZus{}batch\PYGZus{}size}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{1}\PYG{+w}{                                                                                    }\PYG{c+c1}{\PYGZsh{} (lascia 1)}
+\PYG{+w}{  }\PYG{n+nt}{num\PYGZus{}workers}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{8}\PYG{+w}{                                                                                 }\PYG{c+c1}{\PYGZsh{} processi cpu utilizzati (2,4,6,8)}
+\PYG{+w}{  }\PYG{n+nt}{device}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{cuda:3}\PYG{+w}{                                                                    }\PYG{c+c1}{\PYGZsh{} scelgo la gpu}
+\PYG{+w}{  }\PYG{n+nt}{load\PYGZus{}model}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{/home/cannavale/data/seg\PYGZus{}breast/exp\PYGZus{}22/best\PYGZus{}model.pth}\PYG{+w}{                                                                                       }\PYG{c+c1}{\PYGZsh{} non mi interessa}
+\PYG{+w}{  }\PYG{n+nt}{epochs}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{200}\PYG{+w}{                                                                                            }\PYG{c+c1}{\PYGZsh{} inizia con 50/100, poi in base ai risultati ferma quando non migliora più}
+\PYG{+w}{  }\PYG{n+nt}{sliding\PYGZus{}window}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{True}
+\PYG{+w}{  }\PYG{n+nt}{only\PYGZus{}test}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{True}\PYG{+w}{                                                                               }\PYG{c+c1}{\PYGZsh{} se divido l\PYGZsq{}input in sottovolumi, in training imparo con i sotto\PYGZhy{}volumi (da fare con i vasi), in test uso l\PYGZsq{}intera immagine.}
+\PYG{+w}{  }\PYG{n+nt}{roi\PYGZus{}size}\PYG{p}{:}
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{512}
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{512}
+\PYG{+w}{    }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{8}
+
+\PYG{n+nt}{TRAIN\PYGZus{}TRANSFORM}\PYG{p}{:}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.LoadImaged}\PYG{+w}{                                                                  }\PYG{c+c1}{\PYGZsh{} carica le immagini}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}2}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{breast}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.EnsureChannelFirstd}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}2}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{breast}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.ConcatItemsd}\PYG{+w}{                                                                }\PYG{c+c1}{\PYGZsh{} cambia la label dell\PYGZsq{}immagine in img}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}2}
+\PYG{+w}{      }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{img}
+\PYG{+w}{      }\PYG{n+nt}{dim}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.ConcatItemsd}\PYG{+w}{                                                                }\PYG{c+c1}{\PYGZsh{} cambia la label della groundtruth in seg}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{breast}
+\PYG{+w}{      }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{seg}
+\PYG{+w}{      }\PYG{n+nt}{dim}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.DeleteItemsd}\PYG{+w}{                                                                }\PYG{c+c1}{\PYGZsh{} cancella tutte le cose che non mi servono}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{pre}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}1}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}2}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}3}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}4}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{breast}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{vessels}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.ScaleIntensityd}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{img}
+\PYG{+w}{      }\PYG{n+nt}{maxv}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{1.0}
+\PYG{+w}{      }\PYG{n+nt}{minv}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.0}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.Resized}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{img}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{seg}
+\PYG{+w}{      }\PYG{n+nt}{spatial\PYGZus{}size}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{512}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{512}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0}
+\PYG{+w}{      }\PYG{n+nt}{mode}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{area}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{nearest}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.RandSpatialCropSamplesd}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{img}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{seg}
+\PYG{+w}{      }\PYG{n+nt}{num\PYGZus{}samples}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{4}
+\PYG{+w}{      }\PYG{n+nt}{roi\PYGZus{}size}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{512}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{512}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{8}
+
+
+
+
+\PYG{n+nt}{TEST\PYGZus{}TRANSFORM}\PYG{p}{:}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.LoadImaged}\PYG{+w}{                                                                  }\PYG{c+c1}{\PYGZsh{} carica le immagini}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}2}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{breast}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.EnsureChannelFirstd}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}2}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{breast}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.ConcatItemsd}\PYG{+w}{                                                                }\PYG{c+c1}{\PYGZsh{} cambia la label dell\PYGZsq{}immagine in img}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}2}
+\PYG{+w}{      }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{img}
+\PYG{+w}{      }\PYG{n+nt}{dim}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.ConcatItemsd}\PYG{+w}{                                                                }\PYG{c+c1}{\PYGZsh{} cambia la label della groundtruth in seg}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{breast}
+\PYG{+w}{      }\PYG{n+nt}{name}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{seg}
+\PYG{+w}{      }\PYG{n+nt}{dim}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.DeleteItemsd}\PYG{+w}{                                                                }\PYG{c+c1}{\PYGZsh{} cancella tutte le cose che non mi servono}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{pre}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}1}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}2}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}3}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{post\PYGZus{}4}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{breast}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{vessels}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.ScaleIntensityd}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{img}
+\PYG{+w}{      }\PYG{n+nt}{maxv}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{1.0}
+\PYG{+w}{      }\PYG{n+nt}{minv}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.0}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.Resized}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{keys}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{img}
+\PYG{+w}{      }\PYG{n+nt}{spatial\PYGZus{}size}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{512}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{512}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0}
+\PYG{+w}{      }\PYG{n+nt}{mode}\PYG{p}{:}
+\PYG{+w}{        }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{area}
+
+
+
+\PYG{n+nt}{MODEL}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.networks.nets.Unet}
+\PYG{+w}{  }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{channels}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{16}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{32}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{64}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{128}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{256}
+\PYG{+w}{    }\PYG{n+nt}{in\PYGZus{}channels}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{1}
+\PYG{+w}{    }\PYG{n+nt}{out\PYGZus{}channels}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{2}
+\PYG{+w}{    }\PYG{n+nt}{spatial\PYGZus{}dims}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{3}
+\PYG{+w}{    }\PYG{n+nt}{norm}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{INSTANCE}
+\PYG{+w}{    }\PYG{n+nt}{strides}\PYG{p}{:}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{2}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{2}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{2}
+\PYG{+w}{      }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{1}
+
+\PYG{n+nt}{LOSS}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.losses.DiceFocalLoss}\PYG{+w}{  }\PYG{c+c1}{\PYGZsh{} Combina Dice e Focal}
+\PYG{+w}{  }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{softmax}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{true}
+\PYG{+w}{    }\PYG{n+nt}{to\PYGZus{}onehot\PYGZus{}y}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{true}
+\PYG{+w}{    }\PYG{n+nt}{lambda\PYGZus{}dice}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.7}
+\PYG{+w}{    }\PYG{n+nt}{lambda\PYGZus{}focal}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.3}
+
+\PYG{n+nt}{LR\PYGZus{}SCHEDULER}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.handlers.LinearWarmupCosineAnnealingLR}
+\PYG{+w}{  }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{warmup\PYGZus{}epochs}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{5}
+\PYG{+w}{    }\PYG{n+nt}{max\PYGZus{}epochs}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{150}
+\PYG{+w}{    }\PYG{n+nt}{warmup\PYGZus{}start\PYGZus{}lr}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.0001}
+\PYG{+w}{    }\PYG{n+nt}{eta\PYGZus{}min}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.000001}
+
+\PYG{n+nt}{OPTIMIZER}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{torch.optim.AdamW}
+\PYG{+w}{  }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{lr}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.001}
+\PYG{+w}{    }\PYG{n+nt}{weight\PYGZus{}decay}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{0.0001}
+
+\PYG{n+nt}{METRIC}\PYG{p}{:}
+\PYG{+w}{  }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.metrics.DiceMetric}
+\PYG{+w}{  }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{    }\PYG{n+nt}{include\PYGZus{}background}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{false}
+\PYG{+w}{    }\PYG{n+nt}{reduction}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{mean}
+
+\PYG{n+nt}{POST\PYGZus{}PRED}\PYG{p}{:}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.AsDiscrete}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{argmax}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{true}
+
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{customClosing.MorphologicalClosing}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{dim}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{30}
+
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.AsDiscrete}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{to\PYGZus{}onehot}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{2}
+
+\PYG{n+nt}{POST\PYGZus{}LABEL}\PYG{p}{:}
+\PYG{+w}{  }\PYG{p+pIndicator}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nt}{class}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{monai.transforms.AsDiscrete}
+\PYG{+w}{    }\PYG{n+nt}{params}\PYG{p}{:}
+\PYG{+w}{      }\PYG{n+nt}{to\PYGZus{}onehot}\PYG{p}{:}\PYG{+w}{ }\PYG{l+lScalar+lScalarPlain}{2}
+
+\end{MintedVerbatim}

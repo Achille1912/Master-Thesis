@@ -2,7 +2,7 @@ PWD /home/achille/Documents/GitHub/Master-Thesis/Thesis/doc
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/achille/Desktop/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
+INPUT /home/achille/Documents/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
 OUTPUT .aux/HebdomonGuide.log
 INPUT ../tex/hebdomon.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/hebdomon/hebdomon.cls
@@ -705,6 +705,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/appendix/appendix.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
@@ -951,6 +953,9 @@ INPUT .aux/chap_5.aux
 INPUT .aux/chap_6.aux
 INPUT .aux/chap_6.aux
 INPUT .aux/chap_6.aux
+INPUT .aux/Appendice.aux
+INPUT .aux/Appendice.aux
+INPUT .aux/Appendice.aux
 OUTPUT .aux/HebdomonGuide.aux
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -996,6 +1001,8 @@ OUTPUT .aux/HebdomonGuide.mtc4
 OUTPUT .aux/HebdomonGuide.mtc5
 OUTPUT .aux/HebdomonGuide.mtc6
 OUTPUT .aux/HebdomonGuide.mtc7
+OUTPUT .aux/HebdomonGuide.mtc8
+OUTPUT .aux/HebdomonGuide.mtc9
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT .aux/HebdomonGuide.toc
@@ -1130,9 +1137,9 @@ INPUT ./images/2025-08-09-19-34-01.png
 INPUT ./images/2025-08-09-19-34-01.png
 INPUT ./images/2025-08-09-19-34-01.png
 INPUT ./images/2025-08-09-19-34-01.png
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/fira/FiraSans-Bold-osf-ts1.vf
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ts1--base.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT ./figures/split_pie_chart.png
 INPUT ./figures/split_pie_chart.png
 INPUT ./figures/split_pie_chart.png
@@ -1153,6 +1160,11 @@ INPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc
 OUTPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc4
+INPUT ./figures/Untitled Diagram.drawio.png
+INPUT ./figures/Untitled Diagram.drawio.png
+INPUT ./figures/Untitled Diagram.drawio.png
+INPUT ./figures/Untitled Diagram.drawio.png
+INPUT ./figures/Untitled Diagram.drawio.png
 OUTPUT .aux/_018679B249EA6FB07607F2451175FB2C.data.minted
 INPUT .aux/_018679B249EA6FB07607F2451175FB2C.config.minted
 INPUT .aux/_018679B249EA6FB07607F2451175FB2C.config.minted
@@ -1179,10 +1191,10 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/ts1-lmtt10.tfm
 INPUT ./.aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted
 INPUT ./.aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted
 INPUT .aux/_minted/916629501A06053E500A5D6CBB4FAE22.highlight.minted
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT ./.aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
 INPUT ./.aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
 INPUT .aux/_minted/29024B4139A3789B819E291EA7A0E7C0.highlight.minted
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc
 INPUT ./.aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted
 INPUT ./.aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted
 INPUT .aux/_minted/148551D2F0AE14D8EB1E7C74F7144B07.highlight.minted
@@ -1236,6 +1248,11 @@ INPUT ./figures/metrics.png
 INPUT ./figures/metrics.png
 INPUT ./figures/metrics.png
 INPUT ./figures/metrics.png
+INPUT ./images/2025-08-19-16-09-18.png
+INPUT ./images/2025-08-19-16-09-18.png
+INPUT ./images/2025-08-19-16-09-18.png
+INPUT ./images/2025-08-19-16-09-18.png
+INPUT ./images/2025-08-19-16-09-18.png
 INPUT ./figures/slice_017.png
 INPUT ./figures/slice_017.png
 INPUT ./figures/slice_017.png
@@ -1279,6 +1296,15 @@ INPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc
 OUTPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc6
+INPUT ./Appendice.tex
+INPUT ./Appendice.tex
+OUTPUT .aux/Appendice.aux
+INPUT ./Appendice.tex
+INPUT ./Appendice.tex
+INPUT Appendice.tex
+INPUT ./.aux/_minted/652AE9A2E33E8397673124EAF0F21024.highlight.minted
+INPUT ./.aux/_minted/652AE9A2E33E8397673124EAF0F21024.highlight.minted
+INPUT .aux/_minted/652AE9A2E33E8397673124EAF0F21024.highlight.minted
 INPUT .aux/HebdomonGuide.lot
 INPUT .aux/HebdomonGuide.lot
 INPUT .aux/HebdomonGuide.lot
@@ -1290,6 +1316,10 @@ OUTPUT .aux/HebdomonGuide.lof
 OUTPUT .aux/HebdomonGuide.maf
 INPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc
+INPUT .aux/HebdomonGuide.mtc9
+INPUT .aux/HebdomonGuide.mtc9
+INPUT .aux/HebdomonGuide.mtc8
+INPUT .aux/HebdomonGuide.mtc8
 INPUT .aux/HebdomonGuide.mtc7
 INPUT .aux/HebdomonGuide.mtc7
 INPUT .aux/HebdomonGuide.mtc6
@@ -1325,6 +1355,9 @@ INPUT .aux/chap_5.aux
 INPUT .aux/chap_6.aux
 INPUT .aux/chap_6.aux
 INPUT .aux/chap_6.aux
+INPUT .aux/Appendice.aux
+INPUT .aux/Appendice.aux
+INPUT .aux/Appendice.aux
 INPUT .aux/HebdomonGuide.run.xml
 OUTPUT .aux/HebdomonGuide.run.xml
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb

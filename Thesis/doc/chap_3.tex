@@ -6,14 +6,14 @@ Il dataset utilizzato proviene dal database \textbf{Duke Breast Cancer MRI} \cit
 
 Ogni studio è composto da sequenze MRI in formato \textbf{DICOM}, ottenute in posizione prona utilizzando scanner da \textbf{1.5 T} o \textbf{3.0 T} (\textbf{prodotti da GE Healthcare o Siemens}). Le immagini sono acquisite in \textbf{proiezione assiale}, con una \textbf{risoluzione spaziale variabile} compresa tra \textbf{0.6×0.6×1.0 mm\textsuperscript{3}} e \textbf{1.1×1.1×1.2 mm\textsuperscript{3}}, rendendole adatte all'elaborazione tridimensionale.
 
-\begin{wrapfigure}{r}{0.4\textwidth} 
+\begin{figure}
   	\centering 
- 	\includegraphics[width=0.4\textwidth]{images/2025-08-09-19-34-01.png} 
+ 	\includegraphics[width=0.6\textwidth]{images/2025-08-09-19-34-01.png} 
     \caption{Fast Breast MRI Available to Women with Average Breast Cancer Risk | Duke Health \cite{mri_machine}}
- \end{wrapfigure} 
+ \end{figure} 
 
 
-Le sequenze utilizzate nel progetto corrispondono alle immagini \textbf{T1-weighted fat-suppressed pre-contrast}, selezionate per l’elevato contrasto tra il \textbf{tessuto adiposo} e quello \textbf{fibroghiandolare (FGT),} senza l’interferenza di mezzi di contrasto. Questa scelta metodologica è coerente con quanto proposto da \textbf{Lew et al. (2024),} che hanno dimostrato l’efficacia di tale sequenza per la segmentazione automatica del FGT e dei vasi sanguigni.
+Le sequenze utilizzate nel progetto corrispondono alle immagini \textbf{T1-weighted} \textbf{fat-suppressed pre-contrast}, selezionate per l’elevato contrasto tra il \textbf{tessuto adiposo} e quello \textbf{fibroghiandolare (FGT),} senza l’interferenza di mezzi di contrasto. Questa scelta metodologica è coerente con quanto proposto da \textbf{Lew et al. (2024),} che hanno dimostrato l’efficacia di tale sequenza per la segmentazione automatica del FGT e dei vasi sanguigni.
 
 \Subsection{Annotazioni e Ground Truth}
 Una caratteristica distintiva del dataset è la disponibilità di \textbf{annotazioni manuali tridimensionali}, elaborate da \textbf{annotatori formati} e successivamente validate da \textbf{radiologi esperti in senologia}. Ogni caso include \textbf{segmentazioni voxel-wise} delle seguenti strutture:

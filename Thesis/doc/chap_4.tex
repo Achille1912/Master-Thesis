@@ -7,6 +7,11 @@ Uno dei maggiori vantaggi di questo approccio emergeva nella \textbf{fase di val
 
 Sebbene il framework fornisse una struttura organizzata per gli esperimenti, \textbf{non era dotato di sistemi intelligenti in grado di verificare automaticamente la coerenza logica delle configurazioni}. Spettava quindi a me, durante la definizione dei parametri nel file YAML, assicurarmi che le scelte fossero \textbf{compatibili} tra loro e adatte al contesto. Ad esempio, se impostavo un'architettura progettata per input volumetrici, dovevo verificare manualmente che anche le trasformazioni di preprocessing (come il random padding o il resizing) fossero configurate per operare su tre dimensioni, evitando incongruenze che avrebbero compromesso l'addestramento. 
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{figures/Untitled Diagram.drawio.png}
+\end{figure}
+
 
 Allo stesso modo, quando sperimentavo ottimizzatori diversi, dovevo prestare attenzione alla scelta del \textbf{learning rate} e dello \textbf{scheduler}, poiché valori troppo aggressivi potevano \textbf{destabilizzare il training}, mentre quelli troppo conservativi \textbf{rallentavano inutilmente la convergenza}. 
 
