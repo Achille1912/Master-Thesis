@@ -42,7 +42,7 @@ Per garantire la coerenza e individuare possibili problemi, è stato anche neces
 
 \Section{Evoluzione Architetturale e Tuning degli Iperparametri}
 
-Il \textbf{primo esperimento} \ref{tab:exp1_config} ha costituito la \textbf{base di partenza}, con una configurazione \textbf{standard della rete U-Net tridimensionale}, con \textbf{4 blocchi convoluzionali} (\texttt{channels: [16, 32, 64, 128]}), \textbf{normalizzazione batch}, e un \textbf{resize uniforme} applicato a tutte le immagini. Con questa configurazione, è stato ottenuto un \hlight{Dice score sul test set pari a 0.7894}.
+Il \textbf{primo esperimento} (tab. \ref{tab:exp1_config}) ha costituito la \textbf{base di partenza}, con una configurazione \textbf{standard della rete U-Net tridimensionale}, con \textbf{4 blocchi convoluzionali} (\texttt{channels: [16, 32, 64, 128]}), \textbf{normalizzazione batch}, e un \textbf{resize uniforme} applicato a tutte le immagini. Con questa configurazione, è stato ottenuto un \hlight{Dice score sul test set pari a 0.7894}.
 
 \begin{table}[H]
     \begin{center}
@@ -67,7 +67,7 @@ Il \textbf{primo esperimento} \ref{tab:exp1_config} ha costituito la \textbf{bas
 \end{table}
 
 
-Il \textbf{passo successivo} ha previsto un \textbf{aumento del learning rate} dell’ottimizzatore \textbf{Adam}, passando da \textbf{0.0005} a \textbf{0.005}. Questo semplice cambiamento ha prodotto un \hlight{incremento della metrica di circa +1.17\%,} suggerendo che la rete era in grado di \hlight{convergere più rapidamente in presenza di un gradiente iniziale più marcato}. Da qui è emersa l’intuizione che la rete potesse beneficiare anche di una \hlight{maggiore profondità}: il \textbf{terzo} e il \textbf{quarto} esperimento \ref{tab:exp3-4_results} \hlight{hanno confermato questa ipotesi, mostrando miglioramenti crescenti in validazione e test} con l’introduzione di un ulteriore blocco (\texttt{channels: [16, 32, 64, 128, 256]}), fino a raggiungere \hlight{0.8597 sul test set} e \hlight{0.8569 sul validation set}.
+Il \textbf{passo successivo} ha previsto un \textbf{aumento del learning rate} dell’ottimizzatore \textbf{Adam}, passando da \textbf{0.0005} a \textbf{0.005}. Questo semplice cambiamento ha prodotto un \hlight{incremento della metrica di circa +1.17\%,} suggerendo che la rete era in grado di \hlight{convergere più rapidamente in presenza di un gradiente iniziale più marcato}. Da qui è emersa l’intuizione che la rete potesse beneficiare anche di una \hlight{maggiore profondità}: il \textbf{terzo} e il \textbf{quarto} esperimento (tab. \ref{tab:exp3-4_results}) \hlight{hanno confermato questa ipotesi, mostrando miglioramenti crescenti in validazione e test} con l’introduzione di un ulteriore blocco (\texttt{channels: [16, 32, 64, 128, 256]}), fino a raggiungere \hlight{0.8597 sul test set} e \hlight{0.8569 sul validation set}.
 
 \begin{table}[H]
     \centering
@@ -90,7 +90,7 @@ Il \textbf{passo successivo} ha previsto un \textbf{aumento del learning rate} d
 	\label{tab:exp3-4_results}
 \end{table}
 
-A partire dal \textbf{quinto esperimento} \ref{tab:exp5_comparative} è stata esplorata una \textbf{combinazione di modifiche strutturali}, tra cui il passaggio da \textbf{Adam} ad \hlight{AdamW}, il cambiamento della \textbf{normalizzazione} da \textbf{Batch} a \hlight{Instance} e l’utilizzo di una \textbf{loss} \textbf{composita} (\hlight{Focal} + \hlight{Dice} \hlight{Loss}), ciascuna ponderata per gestire in modo bilanciato gli squilibri tra le classi. Questa configurazione ha prodotto \hlight{ottimi risultati in validazione (0,8623) e (0,8597) sul test set}.
+A partire dal \textbf{quinto esperimento} (tab. \ref{tab:exp5_comparative}) è stata esplorata una \textbf{combinazione di modifiche strutturali}, tra cui il passaggio da \textbf{Adam} ad \hlight{AdamW}, il cambiamento della \textbf{normalizzazione} da \textbf{Batch} a \hlight{Instance} e l’utilizzo di una \textbf{loss} \textbf{composita} (\hlight{Focal} + \hlight{Dice} \hlight{Loss}), ciascuna ponderata per gestire in modo bilanciato gli squilibri tra le classi. Questa configurazione ha prodotto \hlight{ottimi risultati in validazione (0.8623) e (0.8597) sul test set}.
 \begin{table}[H]
     \centering
     \begin{NiceTabular}{rl}[rules/color={gray!90},rules/width=1pt]
@@ -113,7 +113,7 @@ A partire dal \textbf{quinto esperimento} \ref{tab:exp5_comparative} è stata es
 \end{table}
 
 
-Nei \textbf{successivi esperimenti}, si è indagata ulteriormente la sensibilità del modello al \textbf{learning rate}, che era stato inizialmente portato troppo in basso (\texttt{0.0001}). Ripristinando un valore intermedio (\texttt{0.001}), il \hlight{Dice score sul test è aumentato di oltre il 3\%.} Parallelamente, l’introduzione di una strategia di \hlight{learning rate scheduling  (LinearWarmupCosineAnnealingLR)} \ref{fig:learning_rate_scheduling} ha portato a \hlight{miglioramenti più modesti ma stabili}.
+Nei \textbf{successivi esperimenti}, si è indagata ulteriormente la sensibilità del modello al \textbf{learning rate}, che era stato inizialmente portato troppo in basso (\texttt{0.0001}). Ripristinando un valore intermedio (\texttt{0.001}), il \hlight{Dice score sul test è aumentato di oltre il 3\%.} Parallelamente, l’introduzione di una strategia di \hlight{learning rate scheduling  (LinearWarmupCosineAnnealingLR)} (fig. \ref{fig:learning_rate_scheduling}) ha portato a \hlight{miglioramenti più modesti ma stabili}.
 
 \begin{figure}[H] 
   	\centering 
@@ -127,7 +127,7 @@ Nei \textbf{successivi esperimenti}, si è indagata ulteriormente la sensibilit�
  
 
 
-Una seconda linea di sperimentazione ha riguardato il \textbf{trattamento dimensionale} delle immagini. Portando la dimensione da \textbf{384x384} a \hlight{512x512}, si è osservato un ulteriore \hlight{miglioramento della metrica}. Al contrario, strategie basate esclusivamente sul \textbf{padding}, o su un \textbf{mix di resize e padding}, hanno avuto un effetto \hlight{negativo} sulle performance, portando a un crollo significativo della metrica nel \textbf{nono} e \textbf{decimo} esperimento fino a \hlight{0.7576 sul test set} e \hlight{0.0816 in validazione}. 
+Una seconda linea di sperimentazione ha riguardato il \textbf{trattamento dimensionale} delle immagini. Portando la dimensione da \textbf{(384x384)} a \hlight{(512x512)}, si è osservato un ulteriore \hlight{miglioramento della metrica}. Al contrario, strategie basate esclusivamente sul \textbf{padding}, o su un \textbf{mix di resize e padding}, hanno avuto un effetto \hlight{negativo} sulle performance, portando a un crollo significativo della metrica nel \textbf{nono} e \textbf{decimo} esperimento fino a \hlight{0.7576 sul test set} e \hlight{0.0816 in validazione}. 
 
 \begin{table}[H]
     \centering
@@ -181,7 +181,7 @@ I primi esperimenti con \textbf{SliceUNet} hanno ottenuto \hlight{risultati inte
 
 \Section{Ritorno all’approccio 3D: Affinamento e Validazione}
 
-Per questo motivo, \textbf{l’attenzione è tornata su modelli tridimensionali}, testando configurazioni diverse di \texttt{roi\_size} (ad esempio, \texttt{512x512x16}) e nuove combinazioni architetturali. \hlight{Esperimenti successivi hanno mostrato che aumentando la profondità lungo l’asse z} e spingendo il numero di \hlight{epoche a 150}, si potevano ottenere performance vicine a \hlight{0.8863 in test}, che \hlight{costituivano il massimo assoluto fino a quel punto.}
+Per questo motivo, \textbf{l’attenzione è tornata su modelli tridimensionali}, testando configurazioni diverse di \texttt{roi\_size} (ad esempio, \texttt{(512x512x16)}) e nuove combinazioni architetturali. \hlight{Esperimenti successivi hanno mostrato che aumentando la profondità lungo l’asse z} e spingendo il numero di \hlight{epoche a 150}, si potevano ottenere performance vicine a \hlight{0.8863 in test}, che \hlight{costituivano il massimo assoluto fino a quel punto.}
 
 \begin{table}[H]
     \centering
@@ -224,7 +224,8 @@ Un \hlight{aspetto critico} che è emerso in questa fase è stato \textbf{il mod
 if isinstance(test_loader.dataset.transform, Compose) 
             and any(isinstance(tr, Resized) 
             for tr in test_loader.dataset.transform.transforms):
-    val_outputs = [Resized(keys="img", spatial_size=original_shape, mode="nearest")
+    val_outputs = [Resized(keys="img", spatial_size=original_shape, 
+                mode="nearest")
                     ({"img": i})["img"] for i in val_outputs]
 \end{code}
 
@@ -236,14 +237,14 @@ Nonostante questa lieve flessione nei valori assoluti, la nuova metodologia \hli
 
 \Subsection{L’Attention U-Net}
 
-L’\textbf{Attention U-Net} \ref{fig:attention_unet} rappresenta una naturale estensione della classica architettura \textbf{U-Net}, progettata per migliorare la capacità del modello di \textbf{concentrarsi sulle regioni di interesse  più rilevanti all’interno dell’immagine}. Introdotta da \textbf{Oktay et al. nel 2018} \cite{oktay2018attention}, questa variante si basa sull’integrazione di \textbf{meccanismi di attenzione spaziale} nei percorsi di \textbf{skip connection} tra \textbf{encoder} e \textbf{decoder}. L’obiettivo principale è quello di guidare la rete \textbf{nell’enfatizzare le strutture salienti} e nel \textbf{sopprimere attivamente le attivazioni inutili} o irrilevanti, soprattutto in contesti caratterizzati da alta complessità anatomica o forte squilibrio tra classi.
+L’\textbf{Attention U-Net} (fig. \ref{fig:attention_unet}) rappresenta una naturale estensione della classica architettura \textbf{U-Net}, progettata per migliorare la capacità del modello di \textbf{concentrarsi sulle regioni di interesse  più rilevanti all’interno dell’immagine}. Introdotta da \textbf{Oktay et al. nel 2018} \cite{oktay2018attention}, questa variante si basa sull’integrazione di \textbf{meccanismi di attenzione spaziale} nei percorsi di \textbf{skip connection} tra \textbf{encoder} e \textbf{decoder}. L’obiettivo principale è quello di guidare la rete \textbf{nell’enfatizzare le strutture salienti} e nel \textbf{sopprimere attivamente le attivazioni inutili} o irrilevanti, soprattutto in contesti caratterizzati da alta complessità anatomica o forte squilibrio tra classi.
 
 Nella \textbf{U-Net tradizionale}, le informazioni a bassa risoluzione estratte dall’encoder vengono concatenate direttamente con i feature map corrispondenti del decoder. Tuttavia, questo approccio assume che tutte le regioni abbiano pari rilevanza informativa, ignorando il fatto che non tutte le porzioni dell’immagine contribuiscono in egual misura alla segmentazione finale. \textbf{L’Attention U-Net} introduce quindi un \textbf{modulo di attenzione} che agisce come un \textbf{filtro “intelligente”:} prima della concatenazione, il modello valuta l’importanza di ciascuna regione mediante un \textbf{gating mechanism}, che calcola \textbf{mappe di attenzione} specifiche per ogni livello di \textbf{skip connection}.
 
 \begin{figure}[H] 
   	\centering 
  	\includegraphics[width=.8\textwidth]{images/2025-07-22-14-33-52.png} 
-    \caption{Shcema dell’Attention U-Net. Le frecce indicano il flusso di informazioni tra i moduli di encoder e decoder, con l’integrazione del modulo di attenzione.}
+    \caption{Schema dell’Attention U-Net. Le frecce indicano il flusso di informazioni tra i moduli di encoder e decoder, con l’integrazione del modulo di attenzione.}
     \label{fig:attention_unet}
  \end{figure} 
 Dal punto di vista implementativo, il modulo di attenzione riceve in input due segnali: da un lato, \textbf{le feature provenienti dal livello encoder} (contenenti informazione spaziale locale); dall’altro, \textbf{i segnali di gating dal decoder} (contenenti informazione semantica più astratta). L’interazione tra questi due flussi genera una \textbf{mappa di attenzione}, applicata tramite moltiplicazione ai tensori encoder, prima della loro trasmissione al decoder. In questo modo, il decoder riceve solo le informazioni più rilevanti per la predizione finale.
@@ -252,7 +253,7 @@ Nel contesto del presente lavoro, \textbf{nonostante un aumento moderato della c
 
 \Section{Esperimento Finale}
 
-Il punto culminante di questa fase è stato rappresentato dall’esperimento \textbf{21}, in cui è stata utilizzata una \hlight{U-Net profonda con cinque livelli e stride finale lungo l’asse z pari a 1}. L’input adottava una ROI size tridimensionale pari a $(512, 512, 8)$, e il training è stato prolungato fino a \hlight{200 epoche} \ref{fig:losses}. 
+Il punto culminante di questa fase è stato rappresentato dall’esperimento \textbf{21}, in cui è stata utilizzata una \hlight{U-Net profonda con cinque livelli e stride finale lungo l’asse z pari a 1}. L’input adottava una ROI size tridimensionale pari a $(512, 512, 8)$, e il training è stato prolungato fino a \hlight{200 epoche} (fig. \ref{fig:losses} e fig. \ref{fig:metrics}). 
 
 \begin{minipage}{.48\textwidth}
     \begin{figure}[H] 
@@ -279,7 +280,7 @@ Il punto culminante di questa fase è stato rappresentato dall’esperimento \te
     \caption{Confronto Dice score tra tutti gli esperimenti effettuati.}
  \end{figure} 
 
-In queste condizioni, \hlight{il modello ha raggiunto un Dice score pari a 0.9124} \ref{fig:metrics}, \hlight{il valore più alto registrato su tutto il test set} \ref{fig:final_segmentation_examples}. Questo risultato rappresenta non solo il successo di una specifica configurazione, ma anche la validazione dell’intero \textbf{processo di ottimizzazione}, culminato in un \textbf{modello accurato}, \textbf{robusto} e valutato con \textbf{criteri metodologicamente solidi}.
+In queste condizioni, \hlight{il modello ha raggiunto un Dice score pari a 0.9124} (fig. \ref{fig:metrics}), \hlight{il valore più alto registrato su tutto il test set} (fig. \ref{fig:final_segmentation_examples}). Questo risultato rappresenta non solo il successo di una specifica configurazione, ma anche la validazione dell’intero \textbf{processo di ottimizzazione}, culminato in un \textbf{modello accurato}, \textbf{robusto} e valutato con \textbf{criteri metodologicamente solidi}.
 
 
 \begin{table}[H]
@@ -357,7 +358,7 @@ Sono state testate diverse dimensioni per il \textbf{kernel size} dell’operazi
     \label{fig:closing_example}
  \end{figure} 
 
-L’effetto del closing \ref{fig:closing_example} è stato valutato rieseguendo la metrica di \textbf{Dice score} sul \emph{test set}. Il modello finale, che in fase di validazione rigorosa aveva raggiunto un valore di \textbf{0.9124}, \hlight{ha beneficiato di un incremento fino a 0.9161} dopo il post-processing. Questo risultato conferma che, pur trattandosi di un miglioramento numericamente modesto \textbf{(\(+0.0037\)),} \hlight{l’operazione di closing ha contribuito a rifinire ulteriormente le maschere, portando a un output visivamente più coerente e clinicamente più fruibile.}
+L’effetto del closing (fig. \ref{fig:closing_example}) è stato valutato rieseguendo la metrica di \textbf{Dice score} sul \emph{test set}. Il modello finale, che in fase di validazione rigorosa aveva raggiunto un valore di \textbf{0.9124}, \hlight{ha beneficiato di un incremento fino a 0.9161} dopo il post-processing. Questo risultato conferma che, pur trattandosi di un miglioramento numericamente modesto \textbf{(\(+0.0037\)),} \hlight{l’operazione di closing ha contribuito a rifinire ulteriormente le maschere, portando a un output visivamente più coerente e clinicamente più fruibile.}
 
 
 

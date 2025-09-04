@@ -2,7 +2,7 @@ PWD /home/achille/Documents/GitHub/Master-Thesis/Thesis/doc
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /home/achille/Documents/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
+INPUT /home/achille/Desktop/GitHub/Master-Thesis/Thesis/doc/HebdomonGuide.tex
 OUTPUT .aux/HebdomonGuide.log
 INPUT ../tex/hebdomon.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/hebdomon/hebdomon.cls
@@ -699,6 +699,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/chancery.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/chancery.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/verbatim.sty
@@ -707,6 +709,8 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/appendix/appendix.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/appendix/appendix.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
@@ -953,9 +957,9 @@ INPUT .aux/chap_5.aux
 INPUT .aux/chap_6.aux
 INPUT .aux/chap_6.aux
 INPUT .aux/chap_6.aux
-INPUT .aux/Appendice.aux
-INPUT .aux/Appendice.aux
-INPUT .aux/Appendice.aux
+INPUT .aux/thanks.aux
+INPUT .aux/thanks.aux
+INPUT .aux/thanks.aux
 OUTPUT .aux/HebdomonGuide.aux
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -988,26 +992,6 @@ INPUT ./figures/logo.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/fira/FiraSans-Regular-osf-sc-ot1.vf
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-sc-ot1--base.tfm
-INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_ogsljj.enc
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_337jzs.enc
-INPUT .aux/HebdomonGuide.toc
-OUTPUT .aux/HebdomonGuide.mtc1
-OUTPUT .aux/HebdomonGuide.mtc2
-OUTPUT .aux/HebdomonGuide.mtc3
-OUTPUT .aux/HebdomonGuide.mtc4
-OUTPUT .aux/HebdomonGuide.mtc5
-OUTPUT .aux/HebdomonGuide.mtc6
-OUTPUT .aux/HebdomonGuide.mtc7
-OUTPUT .aux/HebdomonGuide.mtc8
-OUTPUT .aux/HebdomonGuide.mtc9
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
-INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
-INPUT .aux/HebdomonGuide.toc
-INPUT .aux/HebdomonGuide.toc
-INPUT .aux/HebdomonGuide.toc
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
@@ -1030,6 +1014,24 @@ INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/lm/lmex10.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/public/fira/FiraSans-Regular-osf-sc-ot1.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Regular-osf-sc-ot1--base.tfm
+INPUT /usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_ogsljj.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/fira/fir_337jzs.enc
+INPUT .aux/HebdomonGuide.toc
+OUTPUT .aux/HebdomonGuide.mtc1
+OUTPUT .aux/HebdomonGuide.mtc2
+OUTPUT .aux/HebdomonGuide.mtc3
+OUTPUT .aux/HebdomonGuide.mtc4
+OUTPUT .aux/HebdomonGuide.mtc5
+OUTPUT .aux/HebdomonGuide.mtc6
+OUTPUT .aux/HebdomonGuide.mtc7
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/fira/FiraSans-Bold-osf-ot1.tfm
+INPUT .aux/HebdomonGuide.toc
+INPUT .aux/HebdomonGuide.toc
+INPUT .aux/HebdomonGuide.toc
 OUTPUT .aux/HebdomonGuide.toc
 INPUT ./chap_1.tex
 INPUT ./chap_1.tex
@@ -1160,11 +1162,20 @@ INPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc
 OUTPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc4
-INPUT ./figures/Untitled Diagram.drawio.png
-INPUT ./figures/Untitled Diagram.drawio.png
-INPUT ./figures/Untitled Diagram.drawio.png
-INPUT ./figures/Untitled Diagram.drawio.png
-INPUT ./figures/Untitled Diagram.drawio.png
+INPUT ./figures/Untitled Diagram.drawio.svg
+INPUT ./figures/Untitled Diagram.drawio.svg
+INPUT ./figures/Untitled Diagram.drawio.svg
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf_tex
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf_tex
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf_tex
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf_tex
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf_tex
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf
+INPUT ./svg-inkscape/Untitled Diagram.drawio_svg-tex.pdf
 OUTPUT .aux/_018679B249EA6FB07607F2451175FB2C.data.minted
 INPUT .aux/_018679B249EA6FB07607F2451175FB2C.config.minted
 INPUT .aux/_018679B249EA6FB07607F2451175FB2C.config.minted
@@ -1229,9 +1240,9 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT ./.aux/_minted/C2D11D840D89DF93E5445D1389FE250D.highlight.minted
 INPUT ./.aux/_minted/C2D11D840D89DF93E5445D1389FE250D.highlight.minted
 INPUT .aux/_minted/C2D11D840D89DF93E5445D1389FE250D.highlight.minted
-INPUT ./.aux/_minted/F851D6BA08F717CE340071F989CFF6E2.highlight.minted
-INPUT ./.aux/_minted/F851D6BA08F717CE340071F989CFF6E2.highlight.minted
-INPUT .aux/_minted/F851D6BA08F717CE340071F989CFF6E2.highlight.minted
+INPUT ./.aux/_minted/672054AD093C60B89AFC8660CC4EC703.highlight.minted
+INPUT ./.aux/_minted/672054AD093C60B89AFC8660CC4EC703.highlight.minted
+INPUT .aux/_minted/672054AD093C60B89AFC8660CC4EC703.highlight.minted
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT ./images/2025-07-22-14-33-52.png
 INPUT ./images/2025-07-22-14-33-52.png
@@ -1296,15 +1307,23 @@ INPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc
 OUTPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc6
-INPUT ./Appendice.tex
-INPUT ./Appendice.tex
-OUTPUT .aux/Appendice.aux
-INPUT ./Appendice.tex
-INPUT ./Appendice.tex
-INPUT Appendice.tex
-INPUT ./.aux/_minted/652AE9A2E33E8397673124EAF0F21024.highlight.minted
-INPUT ./.aux/_minted/652AE9A2E33E8397673124EAF0F21024.highlight.minted
-INPUT .aux/_minted/652AE9A2E33E8397673124EAF0F21024.highlight.minted
+INPUT ./thanks.tex
+INPUT ./thanks.tex
+OUTPUT .aux/thanks.aux
+INPUT ./thanks.tex
+INPUT ./thanks.tex
+INPUT thanks.tex
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pzc.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pzc.fd
+INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ot1pzc.fd
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi7t.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi7t.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi7t.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/zapfchan/pzcmi7t.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/vf/adobe/zapfchan/pzcmi7t.vf
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
 INPUT .aux/HebdomonGuide.lot
 INPUT .aux/HebdomonGuide.lot
 INPUT .aux/HebdomonGuide.lot
@@ -1316,10 +1335,6 @@ OUTPUT .aux/HebdomonGuide.lof
 OUTPUT .aux/HebdomonGuide.maf
 INPUT .aux/HebdomonGuide.mtc
 INPUT .aux/HebdomonGuide.mtc
-INPUT .aux/HebdomonGuide.mtc9
-INPUT .aux/HebdomonGuide.mtc9
-INPUT .aux/HebdomonGuide.mtc8
-INPUT .aux/HebdomonGuide.mtc8
 INPUT .aux/HebdomonGuide.mtc7
 INPUT .aux/HebdomonGuide.mtc7
 INPUT .aux/HebdomonGuide.mtc6
@@ -1355,9 +1370,9 @@ INPUT .aux/chap_5.aux
 INPUT .aux/chap_6.aux
 INPUT .aux/chap_6.aux
 INPUT .aux/chap_6.aux
-INPUT .aux/Appendice.aux
-INPUT .aux/Appendice.aux
-INPUT .aux/Appendice.aux
+INPUT .aux/thanks.aux
+INPUT .aux/thanks.aux
+INPUT .aux/thanks.aux
 INPUT .aux/HebdomonGuide.run.xml
 OUTPUT .aux/HebdomonGuide.run.xml
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/fira/FiraSans-Bold.pfb
@@ -1369,3 +1384,4 @@ INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtk10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmtt10.pfb
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfss1095.pfb
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/type1/urw/zapfchan/uzcmi8a.pfb

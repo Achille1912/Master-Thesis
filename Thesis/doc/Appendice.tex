@@ -1,31 +1,32 @@
 \appendix
 
 \chapter{Configurazioni YAML complete}
+\tiny
 \begin{code}{yaml}
     TRAINING:
-  workspace: /home/cannavale/data/seg_breast/exp_24/                                                     # Workspace dell'eseprimento (cannavale/data/seg_brest/exp1/)
-  monai_data: /ssd1/cantone/datasets/Duke-Breast-Cancer-MRI/other/data_monai_relative                  # File di metadati che spiega al framework come funziona il dataset
-  dataset_root: /ssd1/cantone/datasets/Duke-Breast-Cancer-MRI/                                        # percorso del dataset
+  workspace: /home/cannavale/data/seg_breast/exp_24/                                                     
+  monai_data: /ssd1/cantone/datasets/Duke-Breast-Cancer-MRI/other/data_monai_relative                  
+  dataset_root: /ssd1/cantone/datasets/Duke-Breast-Cancer-MRI/                                        
   valid_size: 0.1
-  test_size: 0.1                                                                                        # 20% in test e 80% in train
-  train_test_split_seed: 42                                                                             # seed della randomicità dello split
-  cache_ratio: 0.1                                                                                     # metto basso e metto un accumulation a 4
-  accumulation: 4                                                                                      # l'optimizer entra in gioco ogni 4 volte
+  test_size: 0.1                                                        
+  train_test_split_seed: 42                                                                             
+  cache_ratio: 0.1                                                                                     
+  accumulation: 4                                                                                      
   train_batch_size: 4                                                                                  
-  test_batch_size: 1                                                                                    # (lascia 1)
-  num_workers: 8                                                                                 # processi cpu utilizzati (2,4,6,8)
-  device: cuda:3                                                                    # scelgo la gpu
-  load_model: /home/cannavale/data/seg_breast/exp_22/best_model.pth                                                                                       # non mi interessa
-  epochs: 200                                                                                            # inizia con 50/100, poi in base ai risultati ferma quando non migliora più
+  test_batch_size: 1                                                                                   
+  num_workers: 8                                                                                 
+  device: cuda:3                                                                    
+  load_model: /home/cannavale/data/seg_breast/exp_22/best_model.pth                                                                                      
+  epochs: 200                                                                                            
   sliding_window: True  
-  only_test: True                                                                               # se divido l'input in sottovolumi, in training imparo con i sotto-volumi (da fare con i vasi), in test uso l'intera immagine.
+  only_test: True                                                                               
   roi_size: 
     - 512
     - 512
     - 8                                                                                       
   
 TRAIN_TRANSFORM:
-  - class: monai.transforms.LoadImaged                                                                  # carica le immagini
+  - class: monai.transforms.LoadImaged                                                                  
     params:
       keys:
         - post_2
@@ -35,19 +36,19 @@ TRAIN_TRANSFORM:
       keys:
         - post_2
         - breast
-  - class: monai.transforms.ConcatItemsd                                                                # cambia la label dell'immagine in img
+  - class: monai.transforms.ConcatItemsd                                                                
     params:
       keys:
         - post_2
       name: img
       dim: 0
-  - class: monai.transforms.ConcatItemsd                                                                # cambia la label della groundtruth in seg
+  - class: monai.transforms.ConcatItemsd                                                                
     params:
       keys:
         - breast
       name: seg
       dim: 0
-  - class: monai.transforms.DeleteItemsd                                                                # cancella tutte le cose che non mi servono
+  - class: monai.transforms.DeleteItemsd                                                                
     params:
       keys:
         - pre
@@ -90,7 +91,7 @@ TRAIN_TRANSFORM:
 
 
 TEST_TRANSFORM:
-  - class: monai.transforms.LoadImaged                                                                  # carica le immagini
+  - class: monai.transforms.LoadImaged                                                                  
     params:
       keys:
         - post_2
@@ -100,19 +101,19 @@ TEST_TRANSFORM:
       keys:
         - post_2
         - breast
-  - class: monai.transforms.ConcatItemsd                                                                # cambia la label dell'immagine in img
+  - class: monai.transforms.ConcatItemsd                                                                
     params:
       keys:
         - post_2
       name: img
       dim: 0
-  - class: monai.transforms.ConcatItemsd                                                                # cambia la label della groundtruth in seg
+  - class: monai.transforms.ConcatItemsd                                                                
     params:
       keys:
         - breast
       name: seg
       dim: 0
-  - class: monai.transforms.DeleteItemsd                                                                # cancella tutte le cose che non mi servono
+  - class: monai.transforms.DeleteItemsd                                                                
     params:
       keys:
         - pre
@@ -205,8 +206,4 @@ POST_LABEL:
   - class: monai.transforms.AsDiscrete
     params:
       to_onehot: 2
-    
-\end{code}
-
-\chapter{Log di training}
-Riportare log di nvidia-smi, tempi, ecc.
+\end{code}    

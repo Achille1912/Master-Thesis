@@ -16,10 +16,11 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Grafico a torta della suddivisione del dataset}}{15}{figure.caption.9}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textcolor {mciBlue}{Configurazione Sperimentale}}{16}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Esempio di pipeline sperimentale con configurazione YAML.}}{17}{figure.caption.10}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textcolor {mciBlue}{Esperimenti}}{22}{chapter.5}%
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Andamento del learning rate durante il training, con warmup iniziale e successiva discesa coseno.}}{25}{figure.caption.15}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Shcema dell’Attention U-Net. Le frecce indicano il flusso di informazioni tra i moduli di encoder e decoder, con l’integrazione del modulo di attenzione.}}{28}{figure.caption.18}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Schema dell’Attention U-Net. Le frecce indicano il flusso di informazioni tra i moduli di encoder e decoder, con l’integrazione del modulo di attenzione.}}{28}{figure.caption.18}%
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Andamento delle funzioni di loss durante il training dell’esperimento finale(EXP 21).}}{29}{figure.caption.19}%
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Andamento delle metriche di valutazione durante il training dell’esperimento finale(EXP 21).}}{29}{figure.caption.20}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Confronto Dice score tra tutti gli esperimenti effettuati.}}{29}{figure.caption.21}%
@@ -28,9 +29,5 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{\textcolor {mciBlue}{Conclusioni}}{33}{chapter.6}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Configurazioni YAML complete}{37}{appendix.Alph1}%
-\addvspace {10\p@ }
-\contentsline {xchapter}{Log di training}{43}{appendix.Alph2}%
-\addvspace {10\p@ }
-\contentsline {xchapter}{Bibliografia}{46}{chapter*.27}%
+\contentsline {xchapter}{Bibliografia}{40}{chapter*.29}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

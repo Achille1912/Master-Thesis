@@ -79,7 +79,25 @@
 \RequirePackage{minitoc}
 \RequirePackage{setspace}
 
-\RequirePackage{hyperref}  % Allow the use of hyperlink within document
+\usepackage[colorlinks=true, linkcolor=black, citecolor=black, urlcolor=black]{hyperref}
+
+\usepackage{chancery}
+
+\newenvironment{ringraziamentiCalligra}{%
+  \par\begingroup
+  \fontfamily{pzc}\selectfont\fontsize{16pt}{18pt}\selectfont
+}{%
+  \par\endgroup
+}
+
+% \usepackage{vicent}
+% % (opzionale: il font Calligra è sottile; ingrandiamolo un po')
+% \newenvironment{ringraziamentiCalligra}{%
+%   \par\begingroup
+%   \cursiveshape\fontsize{18pt}{20pt}\selectfont
+% }{%
+%   \par\endgroup
+% }
 
 \RequirePackage{enumitem}
 
@@ -89,6 +107,7 @@
 \setcapindent{0pt}
 
 \usepackage[title]{appendix}
+\usepackage{multicol}
 
 
 \RequirePackage{amsmath}
