@@ -48,15 +48,6 @@ Il modello finale ha raggiunto un **Dice score di 0.9161**, dimostrando una note
 
 ---
 
-## 📌 Come usare questa Repository
-La repository contiene:  
-- `Tesi_Cannavale_Achille.pdf` → testo completo della tesi  
-- Configurazioni YAML di esempio per gli esperimenti  
-- Script Python per preprocessing, training e validazione  
-- Cartelle di logging con esempi di output (loss curve, metriche, modelli salvati, predizioni slice-by-slice)
-
----
-
 ## 📚 Riferimenti
 - Dataset: [Duke Breast Cancer MRI](https://doi.org/10.7937/TCIA.2019.4VAFYFM9)  
 - Oktay et al., *Attention U-Net: Learning Where to Look for the Pancreas*, arXiv:1804.03999  
